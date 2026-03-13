@@ -1,7 +1,7 @@
 version: '3.9'
 services:
-  portainer:
-    container_name: portainer
+  smartcbt_portainer:
+    container_name: smartcbt_portainer
     image: portainer/portainer-ce:2.18.4
     ports:
       - '9010:9000'
@@ -11,8 +11,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: always
 
-  database:
-    container_name: database
+  smartcbt_database:
+    container_name: smartcbt_database
     image: postgis/postgis:13-master
     restart: always
     expose:
@@ -29,8 +29,8 @@ services:
       timeout: 5s
       retries: 5
 
-  cache:
-    container_name: cache
+  smartcbt_cache:
+    container_name: smartcbt_cache
     restart: always
     image: redis:7.2.0
     expose:
@@ -43,14 +43,14 @@ services:
       timeout: 3s
       retries: 2
 
-  directus:
-    container_name: dmc
+  smartcbt_directus:
+    container_name: smartcbt_dmc
     build: .
     image: hx-directus:latest
     depends_on:
-      database:
+      smartcbt_database:
         condition: service_healthy
-      cache:
+      smartcbt_cache:
         condition: service_healthy
     restart: always
     ports:
