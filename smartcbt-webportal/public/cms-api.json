@@ -1,0 +1,1848 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "CBT - Data api",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "api.smartcbt.dasta.or.th/data"
+    }
+  ],
+  "paths": {
+    "/api/tourism-thailand/community_route": {
+      "get": {
+        "tags": ["community route"],
+        "summary": "List community route",
+        "description": "List community route",
+        "operationId": "listCommunityRoute",
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "1"
+            }
+          },
+          {
+            "name": "numberOfDay",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "3"
+            }
+          },
+          {
+            "name": "provinceName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "ยะลา"
+            }
+          },
+          {
+            "name": "numberOfResult",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "5"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "th"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 - Success",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "7904"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 30 Nov 2023 02:29:27 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"1ee0-qfPTOE/cNvMkjpleT7oG3KKasIA\""
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "openresty"
+                }
+              },
+              "Via": {
+                "schema": {
+                  "type": "string",
+                  "example": "kong/3.4.2"
+                }
+              },
+              "X-Kong-Proxy-Latency": {
+                "schema": {
+                  "type": "string",
+                  "example": "9"
+                }
+              },
+              "X-Kong-Upstream-Latency": {
+                "schema": {
+                  "type": "string",
+                  "example": "397"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "X-Served-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "api.smart-cbt.com"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "page": {
+                      "type": "object",
+                      "properties": {
+                        "maxPage": {
+                          "type": "number",
+                          "example": 5
+                        },
+                        "pageNumber": {
+                          "type": "number",
+                          "example": 1
+                        },
+                        "totalResult": {
+                          "type": "number",
+                          "example": 85
+                        }
+                      }
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "distance": {
+                            "type": "number",
+                            "example": 5524
+                          },
+                          "image": {
+                            "type": "string",
+                            "nullable": true,
+                            "example": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003"
+                          },
+                          "latitude": {
+                            "type": "number",
+                            "example": 13.691687
+                          },
+                          "longitude": {
+                            "type": "number",
+                            "example": 100.578984
+                          },
+                          "number_of_days": {
+                            "type": "number",
+                            "example": 1
+                          },
+                          "province": {
+                            "type": "string",
+                            "example": "สมุทรปราการ"
+                          },
+                          "route_id": {
+                            "type": "string",
+                            "example": "1"
+                          },
+                          "route_introduction": {
+                            "nullable": true,
+                            "example": null
+                          },
+                          "route_name": {
+                            "type": "string",
+                            "example": "เส้นทางท่องเที่ยวชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว"
+                          },
+                          "rowNumber": {
+                            "type": "number",
+                            "example": 1
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "distance": 5524,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003",
+                          "latitude": 13.691687,
+                          "longitude": 100.578984,
+                          "number_of_days": 1,
+                          "province": "สมุทรปราการ",
+                          "route_id": "1",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว",
+                          "rowNumber": 1
+                        },
+                        {
+                          "distance": 24679,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110009",
+                          "latitude": 13.665196,
+                          "longitude": 100.53742,
+                          "number_of_days": 1,
+                          "province": "สมุทรปราการ",
+                          "route_id": "2",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลทรงคนอง",
+                          "rowNumber": 2
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110023",
+                          "latitude": 13.68092,
+                          "longitude": 100.574141,
+                          "number_of_days": 1,
+                          "province": "สมุทรปราการ",
+                          "route_id": "3",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลบางน้ำผึ้ง",
+                          "rowNumber": 3
+                        },
+                        {
+                          "distance": 5846,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT300004",
+                          "latitude": 14.353013,
+                          "longitude": 101.938422,
+                          "number_of_days": 1,
+                          "province": "นครราชสีมา",
+                          "route_id": "4",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านสุขสมบูรณ์",
+                          "rowNumber": 4
+                        },
+                        {
+                          "distance": 357,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT300010",
+                          "latitude": 15.2462382,
+                          "longitude": 102.3704753,
+                          "number_of_days": 1,
+                          "province": "นครราชสีมา",
+                          "route_id": "5",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านปราสาท",
+                          "rowNumber": 5
+                        },
+                        {
+                          "distance": 1586,
+                          "image": null,
+                          "latitude": 14.936346,
+                          "longitude": 103.177874,
+                          "number_of_days": 1,
+                          "province": "บุรีรัมย์",
+                          "route_id": "6",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านสนวนนอก",
+                          "rowNumber": 6
+                        },
+                        {
+                          "distance": 8958,
+                          "image": null,
+                          "latitude": 14.55217,
+                          "longitude": 102.859861,
+                          "number_of_days": 2,
+                          "province": "บุรีรัมย์",
+                          "route_id": "7",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านเจริญสุข",
+                          "rowNumber": 7
+                        },
+                        {
+                          "distance": 2064,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT310022",
+                          "latitude": 14.4989457,
+                          "longitude": 102.9811574,
+                          "number_of_days": 2,
+                          "province": "บุรีรัมย์",
+                          "route_id": "8",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านโคกเมือง",
+                          "rowNumber": 8
+                        },
+                        {
+                          "distance": 309,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT320003",
+                          "latitude": 14.716918,
+                          "longitude": 103.39719,
+                          "number_of_days": 1,
+                          "province": "สุรินทร์",
+                          "route_id": "9",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านโพธิ์กอง",
+                          "rowNumber": 9
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT320008",
+                          "latitude": 14.982313,
+                          "longitude": 103.922582,
+                          "number_of_days": 1,
+                          "province": "สุรินทร์",
+                          "route_id": "10",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านอาลึ",
+                          "rowNumber": 10
+                        },
+                        {
+                          "distance": 18698,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT500002",
+                          "latitude": 18.767586,
+                          "longitude": 98.941178,
+                          "number_of_days": 1,
+                          "province": "เชียงใหม่",
+                          "route_id": "11",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านสันลมจอย",
+                          "rowNumber": 11
+                        },
+                        {
+                          "distance": 3213,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT500004",
+                          "latitude": 18.726164,
+                          "longitude": 98.909652,
+                          "number_of_days": 2,
+                          "province": "เชียงใหม่",
+                          "route_id": "12",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านไร่กองขิง",
+                          "rowNumber": 12
+                        },
+                        {
+                          "distance": 5767,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT200001",
+                          "latitude": 13.164891,
+                          "longitude": 100.807062,
+                          "number_of_days": 1,
+                          "province": "ชลบุรี",
+                          "route_id": "13",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนเกาะสีชัง",
+                          "rowNumber": 13
+                        },
+                        {
+                          "distance": 3066,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT200016",
+                          "latitude": 13.016916,
+                          "longitude": 100.97694,
+                          "number_of_days": 1,
+                          "province": "ชลบุรี",
+                          "route_id": "14",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลตะเคียนเตี้ย ",
+                          "rowNumber": 14
+                        },
+                        {
+                          "distance": 1088,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT200028",
+                          "latitude": 12.833364,
+                          "longitude": 100.967848,
+                          "number_of_days": 1,
+                          "province": "ชลบุรี",
+                          "route_id": "15",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านหนองชากแง้ว",
+                          "rowNumber": 15
+                        },
+                        {
+                          "distance": 7321,
+                          "image": null,
+                          "latitude": 12.848769,
+                          "longitude": 101.63385,
+                          "number_of_days": 1,
+                          "province": "ระยอง",
+                          "route_id": "16",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนท่องเที่ยวเชิงอนุรักษ์กระแสบน",
+                          "rowNumber": 16
+                        },
+                        {
+                          "distance": 3302,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT210005",
+                          "latitude": 12.735105,
+                          "longitude": 101.679169,
+                          "number_of_days": 1,
+                          "province": "ระยอง",
+                          "route_id": "17",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านทะเลน้อยระยอง",
+                          "rowNumber": 17
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT210014",
+                          "latitude": 12.706822,
+                          "longitude": 101.62514,
+                          "number_of_days": 1,
+                          "province": "ระยอง",
+                          "route_id": "18",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนมหาวิทยาลัยบ้านนอก บ้านจำรุง",
+                          "rowNumber": 18
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT220001",
+                          "latitude": 12.634181,
+                          "longitude": 102.013358,
+                          "number_of_days": 1,
+                          "province": "จันทบุรี",
+                          "route_id": "19",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนรักษ์เขาบายศรี",
+                          "rowNumber": 19
+                        },
+                        {
+                          "distance": 1332,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT230001",
+                          "latitude": 11.926617,
+                          "longitude": 102.783986,
+                          "number_of_days": 1,
+                          "province": "ตราด",
+                          "route_id": "20",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลไม้รูด",
+                          "rowNumber": 20
+                        }
+                      ]
+                    }
+                  }
+                },
+                "examples": {
+                  "200 - Success": {
+                    "value": {
+                      "page": {
+                        "maxPage": 5,
+                        "pageNumber": 1,
+                        "totalResult": 85
+                      },
+                      "result": [
+                        {
+                          "distance": 5524,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003",
+                          "latitude": 13.691687,
+                          "longitude": 100.578984,
+                          "number_of_days": 1,
+                          "province": "สมุทรปราการ",
+                          "route_id": "1",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว",
+                          "rowNumber": 1
+                        },
+                        {
+                          "distance": 24679,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110009",
+                          "latitude": 13.665196,
+                          "longitude": 100.53742,
+                          "number_of_days": 1,
+                          "province": "สมุทรปราการ",
+                          "route_id": "2",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลทรงคนอง",
+                          "rowNumber": 2
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110023",
+                          "latitude": 13.68092,
+                          "longitude": 100.574141,
+                          "number_of_days": 1,
+                          "province": "สมุทรปราการ",
+                          "route_id": "3",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลบางน้ำผึ้ง",
+                          "rowNumber": 3
+                        },
+                        {
+                          "distance": 5846,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT300004",
+                          "latitude": 14.353013,
+                          "longitude": 101.938422,
+                          "number_of_days": 1,
+                          "province": "นครราชสีมา",
+                          "route_id": "4",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านสุขสมบูรณ์",
+                          "rowNumber": 4
+                        },
+                        {
+                          "distance": 357,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT300010",
+                          "latitude": 15.2462382,
+                          "longitude": 102.3704753,
+                          "number_of_days": 1,
+                          "province": "นครราชสีมา",
+                          "route_id": "5",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านปราสาท",
+                          "rowNumber": 5
+                        },
+                        {
+                          "distance": 1586,
+                          "image": null,
+                          "latitude": 14.936346,
+                          "longitude": 103.177874,
+                          "number_of_days": 1,
+                          "province": "บุรีรัมย์",
+                          "route_id": "6",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านสนวนนอก",
+                          "rowNumber": 6
+                        },
+                        {
+                          "distance": 8958,
+                          "image": null,
+                          "latitude": 14.55217,
+                          "longitude": 102.859861,
+                          "number_of_days": 2,
+                          "province": "บุรีรัมย์",
+                          "route_id": "7",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านเจริญสุข",
+                          "rowNumber": 7
+                        },
+                        {
+                          "distance": 2064,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT310022",
+                          "latitude": 14.4989457,
+                          "longitude": 102.9811574,
+                          "number_of_days": 2,
+                          "province": "บุรีรัมย์",
+                          "route_id": "8",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านโคกเมือง",
+                          "rowNumber": 8
+                        },
+                        {
+                          "distance": 309,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT320003",
+                          "latitude": 14.716918,
+                          "longitude": 103.39719,
+                          "number_of_days": 1,
+                          "province": "สุรินทร์",
+                          "route_id": "9",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านโพธิ์กอง",
+                          "rowNumber": 9
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT320008",
+                          "latitude": 14.982313,
+                          "longitude": 103.922582,
+                          "number_of_days": 1,
+                          "province": "สุรินทร์",
+                          "route_id": "10",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านอาลึ",
+                          "rowNumber": 10
+                        },
+                        {
+                          "distance": 18698,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT500002",
+                          "latitude": 18.767586,
+                          "longitude": 98.941178,
+                          "number_of_days": 1,
+                          "province": "เชียงใหม่",
+                          "route_id": "11",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านสันลมจอย",
+                          "rowNumber": 11
+                        },
+                        {
+                          "distance": 3213,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT500004",
+                          "latitude": 18.726164,
+                          "longitude": 98.909652,
+                          "number_of_days": 2,
+                          "province": "เชียงใหม่",
+                          "route_id": "12",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวชุมชนบ้านไร่กองขิง",
+                          "rowNumber": 12
+                        },
+                        {
+                          "distance": 5767,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT200001",
+                          "latitude": 13.164891,
+                          "longitude": 100.807062,
+                          "number_of_days": 1,
+                          "province": "ชลบุรี",
+                          "route_id": "13",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนเกาะสีชัง",
+                          "rowNumber": 13
+                        },
+                        {
+                          "distance": 3066,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT200016",
+                          "latitude": 13.016916,
+                          "longitude": 100.97694,
+                          "number_of_days": 1,
+                          "province": "ชลบุรี",
+                          "route_id": "14",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลตะเคียนเตี้ย ",
+                          "rowNumber": 14
+                        },
+                        {
+                          "distance": 1088,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT200028",
+                          "latitude": 12.833364,
+                          "longitude": 100.967848,
+                          "number_of_days": 1,
+                          "province": "ชลบุรี",
+                          "route_id": "15",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านหนองชากแง้ว",
+                          "rowNumber": 15
+                        },
+                        {
+                          "distance": 7321,
+                          "image": null,
+                          "latitude": 12.848769,
+                          "longitude": 101.63385,
+                          "number_of_days": 1,
+                          "province": "ระยอง",
+                          "route_id": "16",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนท่องเที่ยวเชิงอนุรักษ์กระแสบน",
+                          "rowNumber": 16
+                        },
+                        {
+                          "distance": 3302,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT210005",
+                          "latitude": 12.735105,
+                          "longitude": 101.679169,
+                          "number_of_days": 1,
+                          "province": "ระยอง",
+                          "route_id": "17",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนบ้านทะเลน้อยระยอง",
+                          "rowNumber": 17
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT210014",
+                          "latitude": 12.706822,
+                          "longitude": 101.62514,
+                          "number_of_days": 1,
+                          "province": "ระยอง",
+                          "route_id": "18",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนมหาวิทยาลัยบ้านนอก บ้านจำรุง",
+                          "rowNumber": 18
+                        },
+                        {
+                          "distance": 0,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT220001",
+                          "latitude": 12.634181,
+                          "longitude": 102.013358,
+                          "number_of_days": 1,
+                          "province": "จันทบุรี",
+                          "route_id": "19",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนรักษ์เขาบายศรี",
+                          "rowNumber": 19
+                        },
+                        {
+                          "distance": 1332,
+                          "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT230001",
+                          "latitude": 11.926617,
+                          "longitude": 102.783986,
+                          "number_of_days": 1,
+                          "province": "ตราด",
+                          "route_id": "20",
+                          "route_introduction": null,
+                          "route_name": "เส้นทางท่องเที่ยวโดยชุมชนตำบลไม้รูด",
+                          "rowNumber": 20
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tourism-thailand/community_route/:id": {
+      "get": {
+        "tags": ["community route"],
+        "summary": "Get community detail id",
+        "description": "Get community detail id",
+        "operationId": "getCommunityDetailId",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "th"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 - Success",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "11768"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 30 Nov 2023 02:29:43 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"2df8-xFw1F6buCpsmGLGmbSDBDfCH8eo\""
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "openresty"
+                }
+              },
+              "Via": {
+                "schema": {
+                  "type": "string",
+                  "example": "kong/3.4.2"
+                }
+              },
+              "X-Kong-Proxy-Latency": {
+                "schema": {
+                  "type": "string",
+                  "example": "0"
+                }
+              },
+              "X-Kong-Upstream-Latency": {
+                "schema": {
+                  "type": "string",
+                  "example": "703"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "X-Served-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "api.smart-cbt.com"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "days": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "day": {
+                                "type": "number",
+                                "example": 1
+                              },
+                              "placeStop": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "attractionId": {
+                                      "type": "string",
+                                      "example": "ATT110003"
+                                    },
+                                    "description": {
+                                      "type": "string",
+                                      "example": "ลูกประคบถือเป็นภูมิปัญญาท้องถิ่นที่ใช้ผ่อนคลายกล้ามเนื้อและแก้อาการปวดเมื่อยมาแต่โบราณ โดยที่บางกอบัวจะนำลูกประคบสด มานวดบริเวณ คอ บ่า ไหล่ และ หลัง ซึ่งเป็นกล้ามเนื้อส่วนที่มีการใช้งานค่อนข้างหนัก โดยเฉพาะอาการออฟฟิศซินโดรม ซึ่งเป็นมากในหมู่พนักงาน และที่บางกอบัวจะมีการนวดประคบบริเวณท่าน้ำคลองแพที่แวดล้อมไปด้วยธรรมชาติ ทำให้การนวดประคบเป็นกิจกรรมเด่นของชุมชนบางกอบัว"
+                                    },
+                                    "distance": {
+                                      "type": "number",
+                                      "example": 0
+                                    },
+                                    "image": {
+                                      "type": "string",
+                                      "example": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG"
+                                    },
+                                    "latitude": {
+                                      "type": "number",
+                                      "example": 13.691687
+                                    },
+                                    "longitude": {
+                                      "type": "number",
+                                      "example": 100.578984
+                                    },
+                                    "nameOfAttraction": {
+                                      "type": "string",
+                                      "example": "นวดลูกประคบ นวด หลัง คอ บ่า ริมคลองแพ"
+                                    },
+                                    "path": {
+                                      "type": "array",
+                                      "nullable": true,
+                                      "example": null
+                                    },
+                                    "stopOrder": {
+                                      "type": "number",
+                                      "example": 1
+                                    }
+                                  }
+                                },
+                                "example": [
+                                  {
+                                    "attractionId": "ATT110003",
+                                    "description": "ลูกประคบถือเป็นภูมิปัญญาท้องถิ่นที่ใช้ผ่อนคลายกล้ามเนื้อและแก้อาการปวดเมื่อยมาแต่โบราณ โดยที่บางกอบัวจะนำลูกประคบสด มานวดบริเวณ คอ บ่า ไหล่ และ หลัง ซึ่งเป็นกล้ามเนื้อส่วนที่มีการใช้งานค่อนข้างหนัก โดยเฉพาะอาการออฟฟิศซินโดรม ซึ่งเป็นมากในหมู่พนักงาน และที่บางกอบัวจะมีการนวดประคบบริเวณท่าน้ำคลองแพที่แวดล้อมไปด้วยธรรมชาติ ทำให้การนวดประคบเป็นกิจกรรมเด่นของชุมชนบางกอบัว",
+                                    "distance": 0,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG",
+                                    "latitude": 13.691687,
+                                    "longitude": 100.578984,
+                                    "nameOfAttraction": "นวดลูกประคบ นวด หลัง คอ บ่า ริมคลองแพ",
+                                    "path": null,
+                                    "stopOrder": 1
+                                  },
+                                  {
+                                    "attractionId": "ATT110002",
+                                    "description": "หัดทำลูกประคบสมุนไพรสดกับคุณกานดา มือวางอันดับหนึ่งทางด้านสมุนไพรของบางกอบัว ลูกประคบของบางกอบัวจะใช้สมุนไพรสด อาทิ ตะไคร้ ขมิ้นชัน ใบมะขาม มะกรูด ไพร พิมเสน เกลือ การบูร ซึ่งลูกประคบสมุนไพรสดจะมีสรรพคุณมากกว่าสมุนไพรอบแห้ง เพราะตัวยาจะซึมเข้าสู่ใต้ผิวหนังได้ดีกว่า พอเราได้ลูกประคบที่ทำกับมือ เราก็จะได้มาลองนวดลองประคบกัน",
+                                    "distance": 0,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110002/1.jpg",
+                                    "latitude": 13.691687,
+                                    "longitude": 100.578984,
+                                    "nameOfAttraction": "กิจกรรมทำลูกประคบสมุนไพร",
+                                    "path": ["13.69169,100.57898", "13.69169,100.57898"],
+                                    "stopOrder": 2
+                                  },
+                                  {
+                                    "attractionId": "ATT110004",
+                                    "description": "กราบหลวงปู่เหมือน วัดบางกอบัว ที่ได้รับความเคารพนับถือจากพุทธศาสนิกชนเป็นอย่างมาก วัดบางกอบัว สร้างมาตั้งแต่สมัยกรุงศรีอยุธยาตอนปลาย เดิมชื่อ \"วัดบางกะบัว\" ต่อมาได้เปลี่ยนเป็นชื่อวัดบางกอบัวตามชื่อตำบล",
+                                    "distance": 578,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110004/1.JPG",
+                                    "latitude": 13.696573,
+                                    "longitude": 100.576286,
+                                    "nameOfAttraction": "กราบหลวงปู่เหมือน วัดบางกอบัว",
+                                    "path": [
+                                      "13.69256,100.57895",
+                                      "13.69301,100.57856",
+                                      "13.6933,100.57853",
+                                      "13.69416,100.57777",
+                                      "13.69425,100.57768",
+                                      "13.69493,100.57699",
+                                      "13.69561,100.57715",
+                                      "13.69635,100.57633",
+                                      "13.69643,100.57625",
+                                      "13.69646,100.57621",
+                                      "13.6965,100.57617",
+                                      "13.69655,100.57621"
+                                    ],
+                                    "stopOrder": 3
+                                  },
+                                  {
+                                    "attractionId": "ATT110005",
+                                    "description": "พิพิธภัณฑ์บ้านคลองบน เป็นของนายแดง ไกรสมโภช อายุ 67 ปี ชาวบางกอบัว ที่เก็บสะสมของโบราณ ของเก่าที่หาดูได้ยาก เพื่อไว้เป็นที่ศึกษาเรียนรู้ของคนรุ่นหลัง เช่น เครื่องเงิน เครื่องลายคราม เครื่องครัว เครื่องมือทำการเกษตร เงินตรา",
+                                    "distance": 830,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110005/1.JPG",
+                                    "latitude": 13.69746,
+                                    "longitude": 100.57119,
+                                    "nameOfAttraction": "พิพิธภัณฑ์บ้านคลองบน",
+                                    "path": [
+                                      "13.69655,100.57621",
+                                      "13.69658,100.57619",
+                                      "13.69697,100.57569",
+                                      "13.69742,100.576",
+                                      "13.69757,100.57579",
+                                      "13.69836,100.57462",
+                                      "13.69848,100.57417",
+                                      "13.69847,100.57407",
+                                      "13.69858,100.57376",
+                                      "13.69923,100.57208",
+                                      "13.69745,100.57122"
+                                    ],
+                                    "stopOrder": 4
+                                  },
+                                  {
+                                    "attractionId": "ATT110006",
+                                    "description": "พื้นที่บางกะเจ้าเป็นพื้นที่ที่ขึ้นชื่อเรื่องมะพร้าว เมนูที่ต้องมาชิมให้ได้คือ แกงกรุบมะพร้าวกุ้งสด เป็นแกงที่หาทานได้ยากเพราะต้องใช้ส่วนของกะลาที่ยังอ่อนอยู่มาซอย ซึ่งก็จะได้ส่วนของกรุบมะพร้าวในปริมาณไม่มากนัก จึงถือว่าเป็นเมนูที่ต้องจองล่วงหน้าก่อนจะมาทาน นอกจากนั้นยังมีเมนูตามฤดูกาลอื่นๆ เช่น ห่อหมกปลากะพงใบยอ น้ำพริกผัดมะขาม เป็นต้น",
+                                    "distance": 1408,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110006/1.jpg",
+                                    "latitude": 13.691687,
+                                    "longitude": 100.578984,
+                                    "nameOfAttraction": "ชิมอาหารเมนูพื้นบ้าน",
+                                    "path": [
+                                      "13.69745,100.57122",
+                                      "13.69923,100.57208",
+                                      "13.69858,100.57376",
+                                      "13.69847,100.57407",
+                                      "13.69848,100.57417",
+                                      "13.69836,100.57462",
+                                      "13.69757,100.57579",
+                                      "13.69742,100.576",
+                                      "13.69697,100.57569",
+                                      "13.69658,100.57619",
+                                      "13.6965,100.57617",
+                                      "13.69646,100.57621",
+                                      "13.69643,100.57625",
+                                      "13.69635,100.57633",
+                                      "13.69561,100.57715",
+                                      "13.69493,100.57699",
+                                      "13.69425,100.57768",
+                                      "13.69416,100.57777",
+                                      "13.6933,100.57853",
+                                      "13.69301,100.57856",
+                                      "13.69256,100.57895"
+                                    ],
+                                    "stopOrder": 5
+                                  },
+                                  {
+                                    "attractionId": "ATT110007",
+                                    "description": "ลงมือทำผ้ามัดย้อมจากสีธรรมชาติที่หาได้จากพื้นถิ่น ได้แก่ สีเหลืองที่ได้ลูกจาก ขมิ้น ใบหูกวางและดาวเรือง, สีแดง/ชมพู ที่ได้จากไม้ฝาง, สีน้ำตาลที่ได้จากกาบมะพร้าว",
+                                    "distance": 1354,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110007/1.JPG",
+                                    "latitude": 13.684486,
+                                    "longitude": 100.584186,
+                                    "nameOfAttraction": "ทำผ้ามัดย้อมด้วยสีธรรมชาติ",
+                                    "path": [
+                                      "13.69256,100.57895",
+                                      "13.69318,100.57957",
+                                      "13.69352,100.5802",
+                                      "13.69331,100.58057",
+                                      "13.69323,100.58073",
+                                      "13.69284,100.58125",
+                                      "13.69255,100.58153",
+                                      "13.69111,100.58254",
+                                      "13.69045,100.583",
+                                      "13.69032,100.58326",
+                                      "13.6897,100.58359",
+                                      "13.68958,100.58365",
+                                      "13.68821,100.58435",
+                                      "13.68731,100.58462",
+                                      "13.68714,100.58462",
+                                      "13.6868,100.58461",
+                                      "13.68658,100.58461",
+                                      "13.68454,100.58402"
+                                    ],
+                                    "stopOrder": 6
+                                  },
+                                  {
+                                    "attractionId": "ATT110008",
+                                    "description": "กลุ่มชาวบ้านที่รวมตัวกันคิดค้นนำสมุนไพรที่ปลูกอยู่ในชุมชนมาต้ม เพื่อทำสปาเท้าน้ำสมุนไพร โดยใช้สมุนไพรกว่า 7 ชนิด อาทิ ชุมเห็ด ส้มป่อย ไพล ขมิ้น ตะไคร้ มะกรูด เหงือกปลาหมอต้ม มาผสมกับน้ำเย็นในอ่างแช่ 15 นาที เพื่อบำบัดผ่อนคลาย ลดอาการชาของเท้าและมือ หลังจากนั้นจะนวดเท้าต่อด้วยน้ำมันมะพร้าว เพื่อให้กล้ามเนื้อเส้นเอ็นผ่อนคลายสบายตัว",
+                                    "distance": 0,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110008/1.JPG",
+                                    "latitude": 13.684486,
+                                    "longitude": 100.584186,
+                                    "nameOfAttraction": "สปาเท้าน้ำสมุนไพร นวดสมุนไพร รพ.สต.บางกอบัว",
+                                    "path": ["13.68449,100.58419", "13.68449,100.58419"],
+                                    "stopOrder": 7
+                                  },
+                                  {
+                                    "attractionId": "ATT110001",
+                                    "description": "ในอดีตคลองแพเป็นลำคลองที่เหมือนเป็นเส้นทางสัญจรไปมาระหว่างชาวบางกอบัวและท่าเรือคลองเตย ทั้งเพื่อการค้าขาย การคมนาคม แต่เมื่อมีถนนเข้ามาถึงในชุมชน ความสำคัญของคลองจึงลดน้อยลงไป ก่อนที่คลองแพจะสูญหายไปจากความทรงจำ ชาวบางกอบัวจึงเกิดความคิดที่จะรักษาวิถีแห่งคลองแพเอาไว้เพื่ออนุรักษ์ รวมถึงฟื้นฟูเส้นทางเดินเรือ โดยร่วมกันขุดลอกคลองระยะทางยาวประมาณ 1 กิโลเมตร เพื่อให้เป็นแหล่งท่องเที่ยวเชิงนิเวศที่สำคัญของชุมชนบางกอบัว",
+                                    "distance": 1354,
+                                    "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110001/1.jpg",
+                                    "latitude": 13.691687,
+                                    "longitude": 100.578984,
+                                    "nameOfAttraction": "ล่องเรือคลองแพ สัมผัสวิถีริมคลอง",
+                                    "path": [
+                                      "13.68454,100.58402",
+                                      "13.68658,100.58461",
+                                      "13.6868,100.58461",
+                                      "13.68714,100.58462",
+                                      "13.68731,100.58462",
+                                      "13.68821,100.58435",
+                                      "13.68958,100.58365",
+                                      "13.6897,100.58359",
+                                      "13.69032,100.58326",
+                                      "13.69045,100.583",
+                                      "13.69111,100.58254",
+                                      "13.69255,100.58153",
+                                      "13.69284,100.58125",
+                                      "13.69323,100.58073",
+                                      "13.69331,100.58057",
+                                      "13.69352,100.5802",
+                                      "13.69318,100.57957",
+                                      "13.69256,100.57895"
+                                    ],
+                                    "stopOrder": 8
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "example": [
+                            {
+                              "day": 1,
+                              "placeStop": [
+                                {
+                                  "attractionId": "ATT110003",
+                                  "description": "ลูกประคบถือเป็นภูมิปัญญาท้องถิ่นที่ใช้ผ่อนคลายกล้ามเนื้อและแก้อาการปวดเมื่อยมาแต่โบราณ โดยที่บางกอบัวจะนำลูกประคบสด มานวดบริเวณ คอ บ่า ไหล่ และ หลัง ซึ่งเป็นกล้ามเนื้อส่วนที่มีการใช้งานค่อนข้างหนัก โดยเฉพาะอาการออฟฟิศซินโดรม ซึ่งเป็นมากในหมู่พนักงาน และที่บางกอบัวจะมีการนวดประคบบริเวณท่าน้ำคลองแพที่แวดล้อมไปด้วยธรรมชาติ ทำให้การนวดประคบเป็นกิจกรรมเด่นของชุมชนบางกอบัว",
+                                  "distance": 0,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG",
+                                  "latitude": 13.691687,
+                                  "longitude": 100.578984,
+                                  "nameOfAttraction": "นวดลูกประคบ นวด หลัง คอ บ่า ริมคลองแพ",
+                                  "path": null,
+                                  "stopOrder": 1
+                                },
+                                {
+                                  "attractionId": "ATT110002",
+                                  "description": "หัดทำลูกประคบสมุนไพรสดกับคุณกานดา มือวางอันดับหนึ่งทางด้านสมุนไพรของบางกอบัว ลูกประคบของบางกอบัวจะใช้สมุนไพรสด อาทิ ตะไคร้ ขมิ้นชัน ใบมะขาม มะกรูด ไพร พิมเสน เกลือ การบูร ซึ่งลูกประคบสมุนไพรสดจะมีสรรพคุณมากกว่าสมุนไพรอบแห้ง เพราะตัวยาจะซึมเข้าสู่ใต้ผิวหนังได้ดีกว่า พอเราได้ลูกประคบที่ทำกับมือ เราก็จะได้มาลองนวดลองประคบกัน",
+                                  "distance": 0,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110002/1.jpg",
+                                  "latitude": 13.691687,
+                                  "longitude": 100.578984,
+                                  "nameOfAttraction": "กิจกรรมทำลูกประคบสมุนไพร",
+                                  "path": ["13.69169,100.57898", "13.69169,100.57898"],
+                                  "stopOrder": 2
+                                },
+                                {
+                                  "attractionId": "ATT110004",
+                                  "description": "กราบหลวงปู่เหมือน วัดบางกอบัว ที่ได้รับความเคารพนับถือจากพุทธศาสนิกชนเป็นอย่างมาก วัดบางกอบัว สร้างมาตั้งแต่สมัยกรุงศรีอยุธยาตอนปลาย เดิมชื่อ \"วัดบางกะบัว\" ต่อมาได้เปลี่ยนเป็นชื่อวัดบางกอบัวตามชื่อตำบล",
+                                  "distance": 578,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110004/1.JPG",
+                                  "latitude": 13.696573,
+                                  "longitude": 100.576286,
+                                  "nameOfAttraction": "กราบหลวงปู่เหมือน วัดบางกอบัว",
+                                  "path": [
+                                    "13.69256,100.57895",
+                                    "13.69301,100.57856",
+                                    "13.6933,100.57853",
+                                    "13.69416,100.57777",
+                                    "13.69425,100.57768",
+                                    "13.69493,100.57699",
+                                    "13.69561,100.57715",
+                                    "13.69635,100.57633",
+                                    "13.69643,100.57625",
+                                    "13.69646,100.57621",
+                                    "13.6965,100.57617",
+                                    "13.69655,100.57621"
+                                  ],
+                                  "stopOrder": 3
+                                },
+                                {
+                                  "attractionId": "ATT110005",
+                                  "description": "พิพิธภัณฑ์บ้านคลองบน เป็นของนายแดง ไกรสมโภช อายุ 67 ปี ชาวบางกอบัว ที่เก็บสะสมของโบราณ ของเก่าที่หาดูได้ยาก เพื่อไว้เป็นที่ศึกษาเรียนรู้ของคนรุ่นหลัง เช่น เครื่องเงิน เครื่องลายคราม เครื่องครัว เครื่องมือทำการเกษตร เงินตรา",
+                                  "distance": 830,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110005/1.JPG",
+                                  "latitude": 13.69746,
+                                  "longitude": 100.57119,
+                                  "nameOfAttraction": "พิพิธภัณฑ์บ้านคลองบน",
+                                  "path": [
+                                    "13.69655,100.57621",
+                                    "13.69658,100.57619",
+                                    "13.69697,100.57569",
+                                    "13.69742,100.576",
+                                    "13.69757,100.57579",
+                                    "13.69836,100.57462",
+                                    "13.69848,100.57417",
+                                    "13.69847,100.57407",
+                                    "13.69858,100.57376",
+                                    "13.69923,100.57208",
+                                    "13.69745,100.57122"
+                                  ],
+                                  "stopOrder": 4
+                                },
+                                {
+                                  "attractionId": "ATT110006",
+                                  "description": "พื้นที่บางกะเจ้าเป็นพื้นที่ที่ขึ้นชื่อเรื่องมะพร้าว เมนูที่ต้องมาชิมให้ได้คือ แกงกรุบมะพร้าวกุ้งสด เป็นแกงที่หาทานได้ยากเพราะต้องใช้ส่วนของกะลาที่ยังอ่อนอยู่มาซอย ซึ่งก็จะได้ส่วนของกรุบมะพร้าวในปริมาณไม่มากนัก จึงถือว่าเป็นเมนูที่ต้องจองล่วงหน้าก่อนจะมาทาน นอกจากนั้นยังมีเมนูตามฤดูกาลอื่นๆ เช่น ห่อหมกปลากะพงใบยอ น้ำพริกผัดมะขาม เป็นต้น",
+                                  "distance": 1408,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110006/1.jpg",
+                                  "latitude": 13.691687,
+                                  "longitude": 100.578984,
+                                  "nameOfAttraction": "ชิมอาหารเมนูพื้นบ้าน",
+                                  "path": [
+                                    "13.69745,100.57122",
+                                    "13.69923,100.57208",
+                                    "13.69858,100.57376",
+                                    "13.69847,100.57407",
+                                    "13.69848,100.57417",
+                                    "13.69836,100.57462",
+                                    "13.69757,100.57579",
+                                    "13.69742,100.576",
+                                    "13.69697,100.57569",
+                                    "13.69658,100.57619",
+                                    "13.6965,100.57617",
+                                    "13.69646,100.57621",
+                                    "13.69643,100.57625",
+                                    "13.69635,100.57633",
+                                    "13.69561,100.57715",
+                                    "13.69493,100.57699",
+                                    "13.69425,100.57768",
+                                    "13.69416,100.57777",
+                                    "13.6933,100.57853",
+                                    "13.69301,100.57856",
+                                    "13.69256,100.57895"
+                                  ],
+                                  "stopOrder": 5
+                                },
+                                {
+                                  "attractionId": "ATT110007",
+                                  "description": "ลงมือทำผ้ามัดย้อมจากสีธรรมชาติที่หาได้จากพื้นถิ่น ได้แก่ สีเหลืองที่ได้ลูกจาก ขมิ้น ใบหูกวางและดาวเรือง, สีแดง/ชมพู ที่ได้จากไม้ฝาง, สีน้ำตาลที่ได้จากกาบมะพร้าว",
+                                  "distance": 1354,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110007/1.JPG",
+                                  "latitude": 13.684486,
+                                  "longitude": 100.584186,
+                                  "nameOfAttraction": "ทำผ้ามัดย้อมด้วยสีธรรมชาติ",
+                                  "path": [
+                                    "13.69256,100.57895",
+                                    "13.69318,100.57957",
+                                    "13.69352,100.5802",
+                                    "13.69331,100.58057",
+                                    "13.69323,100.58073",
+                                    "13.69284,100.58125",
+                                    "13.69255,100.58153",
+                                    "13.69111,100.58254",
+                                    "13.69045,100.583",
+                                    "13.69032,100.58326",
+                                    "13.6897,100.58359",
+                                    "13.68958,100.58365",
+                                    "13.68821,100.58435",
+                                    "13.68731,100.58462",
+                                    "13.68714,100.58462",
+                                    "13.6868,100.58461",
+                                    "13.68658,100.58461",
+                                    "13.68454,100.58402"
+                                  ],
+                                  "stopOrder": 6
+                                },
+                                {
+                                  "attractionId": "ATT110008",
+                                  "description": "กลุ่มชาวบ้านที่รวมตัวกันคิดค้นนำสมุนไพรที่ปลูกอยู่ในชุมชนมาต้ม เพื่อทำสปาเท้าน้ำสมุนไพร โดยใช้สมุนไพรกว่า 7 ชนิด อาทิ ชุมเห็ด ส้มป่อย ไพล ขมิ้น ตะไคร้ มะกรูด เหงือกปลาหมอต้ม มาผสมกับน้ำเย็นในอ่างแช่ 15 นาที เพื่อบำบัดผ่อนคลาย ลดอาการชาของเท้าและมือ หลังจากนั้นจะนวดเท้าต่อด้วยน้ำมันมะพร้าว เพื่อให้กล้ามเนื้อเส้นเอ็นผ่อนคลายสบายตัว",
+                                  "distance": 0,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110008/1.JPG",
+                                  "latitude": 13.684486,
+                                  "longitude": 100.584186,
+                                  "nameOfAttraction": "สปาเท้าน้ำสมุนไพร นวดสมุนไพร รพ.สต.บางกอบัว",
+                                  "path": ["13.68449,100.58419", "13.68449,100.58419"],
+                                  "stopOrder": 7
+                                },
+                                {
+                                  "attractionId": "ATT110001",
+                                  "description": "ในอดีตคลองแพเป็นลำคลองที่เหมือนเป็นเส้นทางสัญจรไปมาระหว่างชาวบางกอบัวและท่าเรือคลองเตย ทั้งเพื่อการค้าขาย การคมนาคม แต่เมื่อมีถนนเข้ามาถึงในชุมชน ความสำคัญของคลองจึงลดน้อยลงไป ก่อนที่คลองแพจะสูญหายไปจากความทรงจำ ชาวบางกอบัวจึงเกิดความคิดที่จะรักษาวิถีแห่งคลองแพเอาไว้เพื่ออนุรักษ์ รวมถึงฟื้นฟูเส้นทางเดินเรือ โดยร่วมกันขุดลอกคลองระยะทางยาวประมาณ 1 กิโลเมตร เพื่อให้เป็นแหล่งท่องเที่ยวเชิงนิเวศที่สำคัญของชุมชนบางกอบัว",
+                                  "distance": 1354,
+                                  "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110001/1.jpg",
+                                  "latitude": 13.691687,
+                                  "longitude": 100.578984,
+                                  "nameOfAttraction": "ล่องเรือคลองแพ สัมผัสวิถีริมคลอง",
+                                  "path": [
+                                    "13.68454,100.58402",
+                                    "13.68658,100.58461",
+                                    "13.6868,100.58461",
+                                    "13.68714,100.58462",
+                                    "13.68731,100.58462",
+                                    "13.68821,100.58435",
+                                    "13.68958,100.58365",
+                                    "13.6897,100.58359",
+                                    "13.69032,100.58326",
+                                    "13.69045,100.583",
+                                    "13.69111,100.58254",
+                                    "13.69255,100.58153",
+                                    "13.69284,100.58125",
+                                    "13.69323,100.58073",
+                                    "13.69331,100.58057",
+                                    "13.69352,100.5802",
+                                    "13.69318,100.57957",
+                                    "13.69256,100.57895"
+                                  ],
+                                  "stopOrder": 8
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fee": {
+                          "type": "number",
+                          "example": 649
+                        },
+                        "nameOfCommunity": {
+                          "type": "string",
+                          "example": "ชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว"
+                        },
+                        "nameOfRoute": {
+                          "type": "string",
+                          "example": "เส้นทางท่องเที่ยวชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว"
+                        },
+                        "numberOfDay": {
+                          "type": "number",
+                          "example": 1
+                        },
+                        "routeId": {
+                          "type": "string",
+                          "example": "1"
+                        },
+                        "routeIntroduction": {
+                          "nullable": true,
+                          "example": null
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "200 - Success": {
+                    "value": {
+                      "result": {
+                        "days": [
+                          {
+                            "day": 1,
+                            "placeStop": [
+                              {
+                                "attractionId": "ATT110003",
+                                "description": "ลูกประคบถือเป็นภูมิปัญญาท้องถิ่นที่ใช้ผ่อนคลายกล้ามเนื้อและแก้อาการปวดเมื่อยมาแต่โบราณ โดยที่บางกอบัวจะนำลูกประคบสด มานวดบริเวณ คอ บ่า ไหล่ และ หลัง ซึ่งเป็นกล้ามเนื้อส่วนที่มีการใช้งานค่อนข้างหนัก โดยเฉพาะอาการออฟฟิศซินโดรม ซึ่งเป็นมากในหมู่พนักงาน และที่บางกอบัวจะมีการนวดประคบบริเวณท่าน้ำคลองแพที่แวดล้อมไปด้วยธรรมชาติ ทำให้การนวดประคบเป็นกิจกรรมเด่นของชุมชนบางกอบัว",
+                                "distance": 0,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG",
+                                "latitude": 13.691687,
+                                "longitude": 100.578984,
+                                "nameOfAttraction": "นวดลูกประคบ นวด หลัง คอ บ่า ริมคลองแพ",
+                                "path": null,
+                                "stopOrder": 1
+                              },
+                              {
+                                "attractionId": "ATT110002",
+                                "description": "หัดทำลูกประคบสมุนไพรสดกับคุณกานดา มือวางอันดับหนึ่งทางด้านสมุนไพรของบางกอบัว ลูกประคบของบางกอบัวจะใช้สมุนไพรสด อาทิ ตะไคร้ ขมิ้นชัน ใบมะขาม มะกรูด ไพร พิมเสน เกลือ การบูร ซึ่งลูกประคบสมุนไพรสดจะมีสรรพคุณมากกว่าสมุนไพรอบแห้ง เพราะตัวยาจะซึมเข้าสู่ใต้ผิวหนังได้ดีกว่า พอเราได้ลูกประคบที่ทำกับมือ เราก็จะได้มาลองนวดลองประคบกัน",
+                                "distance": 0,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110002/1.jpg",
+                                "latitude": 13.691687,
+                                "longitude": 100.578984,
+                                "nameOfAttraction": "กิจกรรมทำลูกประคบสมุนไพร",
+                                "path": ["13.69169,100.57898", "13.69169,100.57898"],
+                                "stopOrder": 2
+                              },
+                              {
+                                "attractionId": "ATT110004",
+                                "description": "กราบหลวงปู่เหมือน วัดบางกอบัว ที่ได้รับความเคารพนับถือจากพุทธศาสนิกชนเป็นอย่างมาก วัดบางกอบัว สร้างมาตั้งแต่สมัยกรุงศรีอยุธยาตอนปลาย เดิมชื่อ \"วัดบางกะบัว\" ต่อมาได้เปลี่ยนเป็นชื่อวัดบางกอบัวตามชื่อตำบล",
+                                "distance": 578,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110004/1.JPG",
+                                "latitude": 13.696573,
+                                "longitude": 100.576286,
+                                "nameOfAttraction": "กราบหลวงปู่เหมือน วัดบางกอบัว",
+                                "path": [
+                                  "13.69256,100.57895",
+                                  "13.69301,100.57856",
+                                  "13.6933,100.57853",
+                                  "13.69416,100.57777",
+                                  "13.69425,100.57768",
+                                  "13.69493,100.57699",
+                                  "13.69561,100.57715",
+                                  "13.69635,100.57633",
+                                  "13.69643,100.57625",
+                                  "13.69646,100.57621",
+                                  "13.6965,100.57617",
+                                  "13.69655,100.57621"
+                                ],
+                                "stopOrder": 3
+                              },
+                              {
+                                "attractionId": "ATT110005",
+                                "description": "พิพิธภัณฑ์บ้านคลองบน เป็นของนายแดง ไกรสมโภช อายุ 67 ปี ชาวบางกอบัว ที่เก็บสะสมของโบราณ ของเก่าที่หาดูได้ยาก เพื่อไว้เป็นที่ศึกษาเรียนรู้ของคนรุ่นหลัง เช่น เครื่องเงิน เครื่องลายคราม เครื่องครัว เครื่องมือทำการเกษตร เงินตรา",
+                                "distance": 830,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110005/1.JPG",
+                                "latitude": 13.69746,
+                                "longitude": 100.57119,
+                                "nameOfAttraction": "พิพิธภัณฑ์บ้านคลองบน",
+                                "path": [
+                                  "13.69655,100.57621",
+                                  "13.69658,100.57619",
+                                  "13.69697,100.57569",
+                                  "13.69742,100.576",
+                                  "13.69757,100.57579",
+                                  "13.69836,100.57462",
+                                  "13.69848,100.57417",
+                                  "13.69847,100.57407",
+                                  "13.69858,100.57376",
+                                  "13.69923,100.57208",
+                                  "13.69745,100.57122"
+                                ],
+                                "stopOrder": 4
+                              },
+                              {
+                                "attractionId": "ATT110006",
+                                "description": "พื้นที่บางกะเจ้าเป็นพื้นที่ที่ขึ้นชื่อเรื่องมะพร้าว เมนูที่ต้องมาชิมให้ได้คือ แกงกรุบมะพร้าวกุ้งสด เป็นแกงที่หาทานได้ยากเพราะต้องใช้ส่วนของกะลาที่ยังอ่อนอยู่มาซอย ซึ่งก็จะได้ส่วนของกรุบมะพร้าวในปริมาณไม่มากนัก จึงถือว่าเป็นเมนูที่ต้องจองล่วงหน้าก่อนจะมาทาน นอกจากนั้นยังมีเมนูตามฤดูกาลอื่นๆ เช่น ห่อหมกปลากะพงใบยอ น้ำพริกผัดมะขาม เป็นต้น",
+                                "distance": 1408,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110006/1.jpg",
+                                "latitude": 13.691687,
+                                "longitude": 100.578984,
+                                "nameOfAttraction": "ชิมอาหารเมนูพื้นบ้าน",
+                                "path": [
+                                  "13.69745,100.57122",
+                                  "13.69923,100.57208",
+                                  "13.69858,100.57376",
+                                  "13.69847,100.57407",
+                                  "13.69848,100.57417",
+                                  "13.69836,100.57462",
+                                  "13.69757,100.57579",
+                                  "13.69742,100.576",
+                                  "13.69697,100.57569",
+                                  "13.69658,100.57619",
+                                  "13.6965,100.57617",
+                                  "13.69646,100.57621",
+                                  "13.69643,100.57625",
+                                  "13.69635,100.57633",
+                                  "13.69561,100.57715",
+                                  "13.69493,100.57699",
+                                  "13.69425,100.57768",
+                                  "13.69416,100.57777",
+                                  "13.6933,100.57853",
+                                  "13.69301,100.57856",
+                                  "13.69256,100.57895"
+                                ],
+                                "stopOrder": 5
+                              },
+                              {
+                                "attractionId": "ATT110007",
+                                "description": "ลงมือทำผ้ามัดย้อมจากสีธรรมชาติที่หาได้จากพื้นถิ่น ได้แก่ สีเหลืองที่ได้ลูกจาก ขมิ้น ใบหูกวางและดาวเรือง, สีแดง/ชมพู ที่ได้จากไม้ฝาง, สีน้ำตาลที่ได้จากกาบมะพร้าว",
+                                "distance": 1354,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110007/1.JPG",
+                                "latitude": 13.684486,
+                                "longitude": 100.584186,
+                                "nameOfAttraction": "ทำผ้ามัดย้อมด้วยสีธรรมชาติ",
+                                "path": [
+                                  "13.69256,100.57895",
+                                  "13.69318,100.57957",
+                                  "13.69352,100.5802",
+                                  "13.69331,100.58057",
+                                  "13.69323,100.58073",
+                                  "13.69284,100.58125",
+                                  "13.69255,100.58153",
+                                  "13.69111,100.58254",
+                                  "13.69045,100.583",
+                                  "13.69032,100.58326",
+                                  "13.6897,100.58359",
+                                  "13.68958,100.58365",
+                                  "13.68821,100.58435",
+                                  "13.68731,100.58462",
+                                  "13.68714,100.58462",
+                                  "13.6868,100.58461",
+                                  "13.68658,100.58461",
+                                  "13.68454,100.58402"
+                                ],
+                                "stopOrder": 6
+                              },
+                              {
+                                "attractionId": "ATT110008",
+                                "description": "กลุ่มชาวบ้านที่รวมตัวกันคิดค้นนำสมุนไพรที่ปลูกอยู่ในชุมชนมาต้ม เพื่อทำสปาเท้าน้ำสมุนไพร โดยใช้สมุนไพรกว่า 7 ชนิด อาทิ ชุมเห็ด ส้มป่อย ไพล ขมิ้น ตะไคร้ มะกรูด เหงือกปลาหมอต้ม มาผสมกับน้ำเย็นในอ่างแช่ 15 นาที เพื่อบำบัดผ่อนคลาย ลดอาการชาของเท้าและมือ หลังจากนั้นจะนวดเท้าต่อด้วยน้ำมันมะพร้าว เพื่อให้กล้ามเนื้อเส้นเอ็นผ่อนคลายสบายตัว",
+                                "distance": 0,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110008/1.JPG",
+                                "latitude": 13.684486,
+                                "longitude": 100.584186,
+                                "nameOfAttraction": "สปาเท้าน้ำสมุนไพร นวดสมุนไพร รพ.สต.บางกอบัว",
+                                "path": ["13.68449,100.58419", "13.68449,100.58419"],
+                                "stopOrder": 7
+                              },
+                              {
+                                "attractionId": "ATT110001",
+                                "description": "ในอดีตคลองแพเป็นลำคลองที่เหมือนเป็นเส้นทางสัญจรไปมาระหว่างชาวบางกอบัวและท่าเรือคลองเตย ทั้งเพื่อการค้าขาย การคมนาคม แต่เมื่อมีถนนเข้ามาถึงในชุมชน ความสำคัญของคลองจึงลดน้อยลงไป ก่อนที่คลองแพจะสูญหายไปจากความทรงจำ ชาวบางกอบัวจึงเกิดความคิดที่จะรักษาวิถีแห่งคลองแพเอาไว้เพื่ออนุรักษ์ รวมถึงฟื้นฟูเส้นทางเดินเรือ โดยร่วมกันขุดลอกคลองระยะทางยาวประมาณ 1 กิโลเมตร เพื่อให้เป็นแหล่งท่องเที่ยวเชิงนิเวศที่สำคัญของชุมชนบางกอบัว",
+                                "distance": 1354,
+                                "image": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110001/1.jpg",
+                                "latitude": 13.691687,
+                                "longitude": 100.578984,
+                                "nameOfAttraction": "ล่องเรือคลองแพ สัมผัสวิถีริมคลอง",
+                                "path": [
+                                  "13.68454,100.58402",
+                                  "13.68658,100.58461",
+                                  "13.6868,100.58461",
+                                  "13.68714,100.58462",
+                                  "13.68731,100.58462",
+                                  "13.68821,100.58435",
+                                  "13.68958,100.58365",
+                                  "13.6897,100.58359",
+                                  "13.69032,100.58326",
+                                  "13.69045,100.583",
+                                  "13.69111,100.58254",
+                                  "13.69255,100.58153",
+                                  "13.69284,100.58125",
+                                  "13.69323,100.58073",
+                                  "13.69331,100.58057",
+                                  "13.69352,100.5802",
+                                  "13.69318,100.57957",
+                                  "13.69256,100.57895"
+                                ],
+                                "stopOrder": 8
+                              }
+                            ]
+                          }
+                        ],
+                        "fee": 649,
+                        "nameOfCommunity": "ชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว",
+                        "nameOfRoute": "เส้นทางท่องเที่ยวชมรมส่งเสริมการท่องเที่ยวโดยชุมชนตำบลบางกอบัว",
+                        "numberOfDay": 1,
+                        "routeId": "1",
+                        "routeIntroduction": null
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tourism-thailand/attraction/:attraction_id": {
+      "get": {
+        "tags": ["community route"],
+        "summary": "Get Attraction detail id",
+        "description": "Get Attraction detail id",
+        "operationId": "getAttractionDetailId",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "en"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 - Success",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "2515"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 30 Nov 2023 02:29:53 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"9d3-Z7fnVS4bmybYOroxO4tu7T64wbc\""
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "openresty"
+                }
+              },
+              "Via": {
+                "schema": {
+                  "type": "string",
+                  "example": "kong/3.4.2"
+                }
+              },
+              "X-Kong-Proxy-Latency": {
+                "schema": {
+                  "type": "string",
+                  "example": "0"
+                }
+              },
+              "X-Kong-Upstream-Latency": {
+                "schema": {
+                  "type": "string",
+                  "example": "607"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              },
+              "X-Served-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "api.smart-cbt.com"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "attractionId": {
+                          "type": "string",
+                          "example": "ATT110003"
+                        },
+                        "attractionType": {
+                          "type": "object",
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "example": "HET"
+                            },
+                            "description": {
+                              "type": "string",
+                              "example": "Health"
+                            }
+                          }
+                        },
+                        "facility": {
+                          "type": "array",
+                          "items": {},
+                          "example": []
+                        },
+                        "image": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG"
+                          },
+                          "example": [
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/2.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/3.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/4.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/5.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/6.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/7.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/8.JPG",
+                            "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/9.JPG"
+                          ]
+                        },
+                        "information": {
+                          "type": "object",
+                          "properties": {
+                            "description": {
+                              "type": "string",
+                              "example": "Compress ball is a local tool for relaxing muscles and relieving aches. Sometimes Bang Kor Bua will bring fresh compress ball to massage the neck, shoulders and back, which are the muscles that are used heavily. This is especially for office syndrome, which is very common among office workers. At Bang Kor Bua, massages are in Klong Pae waterside surrounded by nature. This makes herbal massage a great activity of Bang Ko Bua community."
+                            },
+                            "fee": {
+                              "type": "number",
+                              "example": 299
+                            },
+                            "landmark": {
+                              "type": "string",
+                              "example": "Near Duck Noodle Shop"
+                            },
+                            "privateTransportation": {
+                              "nullable": true,
+                              "example": null
+                            },
+                            "publicTransportation": {
+                              "nullable": true,
+                              "example": null
+                            },
+                            "specialClose": {
+                              "nullable": true,
+                              "example": null
+                            },
+                            "tel": {
+                              "type": "string",
+                              "example": "090-986-7987"
+                            },
+                            "timeperiod": {
+                              "type": "number",
+                              "example": 30
+                            },
+                            "url": {
+                              "nullable": true,
+                              "example": null
+                            }
+                          }
+                        },
+                        "latitude": {
+                          "type": "number",
+                          "example": 13.691687
+                        },
+                        "location": {
+                          "type": "object",
+                          "properties": {
+                            "Address": {
+                              "nullable": true,
+                              "example": null
+                            },
+                            "district": {
+                              "type": "string",
+                              "example": "Phra Pradaeng"
+                            },
+                            "postcode": {
+                              "type": "string",
+                              "example": "10130"
+                            },
+                            "province": {
+                              "type": "string",
+                              "example": "Samut Prakan"
+                            },
+                            "subDistrict": {
+                              "type": "string",
+                              "example": "Bang Kachao"
+                            }
+                          }
+                        },
+                        "longitude": {
+                          "type": "number",
+                          "example": 100.578984
+                        },
+                        "nameOfAttraction": {
+                          "type": "string",
+                          "example": "Compress massage & massage for back, neck, and shoulder at Rim Klong Pae"
+                        },
+                        "nameOfCommunity": {
+                          "type": "string",
+                          "example": "Bang Kobua Community Based Tourism Club"
+                        },
+                        "openday": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "closetime": {
+                                "type": "string",
+                                "example": "17:00"
+                              },
+                              "day": {
+                                "type": "string",
+                                "example": "Monday"
+                              },
+                              "opentime": {
+                                "type": "string",
+                                "example": "08:00"
+                              }
+                            }
+                          },
+                          "example": [
+                            {
+                              "closetime": "17:00",
+                              "day": "Monday",
+                              "opentime": "08:00"
+                            },
+                            {
+                              "closetime": "17:00",
+                              "day": "Tuesday",
+                              "opentime": "08:00"
+                            },
+                            {
+                              "closetime": "17:00",
+                              "day": "Wednesday",
+                              "opentime": "08:00"
+                            },
+                            {
+                              "closetime": "17:00",
+                              "day": "Thursday",
+                              "opentime": "08:00"
+                            },
+                            {
+                              "closetime": "17:00",
+                              "day": "Friday",
+                              "opentime": "08:00"
+                            },
+                            {
+                              "closetime": "17:00",
+                              "day": "Saturday",
+                              "opentime": "08:00"
+                            },
+                            {
+                              "closetime": "17:00",
+                              "day": "Sunday",
+                              "opentime": "08:00"
+                            }
+                          ]
+                        },
+                        "payment": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Cash"
+                          },
+                          "example": ["Cash", "Online Banking"]
+                        },
+                        "tag": {
+                          "type": "array",
+                          "items": {},
+                          "example": []
+                        },
+                        "travelPeriod": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "January"
+                          },
+                          "example": [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June",
+                            "July",
+                            "August",
+                            "September",
+                            "October",
+                            "November",
+                            "December"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "200 - Success": {
+                    "value": {
+                      "result": {
+                        "attractionId": "ATT110003",
+                        "attractionType": {
+                          "code": "HET",
+                          "description": "Health"
+                        },
+                        "facility": [],
+                        "image": [
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/1.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/2.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/3.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/4.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/5.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/6.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/7.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/8.JPG",
+                          "https://cbtthailand.dasta.or.th/upload-file-api/Resources/Attraction/Images/ATT110003/9.JPG"
+                        ],
+                        "information": {
+                          "description": "Compress ball is a local tool for relaxing muscles and relieving aches. Sometimes Bang Kor Bua will bring fresh compress ball to massage the neck, shoulders and back, which are the muscles that are used heavily. This is especially for office syndrome, which is very common among office workers. At Bang Kor Bua, massages are in Klong Pae waterside surrounded by nature. This makes herbal massage a great activity of Bang Ko Bua community.",
+                          "fee": 299,
+                          "landmark": "Near Duck Noodle Shop",
+                          "privateTransportation": null,
+                          "publicTransportation": null,
+                          "specialClose": null,
+                          "tel": "090-986-7987",
+                          "timeperiod": 30,
+                          "url": null
+                        },
+                        "latitude": 13.691687,
+                        "location": {
+                          "Address": null,
+                          "district": "Phra Pradaeng",
+                          "postcode": "10130",
+                          "province": "Samut Prakan",
+                          "subDistrict": "Bang Kachao"
+                        },
+                        "longitude": 100.578984,
+                        "nameOfAttraction": "Compress massage & massage for back, neck, and shoulder at Rim Klong Pae",
+                        "nameOfCommunity": "Bang Kobua Community Based Tourism Club",
+                        "openday": [
+                          {
+                            "closetime": "17:00",
+                            "day": "Monday",
+                            "opentime": "08:00"
+                          },
+                          {
+                            "closetime": "17:00",
+                            "day": "Tuesday",
+                            "opentime": "08:00"
+                          },
+                          {
+                            "closetime": "17:00",
+                            "day": "Wednesday",
+                            "opentime": "08:00"
+                          },
+                          {
+                            "closetime": "17:00",
+                            "day": "Thursday",
+                            "opentime": "08:00"
+                          },
+                          {
+                            "closetime": "17:00",
+                            "day": "Friday",
+                            "opentime": "08:00"
+                          },
+                          {
+                            "closetime": "17:00",
+                            "day": "Saturday",
+                            "opentime": "08:00"
+                          },
+                          {
+                            "closetime": "17:00",
+                            "day": "Sunday",
+                            "opentime": "08:00"
+                          }
+                        ],
+                        "payment": ["Cash", "Online Banking"],
+                        "tag": [],
+                        "travelPeriod": [
+                          "January",
+                          "February",
+                          "March",
+                          "April",
+                          "May",
+                          "June",
+                          "July",
+                          "August",
+                          "September",
+                          "October",
+                          "November",
+                          "December"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "community route"
+    }
+  ]
+}

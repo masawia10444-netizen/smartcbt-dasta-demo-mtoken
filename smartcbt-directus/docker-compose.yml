@@ -1,0 +1,79 @@
+version: '3.9'
+name: cbt
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:2.18.4
+    ports:
+      - '9010:9000'
+    privileged: true
+    volumes:
+      - ./volumes/portainer:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+
+  database:
+    container_name: database
+    image: postgis/postgis:13-master
+    restart: always
+    expose:
+      - 5432
+    ports:
+      - 5433:5432
+    volumes:
+      - ./volumes/directus/data/database:/var/lib/postgresql/data
+    env_file:
+      - .env
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "${POSTGRES_DB}" ]
+      interval: 1s
+      timeout: 5s
+      retries: 5
+
+  cache:
+    container_name: cache
+    restart: always
+    image: redis:7.2.0
+    expose:
+      - 6379
+    volumes:
+      - ./volumes/redis/:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping | grep PONG" ]
+      interval: 1s
+      timeout: 3s
+      retries: 2
+
+  directus:
+    container_name: dmc
+    build: .
+    image: hx-directus:latest
+    depends_on:
+      database:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+    restart: always
+    ports:
+      - 8055:8055
+    volumes:
+      - ./volumes/directus/uploads:/directus/uploads
+      - ./volumes/directus/extensions:/directus/extensions
+    env_file:
+      - .env
+    #    healthcheck: 
+    #        test: 'wget --no-verbose --tries=1 --spider ${PUBLIC_URL}/server/health || exit 1'
+    #        start_period: 10s
+    #        interval: 300s
+    #        timeout: 5s
+    #        retries: 3
+    deploy:
+      resources:
+        reservations:
+          cpus: "2.0"
+          memory: "2048M"
+
+networks:
+  default:
+    name: network-stack
+    external: true

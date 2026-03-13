@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  web:
+    container_name: next-website
+    # image: ghcr.io/dasta-smartcbt/smartcbt-webportal:${BRANCH}
+    build:
+      context: ./
+    mem_limit: 2048M 
+    restart: always
+    ports:
+      - "3000:3000"
+
+    networks:
+      - network-stack
+
+networks:
+  network-stack:
+    external: true
+    
+# networks:
+#   default:
+#     external:
+#       name: network-stack

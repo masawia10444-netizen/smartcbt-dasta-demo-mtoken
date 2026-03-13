@@ -1,0 +1,2078 @@
+{
+  "common": {
+    "businessNegotiation": {
+      "community": {
+        "activity": "Community",
+        "businessName": "list of Entrepreneurs",
+        "rating": "Satisfaction",
+        "remark": "Note",
+        "status": "Status",
+        "tabs": {
+          "status": {
+            "history": "Negotiation history",
+            "open": "Response",
+            "request": "Requested",
+            "waiting_accept": "waiting for reply"
+          }
+        },
+        "title": "Business negotiation",
+        "viewDetail": "See Community details",
+        "link": "Link",
+        "click": "Click"
+      },
+      "entrepreneur": {
+        "activity": "Community",
+        "appointmentDate": "Appointment date and time",
+        "calendar": "Negotiation Calendar",
+        "click": "Click",
+        "matched": "Matched",
+        "meetingLink": "Negotiation Link",
+        "negotiationRejected": "Reject",
+        "province": "Provinces",
+        "rating": "Satisfaction",
+        "remark": "Note",
+        "requestDate": "Request date",
+        "requestingRejected": "Rejected",
+        "status": "status",
+        "tabs": {
+          "status": {
+            "appointmentRequested": "waiting for response",
+            "completed": "Response",
+            "history": "Negotiation history",
+            "requested": "Requested"
+          }
+        },
+        "title": "Business negotiation",
+        "viewDetail": "Community details",
+        "waitingForAnnounce": "Waiting for announce",
+        "waitingForReply": "waiting for response"
+      },
+      "negotiationStatus": {
+        "CHANGE-SLOT": "Rejected",
+        "CLOSED": "Done",
+        "COMPLETED": "Done",
+        "IN-PROGRESS": "Matched",
+        "OPEN": "Matched",
+        "PENDING": "Waiting for response",
+        "REJECTED": "Reject",
+        "REJECTED_OWNER": "Rejected"
+      },
+      "postalTitle": "Business negotiation"
+    },
+    "carbon": {
+      "approveButton": "Approve",
+      "approvePopup": {
+        "failMessage": "Something went wrong",
+        "successDescription": "Successed",
+        "successTitle": "Your program have been approved",
+        "title": "Confirm approval ?"
+      },
+      "carbonFootprint": "Carbon Footprint",
+      "confirmDeletePopup": {
+        "failMessage": "Something went wrong",
+        "successDescription": "Your Program have been deleted",
+        "successTitle": "Successfully deleted",
+        "title": "Confirm deletion ?"
+      },
+      "create": {
+        "carbonFootprint": {
+          "accomodations": "Accomodations/Activities",
+          "activityList": "Activity lists",
+          "addActivity": "Add Activity",
+          "ef": "Emission factor (kgCO2eq)",
+          "emissionFactor": "Emission Factor type",
+          "emissionFactorHint": "GHGs Emission Factor (EF) refers to the measure of greenhouse gas emissions associated with a particular activity, product, or service. It represents the amount of greenhouse gases that are emitted per unit of a specific activity or output",
+          "foods": "Foods",
+          "multiplier": {
+            "accomodations": "Room nights",
+            "foods": "Meal (person)",
+            "title": "Consumption quantity",
+            "transportations": "Distances (Km.)",
+            "wastes": "Amount of wastes (Kg./Person/day)"
+          },
+          "newProxy": "Add New EF (Proxy)",
+          "pcrType": "Type of PCR",
+          "summary": "Carbon footprint from travel (kgCO2eq)",
+          "transportations": "Travel",
+          "unit": "Unit",
+          "wastes": "Wastes"
+        },
+        "day": "Date",
+        "generalInformation": {
+          "activity": {
+            "activityName": "Activity",
+            "activityNo": "Activity No.",
+            "addActivity": "Add new Activity",
+            "addDay": "Add new Date and time",
+            "endTime": "End period",
+            "pcr": "PCR Type",
+            "pcrSelection": "(Can choose more than 1 PCR)",
+            "startTime": "Start time"
+          },
+          "generalInformation": {
+            "companyName": "Company / Community",
+            "programName": "Travel Program name",
+            "title": "Details"
+          },
+          "travelProgram": {
+            "addTravelProgram": "Add more travel days",
+            "description": "Travel program details",
+            "numberOfTourist": "Capacity for Tourists (person)",
+            "registrationDate": "Created date",
+            "scopeOfAssessment": "Scope of assessment",
+            "title": "Program",
+            "unit": "Unit",
+            "unitDescription": "person/day"
+          }
+        },
+        "grandTotal": "Total",
+        "photo": {
+          "accommodation": "Accomodation/Activitie album",
+          "createAlbum": "Create album",
+          "documents": "Promote trip",
+          "foods": "Food album",
+          "photo": "Picture",
+          "travel": "Travel album",
+          "unUseToCoverPhoto": "Delete cover picture",
+          "useToCoverPhoto": "Set as cover picture",
+          "wastes": "wastes album"
+        },
+        "proportion": "Proportion",
+        "recap": {
+          "back": "Travel details",
+          "download": "Download",
+          "submit": "Submit",
+          "saveDraft": "Save"
+        },
+        "savedMessage": "บันทึกแบบร่างโครงการ Carbon สำเร็จ",
+        "steps": {
+          "step1": "1. Program Information",
+          "step2": "2. Data collection scope",
+          "step3": "3. Total CFP",
+          "step4": "4. Pictures"
+        },
+        "successMessage": "The Program has been created successfully",
+        "title": "Program details",
+        "totalCarbonFootprint": "Total Carbon Footprint",
+        "updateSuccessMessage": "Successfully updated"
+      },
+      "document": {
+        "1": {
+          "company": "Company name",
+          "name": "Travel program",
+          "numberOfTourist": "Capacity (person)",
+          "registrationDate": "Created date",
+          "scope": "Scope of assessment",
+          "title": "1. Information",
+          "travelPlanDetails": "Program details",
+          "unit": "Unit"
+        },
+        "2": {
+          "title": "2. Data collection scope"
+        },
+        "3": {
+          "multiplierDescription": "Distances (Km.)",
+          "title": "3. Travel"
+        },
+        "4": {
+          "multiplierDescription": "Number of nigths (Person)",
+          "title": "4. Accomodations and Activities"
+        },
+        "5": {
+          "multiplierDescription": "Number of Meals (Person)",
+          "title": "5. Foods"
+        },
+        "6": {
+          "multiplierDescription": "Wastes",
+          "title": "6. Wastes"
+        },
+        "7": {
+          "title": "7. Total Carbon Footprint"
+        },
+        "8": {
+          "title": "8. Pictures"
+        },
+        "activityName": "Activities",
+        "activityNo": "Activity number",
+        "activityTime": "Period",
+        "cfp": "CFP (kgCO2eq)",
+        "date": "Date {date}",
+        "ef": "EF (kgCO2eq)",
+        "efType": "Type of Emission Factor",
+        "pcrs": "PCR Type"
+      },
+      "emissionProxy": {
+        "action": {
+          "add": "Add Emission Factor (Proxy)"
+        },
+        "controlVariable": "Control Variables",
+        "controlVariableUnit": "Control variable unit",
+        "controlVariableValue": "Varuable value",
+        "emissionFactorUnit": "Emission factor unit",
+        "emissionFactorValue": "Emission factor value",
+        "enable": "Enable",
+        "name": "Emission Factor",
+        "number": "No.",
+        "pcrType": "PCR Type",
+        "popupSaved": {
+          "title": "Saved"
+        },
+        "popupSuccessStatus": {
+          "title": "Published"
+        },
+        "popupUpdateStatusConfirm": {
+          "title": "Program status has changed"
+        },
+        "powerUsageCalculationDescription": "Description",
+        "status": {
+          "draft": "Drafted",
+          "hide": "Hide",
+          "nullish": "Invalid",
+          "published": "Published"
+        },
+        "title": "Emission Factor (Proxy)",
+        "unit": "Unit",
+        "usageCalculationFormula": "Data can be collected from power(kilowwatt-hours) x Time (Hours)"
+      },
+      "manage": {
+        "action": {
+          "edit": "Edit program",
+          "rounds": "Additional information"
+        },
+        "actionColumnTitle": "Management",
+        "activityPeriod": "Duration",
+        "addProgram": "Add new program",
+        "carbonComparisonTable": {
+          "accomodations": "Accomodation/Activity (kgCO2eq)",
+          "average": "Average CFP person/time (kgCO2eq)",
+          "foods": "Foods (kgCO2eq)",
+          "number": "Actual tourists",
+          "time": "Time",
+          "title": "Actual CFP table (kgCO2eq)",
+          "total": "Total (kgCO2eq)",
+          "transportations": "Travel (kgCO2eq)",
+          "wastes": "Waste (kgCO2eq)"
+        },
+        "carbonReleaseTotal": "Carbon footprint Summary(kgCO2eq)",
+        "community": "Community name",
+        "createBy": "Created by",
+        "emissionFactorProxy": "Emission Factor (Proxy)",
+        "footprintPerPersonPerDay": "CFP person/day (kgCO2eq)",
+        "name": "Program name",
+        "realNumberOfTourists": "Actual tourists (person)",
+        "status": "Program status",
+        "tabs": {
+          "status": {
+            "all": "All programs",
+            "approved": "Approved",
+            "draft": "Drafted",
+            "pendingDelete": "Request to delete",
+            "rejected": "Rejected",
+            "waitingForApprove": "Pending for approval"
+          }
+        }
+      },
+      "overview": {
+        "barChart": "Bar chart",
+        "filter": "Filter",
+        "footprintPersonDay": "Carbon Footprint /person /day",
+        "lineChart": "Graph",
+        "managePrograms": "Manage program",
+        "nationalLevel": "National",
+        "popup": {
+          "filter": {
+            "tabs": {
+              "filterByDate": "Date",
+              "filterByMonth": "Month"
+            },
+            "title": "Filter"
+          }
+        },
+        "regionalLevel": "Region",
+        "status": {
+          "approved": "Approved",
+          "deleted": "Deleted",
+          "done": "Done",
+          "draft": "Draft",
+          "inprogress": "In-Progress",
+          "pending_for_approval": "Pending",
+          "published": "Published",
+          "rejected": "Rejected",
+          "request_to_delete": "Request to delete"
+        },
+        "title": "Travel program by Dasta",
+        "totalFootprint": "Total Carbon Footprint"
+      },
+      "project": {
+        "allCarbonProjects": "All programs {count}",
+        "create": {
+          "title": "Carbon"
+        }
+      },
+      "rejectButton": "Reject program",
+      "rejectPopup": {
+        "description": "Confirm rejection?",
+        "failMessage": "Something went wrong",
+        "placeholder": "Please provide reason for rejection",
+        "successDescription": "Successfully rejected",
+        "successTitle": "Successfully rejected",
+        "title": "Reject program"
+      },
+      "summary": {
+        "coverPhoto": "Cover picture",
+        "dataCollectionScope": {
+          "activityList": "Activity lists",
+          "activityNo": "Activity number",
+          "cfp": "CFP (kgCO2eq)",
+          "ef": "EF (kgCO2eq)",
+          "emissionFactor": "Emission Factor type",
+          "multiplier": "Usage quantity",
+          "pcr": "ประเภท PCR",
+          "title": "2. Data collection scope",
+          "unit": "Unit"
+        },
+        "generalInformation": {
+          "activityName": "Activity name",
+          "activityNo": "Activity number",
+          "activityTime": "Period",
+          "companyName": "Company name",
+          "date": "Date",
+          "name": "Program name",
+          "numberOfTourist": "Capacity (person)",
+          "registrationDate": "Created Date",
+          "rejectReason": "Reject reason",
+          "scope": "Scope of Assessment",
+          "title": "1. Information",
+          "travelPlanDetails": "Program details",
+          "unit": "Unit"
+        },
+        "photographicEvidence": "Pictures",
+        "title": "Total Carbon Footprint",
+        "type": {
+          "accomodations": "Accomodations",
+          "foods": "Foods",
+          "transportations": "Travel",
+          "wastes": "Wastes"
+        }
+      },
+      "viewAllProjectInformation": "View all projects"
+    },
+    "cbtProject": {
+      "create": {
+        "organizationName": "Community name",
+        "projectName": "Project name",
+        "carbon": {
+          "programName": "Program name",
+          "title": "Add new program",
+          "newProgram": "Add new program"
+        }
+      },
+      "newOrganization": "Add new community",
+      "newProject": "Add new project",
+      "title": "Add new project",
+      "titleOrganization": "Add new communty"
+    },
+    "community": {
+      "detail": {
+        "acceptBusinessNegotiation": "Negotiation Accepted",
+        "acceptMessage": "Negotiation Accepted {date}",
+        "activitiesAndTourismPrograms": "Community programs",
+        "activityImages": "Activity photos",
+        "address": "Address",
+        "attractionType": "Attraction type",
+        "boat": "Boat",
+        "cancelNegotiation": "Cancel negotiation",
+        "capacity": "Capacity",
+        "car": "Car",
+        "cctv": "CCTV",
+        "changeNegotiationTime": "Change date and time",
+        "communityHighlights": "Community highlights",
+        "communityRequestChangeTime": "Request to change time",
+        "communityResponse": "Request accepted",
+        "confirmChangeTime": "New schedule has Confirmed",
+        "contactInformation": "Contact information",
+        "convenienceStore": "Convenience store",
+        "coordinatorInformation": "Contact information",
+        "edit": "Edit",
+        "electricity": "Electricity",
+        "facebook": "Facebook",
+        "facilitiesForDisability": "Facilities for people with disabilities",
+        "facility": "Facilities",
+        "food": "Foods",
+        "guide": "Guide",
+        "homestay": "Homestay",
+        "instagram": "Instagram",
+        "language": "Language",
+        "lifestyle": "Lifestyle",
+        "maximumTouristCapacity": "Maximum Tourist capacity",
+        "meetingRoom": "Meeting Link",
+        "motorcycle": "Motorcycle",
+        "other": "Other",
+        "otherPlatform": "Other platform",
+        "parking": "Parking",
+        "pdf": "PDF",
+        "presentationMedia": "Presentation",
+        "product": "Community's product",
+        "recommendedSeason": "Recommended season",
+        "rejectBusinessNegotiation": "Rejected",
+        "requestAppointment": "Request business negotiation appointment",
+        "restroom": "Restroom",
+        "souvenirShop": "Souvenir shop",
+        "standardsAndAwards": "Standards/Awards received",
+        "tapWater": "Tap water is available",
+        "tiktok": "Tiktok",
+        "tourBus": "Tour Bus",
+        "tourismData": "Tourism data",
+        "touristCapacity": "{number} person",
+        "touristVehicle": "Tourist-certified vehicle",
+        "travelProgramBookingContactInformation": "Travel program booking contact information",
+        "unit": {
+          "boat": "Boat",
+          "car": "Car",
+          "house": "House",
+          "people": "Person",
+          "room": "Room"
+        },
+        "van": "Van",
+        "waitingMessage": "You have requested a business negotiation and are awaiting community response",
+        "wifi": "WIFI",
+        "youtube": "Youtube"
+      },
+      "info": {
+        "action": "Action",
+        "activity": "Community",
+        "activityStatus": "Status",
+        "add": "Add Community Data",
+        "approvalRequestDate": "Approval Request Date",
+        "community": "Community",
+        "create": {
+          "approved": "Activity approved",
+          "communityDataApproval": "Submit community data for approval",
+          "edit": "Edit",
+          "rejectReason": "Rejection Reason",
+          "rejected": "Activity rejected",
+          "save": "Save draft",
+          "step1": {
+            "accommodateMax": "Maximum capacity for Tourists",
+            "accommodateMin": "Maximum capacity for Tourists",
+            "activityInformation": "Activity Information",
+            "activityOrTravelProgramName": "Travel Program Name",
+            "activityPrice": "Community tourism activity price",
+            "addActivity": "Add Activity",
+            "addCoordinator": "Add Coordinator",
+            "addFoodMenu": "Add Food Menu",
+            "addStandardsOrAwards": "Add Awards",
+            "addTourismProduct": "Add Tourism Product",
+            "attachDocuments": "Upload PDF",
+            "communityAbout": "About the community",
+            "communityDetail": "Description of the community",
+            "communityHighlights": "Community Highlights",
+            "communityInformation": "Community Information",
+            "communityName": "Community Name/Community Enterprise",
+            "coordinator": "Coordinator {number}",
+            "coordinatorFirstName": "Coordinator First Name",
+            "coordinatorInformation": "Coordinator Information",
+            "deleteAll": "Delete All",
+            "deleteCoordinator": "Delete Coordinator",
+            "deleteImageLabel": "Delete Image",
+            "deleteVideoLabel": "Delete Video",
+            "documentFile": "Document File",
+            "facebook": "Facebook",
+            "firstName": "First Name",
+            "foodMenuName": "Food Menu Name",
+            "imageSizeLimitDescription": "Images should not exceed 5MB, maximum of 20 images",
+            "instagram": "Instagram",
+            "languageOfCommunication": "Communication Language",
+            "lastName": "Last Name",
+            "lifestyle": "Lifestyle",
+            "lineId": "Line ID",
+            "mediaInformation": "Image and Video Information",
+            "organizationalUnit": "Department",
+            "other": "Other",
+            "phoneNumber": "Phone number",
+            "presentation": "Presentation",
+            "recommendedSeason": "Recommended season",
+            "standardsOrAwards": "Standards and awards received by the community/Community enterprise (if any, please specify))",
+            "stepTitle": "General Information of Registrant",
+            "tags": "Content Tags",
+            "tiktok": "Tiktok",
+            "title": "Add Community Information",
+            "tourismProductName": "Tourism Product Name",
+            "travelProgramBookingContactInformation": "Travel program booking contact information",
+            "uploadImageLabel": "Upload Image",
+            "uploadVideoLabel": "Upload Video",
+            "videoSizeLimitDescription": "Videos should not exceed 5MB, maximum of 20 videos",
+            "featuredImage": "Featured Image",
+            "youtube": "Youtube"
+          },
+          "step2": {
+            "airConditioning": "Air conditioning",
+            "atm": "ATM",
+            "boat": "Boat",
+            "car": "Car",
+            "cctv": "CCTV",
+            "convenienceStore": "Convenience store",
+            "elderlyRestroom": "Elderly restroom",
+            "electricity": "Access to electricity",
+            "facilitiesForDisability": "Facilities for people with disabilities",
+            "facilitiesInformation": "Facilities Information",
+            "fan": "Fan",
+            "guide": "Local interpreter",
+            "homestay": "Homestay",
+            "maxCapacity": "Maximum capacity in number of people",
+            "meetingRoom": "Meeting room",
+            "motorcycle": "Motorcycle",
+            "muslimPrayerRoom": "Prayer room",
+            "other": "Other",
+            "parking": "Parking",
+            "restroom": "Restroom",
+            "smokingArea": "Smoking area",
+            "souvenirShop": "Souvenir shop",
+            "stepTitle": "Public Facilities for Tourists",
+            "tapWater": "Tap water",
+            "tourBus": "Tour bus",
+            "touristVehicle": "Tourist-certified vehicle",
+            "unit": {
+              "boat": "Boat",
+              "car": "Car",
+              "people": "Person",
+              "room": "Room"
+            },
+            "van": "Van",
+            "wheelchair": "Wheelchair Service",
+            "wifi": "Wi-fi Service"
+          },
+          "step3": {
+            "consent_data_processing": "Consent for data processing provided in the survey and disclosure of information (Please provide consent)",
+            "consent_statement": "I agree to allow Designated Areas for Sustainable Tourism Administration  (Public Organization), and related government units to collect and process personal data provided by me in the survey. Your information will be kept confidential. Data analysis from the questionnaire will be done in an aggregated form.",
+            "other": "Others (Please specify)",
+            "privacy_policy": "Privacy Policy",
+            "question1": "1. Communities/Community Enterprises have certified community-based tourism for which group of tourists? (Select more than 1 option)",
+            "question2": "2. Which markets have certified community-based tourism for tourists in your community/Community Enterprises?",
+            "question2_1": "· Domestic tourists mostly come from which region?",
+            "question2_2": "· International tourists mostly come from which country?",
+            "question2_3": "· Types of community/Community Enterprise tourism",
+            "read_and_accept": "I have read and accept",
+            "stepTitle": "Markets and Tourist Groups",
+            "terms_and_conditions": "Terms and Conditions"
+          },
+          "view": "View",
+          "waitingForApprove": "Waiting for approval"
+        },
+        "delete": "Delete",
+        "eventType": "Event Type",
+        "popup": {
+          "addCommunityInfoConfirm": {
+            "confirmButton": "Confirm",
+            "title": "Confirm Adding Community Tourism Activities?"
+          },
+          "addCommunityInfoSuccess": {
+            "title": "Community information added successfully. Awaiting approval"
+          },
+          "deleteImageConfirm": {
+            "confirmButton": "Delete image",
+            "title": "Confirm Image Deletio"
+          },
+          "deleteImageSuccess": {
+            "title": "Image Deleted Successfully"
+          },
+          "deleteVideoConfirm": {
+            "confirmButton": "Delete Video",
+            "title": "Confirm Video Deletion"
+          },
+          "deleteVideoSuccess": {
+            "title": "Video Deleted Successfully"
+          },
+          "draftCommunityInfoConfirm": {
+            "confirmButton": "Confirm",
+            "title": "Confirm saving the draft of community tourism activities?"
+          },
+          "draftCommunityInfoSuccess": {
+            "title": "Community information saved successfully"
+          },
+          "updateCommunityInfoConfirm": {
+            "confirmButton": "Confirm",
+            "title": "Confirm Editing Community Tourism Activities?"
+          },
+          "updateCommunityInfoSuccess": {
+            "title": "Community information edited successfully. Awaiting approval"
+          }
+        },
+        "rejectReason": "Reason for Rejection",
+        "status": {
+          "approved": "Approved Activities",
+          "draft": "Draft",
+          "rejected": "Rejected Activities",
+          "waitingForApprove": "Waiting for approval"
+        },
+        "tabs": {
+          "status": {
+            "approved": "Approved Activities",
+            "draft": "Draft Activities",
+            "rejected": "Rejected Activities",
+            "waitingForApprove": "Waiting for approval"
+          }
+        },
+        "title": "Community Information",
+        "view": "View"
+      },
+      "status": {
+        "draft": "Draft",
+        "pending": "Pending Approval",
+        "published": "Published",
+        "rejected": "Rejected"
+      }
+    },
+    "financialProxy": {
+      "action": {
+        "add": "Add Proxy"
+      },
+      "categories": {
+        "benefit_transfer": "Benefit Transfer (วิธีการถ่ายโอนมูลค่า)",
+        "market_price": "Market price (ราคาตลาด)",
+        "prevention_cost": "Prevention Cost (ต้นทุนการป้องกัน)"
+      },
+      "create": {
+        "category": "Category",
+        "discountRate": "Discount Rate",
+        "endingYear": "Ending Year",
+        "growthRate": "Growth Rate",
+        "information": {
+          "discountRate": {
+            "description": "The rate used to adjust the value of money over time",
+            "title": "Discount Rate"
+          }
+        },
+        "nameEn": "Proxy Name",
+        "nameTh": "Proxy Name in Thai(ภาษาไทย)",
+        "note": "Note",
+        "province": "Province",
+        "proxyId": "Proxy ID",
+        "save": "Save",
+        "startingYear": "Starting Year",
+        "status": "Status",
+        "title": "Add Proxy Item",
+        "type": "Type",
+        "unit": "Unit",
+        "value": "Value (Baht)",
+        "yearOffset": "Year Offset",
+        "yearly": "Yearly"
+      },
+      "name": "Proxy Name",
+      "popupConfirmStatus": {
+        "subTitle": "All users able to view this information",
+        "submit": "Publish",
+        "title": "Confirm Proxy Publication"
+      },
+      "popupSaved": {
+        "subTitle": "Your item is pending approval",
+        "title": "Data Saved Successfully"
+      },
+      "popupSuccessStatus": {
+        "subTitle": "All system users can view this information",
+        "title": "Publication Successful"
+      },
+      "proxyId": "Proxy ID",
+      "status": {
+        "draft": "Draft",
+        "hide": "Hide",
+        "published": "Published",
+        "title": "Status"
+      },
+      "title": "Financial Proxy",
+      "types": {
+        "economy": "Economy",
+        "environment": "Environment",
+        "society": "Society"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright © 2020 Designated Areas for Sustainable Tourism Administration  (Public Organization) . All Rights Reserved."
+    },
+    "forgotPassword": {
+      "requestNewPassword": "Request a new password",
+      "successMessage": "New password has sent to your email",
+      "title": "Forgot Password"
+    },
+    "global": {
+      "accept": "Accept",
+      "add": "Add",
+      "address": "Address",
+      "all": "All",
+      "allProvinces": "All provinces",
+      "allValues": "All values",
+      "approvedBy": "Approved by",
+      "asc": "Ascending",
+      "back": "Back",
+      "baht": "Bath",
+      "cancel": "Cancel",
+      "category": "Category",
+      "confirm": "Confirm",
+      "createBy": "Created by",
+      "dasta": "Dasta",
+      "delete": "Delete",
+      "desc": "Descending",
+      "district": "District",
+      "dontHave": "Null",
+      "download": "Download",
+      "edit": "Edit",
+      "editProfile": "Edit Profile",
+      "email": "E-mail",
+      "have": "have",
+      "items": "Items",
+      "latitude": "Latitude",
+      "location": "Location",
+      "login": "Login",
+      "loginWithGoogle": "Log-in with Google",
+      "logout": "Log-out",
+      "longitude": "Longtitude",
+      "next": "Next",
+      "noData": "No data",
+      "notHave": "Null",
+      "ok": "OK",
+      "or": "Or",
+      "other": "Other",
+      "password": "Password",
+      "pdf": "PDF",
+      "postcode": "Postcode",
+      "prev": "Prev",
+      "print": "Print",
+      "profileUpload": "Profile Upload",
+      "project": "Project",
+      "province": "Province",
+      "ref": "Reference",
+      "save": "Save",
+      "search": "Search",
+      "slogan": "Sustainable Tourism Development to create a happy community",
+      "status": "Status",
+      "subDistrict": "Sub-district",
+      "subdistrict": "Sub-district",
+      "totalList": "All lists",
+      "type": "Type",
+      "unit": "Unit",
+      "updatedAt": "Last Updated",
+      "upload": "Upload",
+      "uploadReferenceFile": "Upload Reference File",
+      "value": "Value",
+      "year": "Year",
+      "requiredErrorMsg": "This field is required"
+    },
+    "login": {
+      "doNotHaveAccount": "Don't have an account yet?",
+      "doNotHaveAccountMessage": "Don't have an account Check Email/PhoneNumber or password",
+      "forgotPassword": "Forgot Password",
+      "loginInput": "User/Email/Phone number",
+      "register": "Register",
+      "rememberUsernamePassword": "Remember your username and password.",
+      "successMessage": "Login Successfully",
+      "title": "Member Login"
+    },
+    "mainMenu": {
+      "api": "API",
+      "buttonDocument": "User Manual",
+      "carbonFootprint": "Carbon Footprint",
+      "photoBank": "Photo Bank",
+      "siaSroi": "SIA / SROI",
+      "travelMart": "Travel Mart",
+      "cbtThailand": "CBT Thailand"
+    },
+    "manageApi": {
+      "contactUs": {
+        "h1": "Contacts",
+        "h2": "Designated Areas for Sustainable Tourism Administration (Public Organization)",
+        "p1": "118/1 Tipco Tower (HQ) Floor 30-31 Rama VI Rd, Phaya Thai Subdistrict, Phaya Thai District, Bangkok 10400",
+        "contact": "Telephone 0 2357 3580-7, 0 2357 3590, 0 2357 3592<br/>Fax 0 2357 3596 (Floor 30), 0 2357 3599 (Floor 31)<br/>Email saraban@dasta.or.th , contact@dasta.or.th"
+      },
+      "form": {
+        "login": {
+          "title": "เข้าสู้ระบบ API"
+        },
+        "onboarding": {
+          "confirmButton": "ลงทะเบียน",
+          "email": "อีเมล",
+          "firstName": "ชื่อ",
+          "lastName": "นามสกุล",
+          "organization": "หน่วยงาน",
+          "popup": {
+            "done": {
+              "description": "ระบบจะส่งยืนยันการลงทะเบียนของท่านผ่านทางอีเมล",
+              "title": "เราได้รับการลงทะเบียนของท่านแล้ว"
+            }
+          },
+          "title": "ลงทะเบียน API"
+        },
+        "privacy_policy": "นโยบายความเป็นส่วนตัว",
+        "register": {
+          "confirmButton": "ลงทะเบียน",
+          "confirmPassword": "ยืนยันรหัสผ่าน",
+          "consent": "ฉันได้อ่านและยอมรับ",
+          "email": "อีเมล",
+          "errorMessage": "ลงทะเบียนไม่สำเร็จ",
+          "organization": "หน่วยงาน",
+          "password": "รหัสผ่าน",
+          "popup": {
+            "done": {
+              "title": "ระบบจะส่งลิงก์ยืนยันผ่านอีเมลของท่าน"
+            }
+          },
+          "title": "ลงทะเบียน API"
+        }
+      },
+      "menus": {
+        "apiKey": "API Key",
+        "dashboard": "Dashboard",
+        "developer": "สำหรับนักพัฒนา",
+        "overview": "ภาพรวมระบบ",
+        "policy": "นโยบายและเงื่อนไข",
+        "removeAccount": "ลบบัญชีผู้ใช้งาน API",
+        "security": "ความปลอดภัย"
+      },
+      "overview": {
+        "button": "เริ่มต้นใช้งาน",
+        "description": "ชุดคำสั่งและกฎเกณฑ์ที่ออกแบบมาเพื่อให้แอปพลิเคชันหรือระบบต่างๆ  ซึ่งสามารถเชื่อมต่อและแลกเปลี่ยนข้อมูลกันได้อย่างมีประสิทธิภาพผ่านช่องทางที่กำหนดไว้ เป็นส่วนสำคัญในการเปิดโอกาสให้ระบบต่างๆ สามารถทำงานร่วมกันได้ในสถานการณ์ที่ต้องการแลกเปลี่ยนข้อมูลหรือบริการ นักพัฒนาสามารถนำ API ใช้เพื่อติดต่อกับแหล่งข้อมูล หรือบริการภายนอกเพื่อเพิ่มความสามารถหรือความหลากหลายให้แก่แอปพลิเคชันได้อย่างเป็นระบบจากฐานของระบบ SmartCBT",
+        "title": "API"
+      },
+      "developer": {
+        "title": "CBT Data API",
+        "description": "The OpenAPI specification for CBT Data API"
+      },
+      "developerOverview": {
+        "title": "Overview",
+        "description": "Access tourism data with SMART CBT DATA API. Connect your application or website to a comprehensive and diverse range of data services, such as tourist attractions, hotels and accommodation, and recommended travel routes."
+      },
+      "developerApiKey": {
+        "paragraph1": {
+          "title": "For Developers",
+          "description": "For system developers and those interested in Smart CBT data, you must create an API Key to access it. The API Key will allow the system to link your service permissions to your account information."
+        },
+        "paragraph2": {
+          "title": "Your API Key"
+        },
+        "input": {
+          "placeholder": "Click Button Generate API Key",
+          "submit": "Generate API Key",
+          "copy": "Copy",
+          "copied": "Copied !!"
+        }
+      },
+      "developerSecurity": {
+        "paragraph1": {
+          "description": "To improve the security of your service requests, we recommend that you specify the source information for your services in the form below. The source information that you provide will help the system generate usage reports so you can effectively track the volume and behavior of your application's usage. Once you have defined the source information for your service requests, the system will only allow requests from the specified source. You will also automatically receive transaction credit."
+        },
+        "domain": {
+          "title": "Domain Name",
+          "description": "Please specify the domain name for your website that will enable the use of the API. In case your website has more than 1 subdomain, you can configure it in the form of Wildcard DNS, such as *.domain.com"
+        },
+        "ipAddress": {
+          "title": "IP Address",
+          "description": "Please specify the Public IP Address of your Application Server to enable the use of the Web Service API for checking the Public IP Address. Please go to the website whatsmyip.org from the desktop console on your Application Server"
+        },
+        "action": {
+          "placeholder": "please provide information",
+          "add": "Add"
+        }
+      },
+      "removeAccount": {
+        "paragraph": "Delete user account. After confirming the deletion of your account, all your personal information will be removed from the database.",
+        "action": {
+          "selectAccount": "Please confirm the permanent deletion of the account.",
+          "removePermanent": "Delete the account permanently."
+        }
+      }
+    },
+    "menus": {
+      "aboutProjects": "About Project",
+      "allProjects": "All Projects",
+      "contactUs": "contract us",
+      "detailProjects": "Project Detail",
+      "forDeveloper": "For Developer",
+      "home": "Home",
+      "language": "language",
+      "login": "Login",
+      "mainApim": "Main",
+      "mainPage": "Main Menu",
+      "menu": "Menu",
+      "profile": "Profile",
+      "register": "Register",
+      "registerManageApi": "Register API",
+      "registerTravelMart": "Enroll",
+      "relatedSystem": "Related System"
+    },
+    "photoBank": {
+      "category": {
+        "nextPage": "Next Page",
+        "page": "Page",
+        "search": "Search",
+        "totalPage": "Total {total} Page"
+      },
+      "detail": {
+        "category": "Category : ",
+        "community": "Community : ",
+        "download": "Download",
+        "fileType": "File Download : ",
+        "id": "ID : ",
+        "morePhotos": "Addiotional Photos",
+        "organization": "Organization : ",
+        "photographer": "Photographer : ",
+        "seeMore": "See more",
+        "uploaderAt": "Last uploaded : "
+      },
+      "main": {
+        "category": "Suggested Category",
+        "community": "Community",
+        "menus": {
+          "createAlbum": "Create Album",
+          "myAlbums": "Album Upload",
+          "search": "Search"
+        },
+        "province": "Province",
+        "search": "Search",
+        "searchPicture": "Sarach for Image, Province",
+        "subTitle": "Sarach for Image",
+        "title": "CBT PHOTO BANK",
+        "toolbarMenus": {
+          "registerAsPhotographer": "Photographer Enroll",
+          "uploadPhoto": "Image Upload"
+        }
+      },
+      "myAlbums": {
+        "create": {
+          "category": "Category",
+          "community": "Community",
+          "communityPlaceholder": "Chosing Community",
+          "create": "Create Album",
+          "description": "Description",
+          "descriptionPlaceholder": "Fill in description",
+          "namePlaceholder": "Name of Album",
+          "organization": "Organizaition",
+          "organizationPlaceholder": "Chosing Organization",
+          "popup": {
+            "albumCreated": {
+              "title": "Album upload accomplished "
+            }
+          },
+          "region": "Region",
+          "regionPlaceholder": "chosing region",
+          "status": {
+            "approved": "Album has been Approved",
+            "reviewing": "Verify Processing"
+          },
+          "tags": "Tags",
+          "tagsPlaceholder": "Add Tags",
+          "uploadByClicked": "Click for Upload",
+          "uploadByDragged": "drag and drop photo or video files into the area indicated"
+        },
+        "createAlbum": "Create Album",
+        "recordNumber": "{number} List",
+        "title": "My Album",
+        "deleteSuccessMessage": "Delete success.",
+        "deleteFailedMessage": "Delete Failed. Please try again.",
+        "popupConfirmDelete": {
+          "subTitle": "Please confirm the deletion of the image.",
+          "submit": "Confirm",
+          "title": "Confirm deletion ?"
+        }
+      },
+      "search": {
+        "searchPlaceholder": "Saerch",
+        "searchResult": "Result",
+        "searchResultNumber": "Number of Photo",
+        "searchResultNumberRecords": "{number} / {total} List"
+      }
+    },
+    "profile": {
+      "api": {
+        "email": "Emial",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "organization": "Organization",
+        "password": "Password",
+        "phoneNumber": "Phone Num",
+        "registerIntro": {
+          "buttonText": "API Enroll",
+          "description": "API Gateway hasn't been enroll \nPlease register before access"
+        },
+        "status": {
+          "approved": "Account for API has been approved"
+        },
+        "title": "User API"
+      },
+      "menus": {
+        "api": "User API",
+        "logout": "Log-out",
+        "photoBankUser": "User Photo Bank",
+        "profile": "User account",
+        "removeAccount": "Remove Account",
+        "travelMartUser": "User Travel Mart"
+      },
+      "photoBank": {
+        "create": {
+          "edit": "Edit",
+          "firstName": "First-Name",
+          "lastName": "Last-name",
+          "organization": "Organization",
+          "phoneNumber": "Phone number",
+          "policiesAcceptant": "Policies Acceptant",
+          "popup": {
+            "edited": {
+              "title": "Photographer enrollment data has been edited"
+            },
+            "registered": {
+              "title": "Your account are in verifying process by admin"
+            }
+          },
+          "register": "Photographer Enrollment",
+          "status": {
+            "draft": "Your enrollment has been accomplished, please wait for approval by admin",
+            "published": " You've been verify for CBT photographer"
+          },
+          "upload": "file upload",
+          "uploadPortfolio": "Portfolio Attrachment"
+        },
+        "register": "Register Photo Bank",
+        "registerDetail": "Re3gisteration Photo Bank For Photographer",
+        "title": "User Photo Bank"
+      },
+      "travelMart": {
+        "form": {
+          "address": "Address",
+          "communityInformation": "Community Information",
+          "communityName": "Name of Community/Social Enterprise",
+          "coordinatorFirstName": "First Name",
+          "coordinatorInformation": "Contract Information",
+          "coordinatorLastName": "Last name",
+          "moo": "Name of Community/Social Enterprise",
+          "mooNo": "Moo no.",
+          "no": "no.",
+          "phoneNumber": "Phone Number",
+          "road": "Road",
+          "soi": "Soi"
+        },
+        "gotoWebsite": "Webpage",
+        "registerIntro": {
+          "buttonText": "Register for Travel Mart",
+          "description": "You haven't been register for Travel Mart \nPlease enroll before access"
+        },
+        "status": {
+          "approved": "Your Community has been registered."
+        },
+        "title": "User Travel Mart"
+      },
+      "user": {
+        "email": "Email",
+        "failMessage": "There are some errors. Please check.",
+        "firstName": "First-Name",
+        "lastName": "Last-name",
+        "notHaveName": "Normal User",
+        "organization": "Organization",
+        "password": "Passeword",
+        "phoneNumber": "Phone number",
+        "saveSuccessMessage": "Save information successful",
+        "status": {
+          "approved": "Your account has been verified",
+          "pending": "Email verifying has been approved, please wait for approval process"
+        },
+        "title": "Personal Information"
+      }
+    },
+    "project": {
+      "allProjects": "All Projects",
+      "allStatuses": "Overall",
+      "budget": {
+        "amount": "Amount",
+        "description": "Description",
+        "fiscalYear": "Fiscal Year",
+        "totalBudget": "Budget for project (baht)"
+      },
+      "community": "Community",
+      "create": {
+        "approve": "Project Approved",
+        "approveDeleteProject": "Project delete been approved",
+        "done": "Done",
+        "back": "Back",
+        "buildProject": "Create Project",
+        "next": "Next",
+        "popupApproveDelete": {
+          "title": "Project Erase Confirmation"
+        },
+        "popupDone": {
+          "title": "Complete Project Confirmation"
+        },
+        "popupApproveSuccess": {
+          "subTitle": "Your project has been shown in the Project approval site ",
+          "title": "Project Approval has been Accomplished"
+        },
+        "popupCancelProject": {
+          "actionButtonTitle": "Cancle Confirmation",
+          "cancelButtonTitle": "No,thank you",
+          "subTitle": "Data won't be save, if project has been cancle",
+          "title": "Do you want to cancle the project Yes or No"
+        },
+        "popupConfirmApproval": {
+          "subTitle": "Do you want to approve your project Yes or No ?",
+          "submit": "Approved",
+          "title": "Confirmation for Approval"
+        },
+        "popupReject": {
+          "reasonPlaceholder": "Please describe rejected reason",
+          "submit": "Yes",
+          "title": "Do you want to rejected the project Yes or No?"
+        },
+        "reject": "Project Rejected",
+        "save": "Save",
+        "setAsCover": "Set as cover",
+        "step1": {
+          "addPhoto": "Add photo",
+          "createCBTProject": {
+            "communityName": "Name of Community",
+            "latitude": "Latitude (Latitude)",
+            "longitude": "Longitude (Longitude)",
+            "postCode": "postcode",
+            "projectName": "Name of Project",
+            "save": "save",
+            "title": "Add Project"
+          },
+          "createOrganization": {
+            "communityName": "Name of Community",
+            "latitude": "Latitude (Latitude)",
+            "longitude": "Longitude (Longitude)",
+            "organizationName": "Name of Community",
+            "postCode": "postcode",
+            "save": "save",
+            "title": "Adding community list"
+          },
+          "createPhotoAlbum": "Create photo album",
+          "deletePhoto": "Delete photo",
+          "newCommunity": "Adding new community",
+          "newProject": "Adding new project",
+          "photoAlbum": "Photo album",
+          "projectName": "Project name",
+          "setAsCover": "Set as cover",
+          "uploadCoverPicture": "Upload cover picture"
+        },
+        "step2": {
+          "addDetails": "เพิ่มรายละเอียด",
+          "projectAgencyDriving": "หน่วยงานที่ขับเคลื่อนโครงการ",
+          "projectOrganization": "หน่วยงานร่วมขับเคลื่อนโครงการ/หน่วยงานที่รับผิดชอบโครงการ",
+          "totalBudget": "งบประมาณขับเคลื่อนโครงการทั้งหมด (บาท)",
+          "totalBudgetForYear": "รวมงบประมาณขับเคลื่อนโครงการปีที่ {yearIndex}"
+        },
+        "step3": {
+          "benefits": "ผลประโยชน์ที่เกิดขึ้นจากโครงการ",
+          "longTermEffects": "ผลกระทบระยะยาว",
+          "projectName": "ชื่อโครงการ",
+          "userGroup": "กลุ่มผู้ใช้ประโยชน์"
+        },
+        "step4": {
+          "economic": "ด้านเศรษฐกิจ",
+          "environment": "ด้านสิ่งแวดล้อม",
+          "social": "ด้านสังคม",
+          "with": "การเปลี่ยนแปลงหลังจากที่มีโครงการแล้ว (With)",
+          "without": "กรณีที่ไม่มีโครงการ (Without)"
+        },
+        "step5": {
+          "budget": "งบประมาณ",
+          "fiscalYear": "ปีงบประมาณ ( พ.ศ. )",
+          "listOfCosts": "รายการต้นทุนในการดำเนินโครงการ",
+          "mainActivities": "โครงการ/กิจกรรมหลัก",
+          "total": "Total",
+          "totalBudget": "งบประมาณขับเคลื่อนโครงการทั้งหมด (บาท)",
+          "totalBudgetForYear": "รวมงบประมาณขับเคลื่อนโครงการปีที่ {year}"
+        },
+        "step6": {
+          "baseCaseBenefit": "ผลประโยชน์กรณีฐาน",
+          "benefitNo": "ผลประโยชน์ที่",
+          "confirm": "ยืนยัน",
+          "financialProxy": "Financial Proxy",
+          "sensitivityAnalysis": "วิเคราะห์ความอ่อนไหว (Sensitivity Analysis)",
+          "sensitivityAnalysisInfo": "คำนิยามวิเคราะห์ความอ่อนไหว",
+          "sensitivityAnalysisTooltip": "เป็นการทดสอบความมั่นคงของผลประโยชน์ที่ได้จากการวิเคราะห์บนพิสัยของการประมาณค่าความน่าจะเป็น"
+        },
+        "step61": {
+          "addNewBenefit": "เพิ่มปีผลประโยชน์",
+          "delete": "ลบ",
+          "netBenefit": "มูลค่าผลประโยชน์สุทธิ",
+          "newProxy": "New Proxy",
+          "nonVariableCost": "ต้นทุนไม่ผันแปร (บาท)",
+          "number": "No.",
+          "pendingCreateProxyInfo": "เป็นค่า Proxy ที่กำหนดเอง",
+          "percentageAdjustment": "เปลี่ยนแปลง(%)",
+          "proxy": "Proxy",
+          "proxyUnit": "หน่วย",
+          "proxyValue": "มูลค่า",
+          "quantity": "จำนวน",
+          "tabs": {
+            "baseCaseBenefit": "ผลประโยชน์กรณีฐาน",
+            "maximumCaseBenefit": "ผลประโยชน์กรณีสูงสุด ( +%)",
+            "maximumCaseBenefitTooltip": "เป็นการทดสอบความมั่นคงของผลประโยชน์ที่ได้จากการ วิเคราะห์บนพิสัยของการประมาณค่าความน่าจะเป็น ในกรณีที่เกิดผลประโยชน์สูงสุด (Best case scenario)",
+            "minimumCaseBenefit": "ผลประโยชน์กรณีต่ำสุด ( -%)",
+            "minimumCaseBenefitTooltip": "เป็นการทดสอบความมั่นคงของผลประโยชน์ที่ได้จากการวิเคราะห์ บนพิสัยของการประมาณค่าความน่าจะเป็น ในกรณีที่เกิดผลประโยชน์ต่ำที่สุด (worst case scenario)"
+          },
+          "title": "ผลประโยชน์",
+          "totalAmount": "ผลรวมมูลค่า (THB)",
+          "unitPerYear": "หน่วย/ปี",
+          "variableCost": "ต้นทุนผันแปร (บาท/หน่วย)",
+          "year": "ปี (พ.ศ.)"
+        },
+        "step7": {
+          "exTabs": {
+            "ante": "Ex - Ante",
+            "post": "Ex - Post"
+          },
+          "tabs": {
+            "base": "ผลประโยชน์กรณีฐาน",
+            "maximum": "ผลประโยชน์กรณีสูงสุด( +%)",
+            "minimum": "ผลประโยชน์กรณีต่ำสุด( -%)"
+          },
+          "title": "ผลประโยชน์จากการดำเนินโครงการสู่กลุ่มเป้าหมาย"
+        },
+        "step8": {
+          "effect": {
+            "attribution": "ผลกระทบที่เกิดจากองค์กรอื่น (Attribution)",
+            "deadweight": "ผลกระทบส่วนเกิน (Deadweight)",
+            "displacement": "ผลกระทบด้านการทดแทน (Displacement)"
+          }
+        },
+        "step9": {
+          "activities": "กิจกรรม",
+          "afterProjectPeriod": "หลังช่วงการดำเนินโครงการ",
+          "assumptionData": "Assumption Data",
+          "attibutionTitle": "ผลกระทบกรณีฐานหมวดที่ 1 ผลกระทบจากองค์กรอื่น (Attribution)",
+          "back": "สรุปรายละเอียด",
+          "rejectReason": "เหตุผลที่ถูกปฏิเสธ",
+          "baseCaseImpact": "ผลกระทบกรณีฐาน (Base Case Impact)",
+          "beneficiary": "ผู้ได้รับผลประโยชน์",
+          "benefit": "ผลประโยชน์ของโครงการ (Benefit)",
+          "deadweightTitle": "ผลกระทบกรณีฐานหมวดที่ 2 ผลลัพธ์ส่วนเกิน (Deadweight)",
+          "discountRate": "Discount Rate (R)  {rate}%",
+          "displacementTitle": "ผลกระทบกรณีฐานหมวดที่ 3 ผลลัพธ์ทดแทน (Displacement)",
+          "download": "ดาวน์โหลดเอกสาร",
+          "economic": "ด้านเศรษฐกิจ",
+          "effect": "ผลกระทบ",
+          "environment": "สิ่งแวดล้อม",
+          "exTabs": {
+            "ante": "Ex - Ante",
+            "post": "Ex - Post"
+          },
+          "implementationPeriod": "ช่วงการดำเนินโครงการ",
+          "initialInvestment": "Initial Investment",
+          "pendingCreateProxyInfo": "เป็นค่า Proxy ที่กำหนดเอง",
+          "presentBaseCaseImpact": "ผลกระทบกรณีฐานปรับเป็นมูลค่าปัจจุบันสุทธิ (Present Base Case Impact)",
+          "presentBenefit": "ผลประโยชน์ปัจจุบันสุทธิ (Present Benefit)",
+          "presentValue": "มูลค่าปัจจุบัน (Present Value)",
+          "presentValueInvestment": "ต้นทุนปัจจุบันสุทธิ Present Value of Investment (PV)",
+          "product": "ผลผลิต",
+          "projectAgencyDriving": "หน่วยงานที่ขับเคลื่อนโครงการ",
+          "projectDrivingBudget": "งบประมาณขับเคลื่อนโครงการ (บาท)",
+          "projectDuration": "ระยะเวลาขับเคลื่อนโครงการ (ปี)",
+          "projectName": "ชื่อโครงการ",
+          "projectOrganization": "หน่วยงานร่วมขับเคลื่อนโครงการ/หน่วยงานที่รับผิดชอบโครงการ",
+          "result": "ผลลัพธ์",
+          "save": "save",
+          "social": "ด้านสังคม",
+          "socialReturnOnInvestment": "Social Return on Investment",
+          "sroiIRR": "SROI Internal Rate of Return (IRR)",
+          "sroiRatio": "SROI Ratio",
+          "sroiSummary": "SROI Summary",
+          "sroiTabs": {
+            "baseCase": "ผลประโยชน์กรณีฐาน",
+            "bestCase": "ผลประโยชน์กรณีสูงสุด( +%)",
+            "worstCase": "ผลประโยชน์กรณีต่ำสุด ( -%)"
+          },
+          "startingYear": "ปีที่เริ่มขับเคลื่อนโครงการ (พ.ศ.)",
+          "submit": "ส่งอนุมัติ",
+          "tabs": {
+            "sia": "SIA",
+            "sroi": "SROI"
+          },
+          "total": "รวม",
+          "totalBaseCaseImpact": "รวม (Base Case Impact)",
+          "totalBenefitTotalCostBaseCaseImpact": "ผลประโยชน์รวม (Total Benefit)-ต้นทุนรวม (Total Cost)-ผลกระทบกรณีฐาน (Base Case Impact)",
+          "totalCost": "รวม ( Cost )",
+          "totalInitialInvestment": "ต้นทุนรวมปัจจุบัน Total NPV Initial Investment (PV)",
+          "totalPresentBaseCaseImpact": "ผลกระทบกรณีฐานมูลค่ารวมปัจจุบัน (Total Present Base Case Impact)",
+          "totalPresentBenefit": "รวมผลประโยชน์ปัจจุบันสุทธิ (Total Present Benefit)",
+          "totalPresentBenefitBaseCaseImpact": "ผลประโยชน์ปัจจุบันสุทธิ (Total Present Benefit) หลังหักลบกรณีฐาน (Base Case Impact)",
+          "totalTotal": "รวม (Total)"
+        },
+        "steps": {
+          "step1": "1. ชื่อโครงการ",
+          "step2": "2. ทบทวนรายละเอียดโครงการที่ต้องประเมิน",
+          "step3": "3. สื่อสารความสำคัญของโครงการผ่านทฤษฎีการเปลี่ยนแปลง",
+          "step4": "4. การเปรียบเทียบผลการวิเคราะห์ภาพรวมผลกระทบกรณี “มีโครงการ” และ “ไม่มีโครงการ”",
+          "step5": "5. งบประมาณในการดำเนินโครงการ",
+          "step6": "6. ผลประโยชน์ที่จะได้รับจากการดำเนินโครงการ",
+          "step7": "7. ผลประโยชน์จากการดำเนินโครงการสู่กลุ่มเป้าหมาย",
+          "step8": "8. ผลกระทบ",
+          "step9": "9. สรุปรายละเอียด"
+        },
+        "uploadCoverPicture": "Upload cover picture"
+      },
+      "createSuccessMessage": "Create SIA/SROI Success",
+      "dastaWorkingArea": "พื้นที่ดำเนินการ",
+      "documents": {
+        "projectBenefit": {
+          "benefitTable": {
+            "title": "ผลประโยชน์จากการดำเนินโครงการสู่กลุ่มเป้าหมาย"
+          },
+          "fromImplementation": {
+            "title": "ผลประโยชน์ที่จะได้รับจากการดำเนินโครงการ"
+          }
+        },
+        "projectBudget": {
+          "activity": "โครงการ/กิจกรรมหลัก",
+          "budget": "งบประมาณ",
+          "details": "รายการต้นทุนในการดำเนินโครงการ",
+          "title": "งบประมาณในการดำเนินโครงการ",
+          "total": "งบประมาณขับเคลื่อนโครงการทั้งหมด (บาท)",
+          "totalYear": "รวมงบประมาณขับเคลื่อนโครงการปีที่ ",
+          "year": "ปีงบประมาณ ( พ.ศ. )"
+        },
+        "projectDetails": {
+          "projectName": "Name of Project",
+          "question": {
+            "1": "1.ความเชื่อมโยงของโครงการนุทธศาสตร์และแผนงานเกี่ยวข้อง",
+            "2": "2. ลักษณะโครงการ",
+            "3": "3. ประเภทโครงการ",
+            "4": "4. สถานะโครงการ",
+            "5": "5. สถานที่จัดทำโครงการ",
+            "6": "6. พื้นที่ดำเนินงาน",
+            "7": "7. หน่วยงานที่ขับเคลื่อนโครงการ",
+            "8": "8. ระยะเวลาขับเคลื่อนโครงการ (ปี)",
+            "9": "9. ผลสืบเนื่องหลังระยะเวลาดำเนินโครงการ (ปี) (On-going)",
+            "10": "10. งบประมาณขับเคลื่อนโครงการ (บาท)",
+            "11": "11. วัตถุประสงค์โครงการ (Objective)",
+            "12": "12. กิจกรรมภายในโครงการ (Activity)",
+            "13": "13. ผลผลิตจากการดำเนินโครงการ (Output)",
+            "14": "14. ตัวชี้วัดความเปลี่ยนแปลง (Outcome)",
+            "15": "15. ผู้ที่ใช้ประโยชน์",
+            "16": "16. SDGs",
+            "1dot1": "1.1. แผนยุทธศาสตร์ชาติ",
+            "1dot2": "1.2. แผนแม่บทภายใต้ยุทธศาสตร์ชาติ",
+            "1dot3": "1.3. แผนพัฒนาการเศรษฐกิจและสังคมแห่งชาติ ฉบับที่ 13",
+            "1dot4": "1.4. แผนยุทธศาสตร์ที่เกี่ยวข้อง",
+            "1dot5": "1.5. แผนปฏิรูปประเทศ",
+            "1dot6": "1.6. ความสอดคล้องกับโมเดลเศรษฐกิจ BCG Model",
+            "1dot7": "1.7. สนับสนุนเป้าหมายการดำเนินงานของ อพท. ในประเด็น",
+            "7dot1": "หน่วยงานที่ขับเคลื่อนโครงการ",
+            "7dot2": "หน่วยงานที่ร่วมขับเคลื่อนโครงการ / หน่วยงานที่รับผิดชอบโครงการ",
+            "8dot1": "ปีที่เริ่มขับเคลื่อนโครงการ (พ.ศ.)",
+            "8dot2": "ปีที่โครงการเสร็จสิ้น (พ.ศ.)",
+            "9dot1": "ปีสิ้นสุดผลสืบเนื่องหลังระยะเวลาดำเนินโครงการ (พ.ศ.)"
+          },
+          "title": "ทบทวนรายละเอียดโครงการที่ต้องประเมิน"
+        },
+        "projectEffect": {
+          "attribution": {
+            "percent": "Attribution (%)",
+            "title": "ผลกระทบที่เกิดจากองค์กรอื่น (Attribution) ระบุองค์กรที่ร่วมทำ"
+          },
+          "benefitPercent": "ประโยชน์โครงการ (%)",
+          "deadweight": {
+            "percent": "Deadweight (%)",
+            "title": "ผลกระทบส่วนเกิน (Deadweight) ระบุผลที่เกิดขึ้นแม้ไม่มีโครงการ"
+          },
+          "displacement": {
+            "percent": "Displacement (%)",
+            "title": "ผลกระทบด้านการทดแทน (Displacement) ระบุผลกระทบเชิงลบ"
+          },
+          "title": "ผลกระทบ"
+        },
+        "projectEffectOverview": {
+          "economic": "ด้านเศรษฐกิจ",
+          "environment": "ด้านสิ่งแวดล้อม",
+          "social": "ด้านสังคม",
+          "title": "การเปรียบเทียบผลการวิเคราะห์ภาพรวมผลกระทบกรณี “มีโครงการ” และ “ไม่มีโครงการ”",
+          "with": "การเปลี่ยนแปลงหลังจากที่มีโครงการแล้ว (With)",
+          "without": "กรณีที่ไม่มีโครงการ (Without)"
+        },
+        "socialImpactPathway": {
+          "headers": {
+            "activity": "Activity",
+            "impact": "Impact",
+            "input": "Input",
+            "outcome": "Outcome",
+            "output": "Output",
+            "project": "Project",
+            "user": "User"
+          },
+          "title": "การนำข้อมูลโครงการที่ได้มาสร้างการวิเคราะห์เพื่อสร้างเส้นทางสู่ผลกระทบทางสังคมของโครงการ เพื่อสังคม (Social Impact Pathway) (SIA)"
+        },
+        "summary": {
+          "sia": {
+            "activity": "กิจกรรม",
+            "beneficiary": "ผู้ได้รับผลประโยชน์",
+            "rejectReason": "เหตุผลที่ถูกปฏิเสธ",
+            "impact": {
+              "economic": "ด้านเศรษฐกิจ",
+              "environment": "ด้านสิ่งแวดล้อม",
+              "social": "ด้านสังคม",
+              "title": "ผลกระทบ"
+            },
+            "institution": "หน่วยงานที่ขับเคลื่อนโครงการ",
+            "outcome": "ผลลัพธ์",
+            "output": "ผลผลิต",
+            "projectName": "ชื่อโครงการ",
+            "startYear": "ปีที่เริ่มขับเคลื่อนโครงการ (พ.ศ.)",
+            "title": "SIA",
+            "total": "รวมงบประมาณขับเคลื่อนโครงการทั้งหมด",
+            "totalYear": "รวมงบประมาณขับเคลื่อนโครงการปีที่ {year} ",
+            "year": "ระยะเวลาขับเคลื่อนโครงการ (ปี)"
+          },
+          "sroi": {
+            "title": "SROI (Social Return on Investment)"
+          },
+          "title": "สรุปรายละเอียด"
+        },
+        "theoryOfChange": {
+          "beneficiaryGroup": "กลุ่มผู้ใช้ประโยชน์/ผู้มีส่วนได้เสีย",
+          "benefits": "ผลประโยชน์ที่เกิดขึ้นจากโครงการ",
+          "longTermEffects": "ผลกระทบระยะยาว",
+          "projectName": "ชื่อโครงการ",
+          "title": "สื่อสารความสำคัญของโครงการผ่านทฤษฎีการเปลี่ยนแปลง"
+        }
+      },
+      "exAnte": "Ex - Ante",
+      "exPost": "Ex - Post",
+      "filter": "ตัวกรอง",
+      "location": "พื้นที่ดำเนินงาน",
+      "manage": {
+        "action": {
+          "add": "Adding Project",
+          "delete": "Delete",
+          "edit": "Editing",
+          "financialProxy": "Financial Proxy",
+          "title": "แก้ไขข้อมูล"
+        },
+        "allProjects": "โครงการทั้งหมด",
+        "cost": "ต้นทุน (บาท)",
+        "createBy": "สร้างโดย",
+        "name": "ชื่อโครงการ",
+        "organization": "หน่วยงานที่รับผิดชอบ",
+        "popupWarningDelete": {
+          "subTitle": "คุณกำลังลบข้อมูล กดยืนยันเพื่อดำเนินการต่อ",
+          "title": "ยืนยันการลบข้อมูล"
+        },
+        "status": "สถานะโครงการ",
+        "tabs": {
+          "status": {
+            "all": "โครงการทั้งหมด",
+            "approved": "อนุมัติแล้ว",
+            "completed": "โครงการเสร็จสิ้น",
+            "draft": "ร่างโครงการ",
+            "onGoing": "อยู่ระหว่างดำเนินการ",
+            "pendingDelete": "คำขอลบโครงการ",
+            "rejected": "โครงการถูกปฏิเสธ",
+            "title": "สถานะ",
+            "waitingForApprove": "รออนุมัติ"
+          }
+        },
+        "title": "โครงการของ อพท.",
+        "year": "ปีที่เริ่ม (พ.ศ.)"
+      },
+      "manageProject": "จัดการโครงการ",
+      "npv": "NPV",
+      "npvSROI": "NPV SROI (THB)",
+      "overview": {
+        "remark": "*ข้อมูล Ex - Ante และ Ex - post แสดงเฉพาะโครงการที่อนุมัติเป็นต้นไป",
+        "toggleProjectSelection": "เลือกแสดงเฉพาะโครงการ"
+      },
+      "project": "โครงการ",
+      "projectDuration": "ระยะเวลาโครงการ",
+      "province": "จ.",
+      "ratioTime": "เท่า",
+      "searchPlacehlder": "ค้นหาชื่อโครงการ",
+      "saveSuccessMessage": "Save draft SIA/SROI success",
+      "sroiRatio": "SROI Ratio",
+      "status": {
+        "all": "Overall",
+        "approved": "Approved",
+        "deleted": "Delete",
+        "done": "Done",
+        "draft": "Draft",
+        "inprogress": "Inprogress",
+        "pending_for_approval": "Pending for approval",
+        "published": "Published",
+        "rejected": "Rejected",
+        "request_to_delete": "Request for delete",
+        "title": "Status"
+      },
+      "successMessage": "Creating Project for SIA/SROI has been accomplished",
+      "year": "Yearly"
+    },
+    "recommend": {
+      "community": {
+        "businessMeetingRequest": "Business Matching Request",
+        "community": "Community",
+        "media": "Media",
+        "name": "Community list",
+        "pdf": "PDF",
+        "province": "Province",
+        "recommended": "Recocommened",
+        "searchActivity": "Search for Community",
+        "title": "Recommended List",
+        "type": "Type of community",
+        "viewDetail": "Community details",
+        "youtube": "Youtube"
+      },
+      "entrepreneur": {
+        "businessMeetingRequest": "Business Matching Request",
+        "businessName": "Name of Business",
+        "businessType": "Business Type",
+        "entrepreneurName": "Entrepreneur",
+        "province": "province",
+        "recommended": "recommended",
+        "searchBusinessName": "Search for business",
+        "title": "Recommended List",
+        "type": "Type of travel",
+        "viewDetail": "Business detail",
+        "search": "Search for business"
+      }
+    },
+    "register": {
+      "confirmPassword": "Confirm Password",
+      "haveAnAccount": "Have an account",
+      "phoneNumber": "Phone Number",
+      "register": "Register",
+      "successMessage": "Register Accomplished",
+      "title": "Member registration"
+    },
+    "restPassword": {
+      "changePassword": "Change Password",
+      "confirmPassword": "Confirmation for new password",
+      "failMessage": "Denied for changing password, please re-checked your password ",
+      "password": "Please re-entry your password",
+      "successMessage": "Changing password accomplished",
+      "title": "Entry new password"
+    },
+    "travelMart": {
+      "manual": {
+        "title": "คู่มือการใช้งาน Travel Mart"
+      },
+      "aboutProject": {
+        "aboutProjectDescription": "CBT Travel Mart เป็นส่วนหนึ่งของระบบ SMART CBT ที่พัฒนาโดยองค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) หรือ อพท. ดำเนินการยกระดับสินค้าและบริการทางการท่องเที่ยวโดยชุมชนเพื่อเชื่อมโยงสู่ตลาดมูลค่าสูง เป็นช่องทางเชื่อมโยงผู้ซื้อ (ผู้ประกอบการธุรกิจท่องเที่ยว) และผู้ขาย (ชุมชนท่องเที่ยว) ให้สามารถค้นหาและนัดหมายเจรจาธุรกิจระหว่างกันทาง Online ให้เกิดการซื้อขายและกระจายนักท่องเที่ยวที่เหมาะสมลงไปยังชุมชนเป้าหมายได้เป็นผลสำเร็จ<br/><br/>CBT Travel Mart ยังเป็นพื้นที่ในการฝึกให้ชุมชนได้นำเสนอขายสินค้าและบริการทางการท่องเที่ยว (Pitching) รวมทั้งกิจกรรมการจับคู่ธุรกิจ (Business Matching) ต่อยอดไปสู่การทดสอบเส้นทางและกิจกรรมท่องเที่ยวโดยชุมชน (Product Testing) เพราะเป้าหมายของการท่องเที่ยวโดยชุมชน คือ การที่ชุมชนได้รับการพัฒนาจนมีศักยภาพ ได้รับประโยชน์จากการพัฒนาการท่องเที่ยว มีการกระจายรายได้สู่ชุมชน และให้ชุมชนสามารถพึ่งพาตนเองได้ เพื่อความยั่งยืนที่แท้จริง โดย อพท.จะเป็นหน่วยงานหลักในการเป็นตัวกลางประสานภาคส่วนต่าง ๆ มาร่วมกันพัฒนา เพราะเราเชื่อว่า \"ทำท่องเที่ยวเก่งคนเดียวไม่ได้\"",
+        "aboutProjectTitle": "เกี่ยวกับ CBT Travel Mart",
+        "creatingUnderstanding": "สร้างความรู้ความเข้าใจร่วมกัน",
+        "headerDescription": "การพัฒนาการท่องเที่ยวอย่างยั่งยืนเพื่อสร้างชุมชนแห่งความสุข",
+        "headerTitle": "CBT TRAVEL MART",
+        "invitingCommunitiesDescription": "<ul><li>กลุ่ม/ชมรม/วิสาหกิจชุมชนต่างๆ ที่เกี่ยวข้องกับการท่องเที่ยวในประเทศไทย</li><li>กิจกรรมด้านการท่องเที่ยวต้องดำเนินโดยคนชุมชน</li><li>มีใจพร้อมให้บริการ</li><li>มีสินค้า/บริการทางการท่องเที่ยวสมบูรณ์พร้อมขายสู่ตลาด</li><li>มีราคาที่เป็นมิตรและยุติธรรมต่อทั้งชุมชนและผู้ประกอบการ</li><li>พร้อมยอมรับและเรียนรู้สิ่งใหม่ๆ เพื่อการพัฒนาการตนเองเสมอ</li><li>สามารถทำผลงานนำเสนอ ( Power Point ) ได้</li><li>กล้าพูดและมีความสามารถในการนำเสนอ</li></ul>",
+        "invitingCommunitiesTitle": "เชิญชวนชุมชนท่องเที่ยว",
+        "invitingEntrepreneursDescription": "<ul><li>บริษัทด้านธุรกิจท่องเที่ยวที่ได้รับการจดทะเบียนถูกต้อง</li><li>มีความสนใจและพร้อมจะทำงานร่วมกับชุมชนในประเทศไทย</li><li>สามารถเรียนรู้และพร้อมปรับตัวที่จะเรียนรู้ในการทำธุรกิจร่วมกับชุมชน</li><li>สามารถยอมรับผลประโยชน์ร่วมกับชุมชนได้</li><li>พร้อมที่จะทำการท่องเที่ยวอย่างรับผิดชอบร่วมกับชุมชน</li></ul>",
+        "invitingEntrepreneursTitle": "เชิญชวนผู้ประกอบการธุรกิจท่องเที่ยว",
+        "invitingGuidesDescription": "<ul><li>มัคคุเทศก์ที่มีใบอนญาติมัคคุเทศก์ถูกต้อง</li><li>มีความสนใจที่จะทำงานร่วมกับชุมชน</li><li>สามารถเรียนรู้และพร้อมปรับตัวที่จะเรียนรู้การทำงานร่วมกับชุมชน</li><li>พร้อมที่จะทำการท่องเที่ยวอย่างรับผิดชอบร่วมกับชุมชน</li><li>สามารถยอมรับผลประโยชน์ร่วมกับชุมชนได้</li></ul>",
+        "invitingGuidesTitle": "เชิญชวนมัคคุเทศก์",
+        "target1": "ชุมชนท่องเที่ยว",
+        "target2": "ผู้ประกอบการธุรกิจท่องเที่ยว",
+        "target3": "มัคคุเทศก์",
+        "targetOfProject": "กลุ่มเป้าหมายของ CBT Travel Mart"
+      },
+      "contactUs": {
+        "email": "Email {email}",
+        "phoneNumber": "เบอร์ติดต่อ {phoneNumber}",
+        "projectCoordinatorContact": "ติดต่อเจ้าหน้าที่ประสานงานโครงการฯ อพท.",
+        "title": "ติดต่อเรา"
+      },
+      "main": {
+        "community": "ชุมชน",
+        "eventType": "ประเภทกิจกรรม",
+        "menus": {
+          "allRolesBusinessNegotiations": "จับคู่เจรจาธุรกิจ",
+          "businessIntroduction": "แนะนำผู้ประกอบการ",
+          "businessNegotiations": "การนัดหมาย\nการเจรจาธุรกิจ",
+          "communityInformation": "ข้อมูลชุมชน",
+          "communityIntroduction": "แนะนำชุมชน",
+          "documents": "คู่มือการใช้ระบบ \nCBT Travel mart",
+          "event": "กำหนดการ \nจัดกิจกรรม",
+          "matching": "Business Matching",
+          "sell": "ข้อมูลชุมชนพร้อมขาย",
+          "training": "ห้องอบรม \nเพื่อยกระดับศักยภาพ"
+        },
+        "province": "จังหวัด",
+        "region": "ภูมิภาค",
+        "searchCommunity": "ค้นหาชื่อชุมชน",
+        "subTitle": "การพัฒนาการท่องเที่ยวอย่างยั่งยืนเพื่อสร้างชุมชนแห่งความสุข",
+        "title": "CBT TRAVEL MART 2023"
+      },
+      "matching": {
+        "description": "<h3>หลักเกณฑ์การคัดเลือกและประเมินศักยภาพของชุมชนจากการนำเสนอขาย มาจากหัวข้อการอบรมด้าน 4 ข้อดังนี้</h3>\n <ul><li>แนวคิดการนำเสนอขาย เพื่อให้ชุมชนนำไปประยุกต์ใช้กับการนำเสนอขายเส้นทางกิจกรรมท่องเที่ยว และสินค้าทางการท่องเที่ยวโดยชุมชนได้</li><li>เทคนิคการนำเสนอขายให้โดนใจผู้ฟัง และสร้างความมั่นใจแต่ผู้นำเสนอ</li><li>การออกแบบรายละเอียดการนำเสนอผ่านแผนผังการนำเสนอขาย ( Pitching Canvas )จนเกิดความครบถ้วนในการเตรียมความพร้อมก่อนการนำเสนอ หากใช้แนวคิด 4E</li><li>การสร้างเรื่องเล่าสำหรับการนำเสนอ ( Storytelling for Pitching )</li></ul>",
+        "descriptionExpert1": "อาจารย์คณะนิเทศศาสตร์ มหาวิยาลัยหอการค้าไทย ผู้เชี่ยวชาญด้านการสร้างแบรนด์และการสื่อสารการตลาด",
+        "descriptionExpert2": "Founder & Managing Director, BRAND STUDIO (THAILAND) Co.,Ltd Head of Aviation Business Management, SRIPATUM UNIVERSITY Chonburi campus",
+        "expert": "ผู้เชี่ยวชาญ",
+        "nameExpert1": "ผศ.ดร.บุปผา ลาภะวัฒนาพันธ์",
+        "nameExpert2": "ผศ.ดร.ปิ่นปินัทธ์ จ่าดา",
+        "sellPresentationTable": "ตารางการนำเสนอขาย",
+        "table": {
+          "activityName": "รายการกิจกรรม",
+          "click": "คลิก",
+          "date": "วันที่",
+          "displayTime": "{time} น.",
+          "presentationLink": "ลิงก์เจรจา",
+          "province": "จังหวัด",
+          "time": "เวลา"
+        },
+        "title": "Business Matching"
+      },
+      "matchingPopup": {
+        "acceptNegotiation": {
+          "date": "วันที่เวลา :",
+          "descriptionDone": "ตอบรับคำขอเจรจาธุรกิจสำเร็จ ทางระบบจะทำการยืนยันผ่านทาง email ของท่าน",
+          "descriptionFail": "มีข้อผิดพลาดบางอย่าง โปรดตรวจสอบ",
+          "entrepreneur": "ผู้ประกอบการ :",
+          "eventName": "ชุมชน :",
+          "submit": "ตอบรับคำขอเจรจาธุรกิจ",
+          "title": "ยืนยันตอบรับคำขอเจรจาธุรกิจ",
+          "type": "ประเภทธุรกิจ :"
+        },
+        "confirmCancelNegotiation": {
+          "confirm": "ยกเลิกเจรจาธุรกิจ",
+          "descriptionDone": "ยกเลิกการเจรจาธุรกิจเรียบร้อย",
+          "descriptionFail": "มีข้อผิดพลาดบางอย่าง โปรดตรวจสอบ",
+          "descriptionPlaceholder": "ระบุรายละเอียดการยกเลิกการเจรจา",
+          "title": "ยืนยันยกเลิกการเจรจา"
+        },
+        "confirmReschedule": {
+          "activity": "กิจกรรม :",
+          "confirm": "ยืนยันการเปลี่ยนเวลาเจรจาธุรกิจ",
+          "date": "วันที่เวลา :",
+          "descriptionDone": "เปลี่ยนเวลาการเจรจาธุรกิจสำเร็จ",
+          "descriptionFail": "มีข้อผิดพลาดบางอย่าง โปรดตรวจสอบ",
+          "entrepreneur": "ผู้ประกอบการ :",
+          "time": "{date} เวลา {time} น.",
+          "title": "ยืนยันการเปลี่ยนเวลาเจรจาธุรกิจ",
+          "type": "ประเภทธุรกิจ :"
+        },
+        "rejectNegotiation": {
+          "changeTime": "ต้องการเปลี่ยนวันเวลาที่ขอนัดเจรจา",
+          "confirm": "ยืนยันการปฏิเสธเจรจาธุรกิจ",
+          "descriptionDone": "ส่งคำขอการเปลี่ยนเวลาเจรจาเรียบร้อย",
+          "descriptionFail": "มีข้อผิดพลาดบางอย่าง โปรดตรวจสอบ",
+          "other": "ระบุเหตุผลอื่น",
+          "title": "ปฏิเสธการเจรจา"
+        },
+        "requestNegotiation": {
+          "date": "วันและเวลาที่ขอเจรจา :",
+          "description": "เลือกวันที่และเวลาที่ต้องการเจรจา",
+          "descriptionDone": "ส่งคำขอเจรจาธุรกิจสำเร็จทางระบบจะทำการตอบกลับและยืนยันผ่านทาง email ของท่าน",
+          "descriptionFail": "มีข้อผิดพลาดบางอย่าง โปรดตรวจสอบ",
+          "eventName": "กิจกรรม :",
+          "needGuide": "ต้องการมัคคุเทศก์",
+          "province": "จังหวัด :",
+          "send": "ส่งคำขอเจรจาธุรกิจ",
+          "title": "ขอนัดหมายเจรจาธุรกิจ",
+          "titleCheck": "คำขอเจรจาธุรกิจ"
+        }
+      },
+      "profile": {
+        "entrepreneur": {
+          "activity": "กิจกรรมเพื่อสังคม",
+          "address": "ที่ตั้งบริษัท",
+          "contactUs": "ติดต่อประสานงาน",
+          "email": "อีเมล",
+          "facebook": "Facebook",
+          "instagram": "Instagram",
+          "phoneNumber": "เบอร์โทรศัพท์",
+          "requestAppointment": "ขอนัดหมายเจรจาธุรกิจ",
+          "tikTok": "Tik-Tok",
+          "title": "ผู้ประกอบการธุรกิจ",
+          "type": "ประเภทของสถานประกอบการของท่าน",
+          "website": "เว็บไซต์"
+        },
+        "tabs": {
+          "community": "สำหรับชุมชน",
+          "guide": "สำหรับมัคคุเทศก์",
+          "organization": "สำหรับผู้ประกอบการ"
+        }
+      },
+      "register": {
+        "pending": "ข้อมูลของคุณอยู่ในระหว่างการตรวจสอบ",
+        "rejected": "ข้อมูลของคุณถูกปฏิเสธกรุณาแก้ไขและส่งใหม่อีกครั้ง",
+        "address": {
+          "district": "อำเภอ",
+          "googleMapUrl": "Google map URL",
+          "lat": "Latitude",
+          "long": "Longitude",
+          "moo": "หมู่ที่",
+          "no": "เลขที่",
+          "postCode": "รหัสไปรษณีย์",
+          "province": "จังหวัด",
+          "road": "ถนน",
+          "soi": "ซอย",
+          "subdistrict": "ตำบล",
+          "villageName": "ชื่อหมู่บ้าน"
+        },
+        "community": {
+          "addressDetail": "รายละเอียดที่อยู่",
+          "communityInformation": "ข้อมูลที่อยู่ผู้ประสานงาน",
+          "communityName": "ชื่อชุมชน/วิสหกิจชุมชน",
+          "consent": "ฉันได้อ่านและยอมรับ",
+          "consentInformation": "การยินยอมการประมวลผลข้อมูลที่ให้ไว้ในการสำรวจและเผยแพร่ข้อมูล (กรุณาให้ความยินยอม)",
+          "coordinatorInformation": "ข้อมูลผู้ประสานงาน",
+          "dataDissemination": "ข้าพเจ้าตกลงยินยอมให้องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) หรือ อพท. และหน่วยงานของรัฐที่เกี่ยวข้องจดเก็บและประมวลผลข้อมูลส่วนบุคคลที่ข้าพเจ้าได้ให้ไว้ในการสำรวจ ทั้งนี้ ข้อมูลของท่านจะถือเป็นความลับ การวิเคราะห์ข้อมูลจากแบบสอบถามจะเป็นไปในลักษณะของภาพรวม",
+          "email": "อีเมล",
+          "firstName": "ชื่อผู้ประสานงาน",
+          "lastName": "นามสกุลผู้ประสานงาน",
+          "password": "รหัสผ่าน",
+          "phoneNumber": "เบอร์โทรศัพท์",
+          "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+          "profile": "ข้อมูลส่วนตัว",
+          "status": {
+            "click": "คลิกที่นี่",
+            "completed": "คุณได้ทำการลงทะเบียนชุมชนท่องเที่ยวแล้ว",
+            "waiting": "รอการยืนยันการลงทะเบียนชุมชนท่องเที่ยว กรุณาตรวจสอบที่อีเมลของคุณ"
+          },
+          "termsAndConditions": "ข้อตกลงและเงื่อนไข",
+          "title": "ลงทะเบียนชุมชนท่องเที่ยว"
+        },
+        "confirmRegistration": "ยืนยันการลงทะเบียน",
+        "entrepreneur": {
+          "appendReward": "เพิ่มรางวัล",
+          "association": "ท่านเป็นสมาชิกอยู่ในสมาคมผู้ประกอบการท่องเที่ยวหรือไม่ หากใช่ท่านอยู่ในสมาคมใด",
+          "attachDocuments": "แนบเอกสาร",
+          "businessInformation": "ข้อมูลทางธุรกิจ",
+          "companyLicenseNumber": "เลขที่ใบอนุญาตการจดทะเบียนบริษัทของท่าน",
+          "companyLocationDetail": "ที่ตั้งบริษัท",
+          "companyName": "ชื่อบริษัทของท่าน",
+          "companyRegistrationDocument": "เอกสารใบจดทะเบียนบริษัท (ที่ยังไม่หมดอายุ)",
+          "coordinatorEmail": "E-mail",
+          "coordinatorFirstName": "ชื่อ",
+          "coordinatorInformation": "ข้อมูลผู้ประสานงาน",
+          "coordinatorLastName": "นามสกุล",
+          "coordinatorPhoneNumber": "เบอร์โทรศัพท์",
+          "facebook": "Facebook",
+          "instagram": "Instagram",
+          "lengthOfBusiness": "ระยะเวลาในการประกอบธุรกิจ (ประมาณการปีที่เปิดให้บริการ)",
+          "line": "ID Line",
+          "onlineContactInformation": "ข้อมูลติดต่อช่องทางออนไลน์",
+          "other": "อื่นๆ",
+          "step": {
+            "back": "ก่อนหน้านี้",
+            "informationRegistrant": "ข้อมูลทั่วไปของผู้ลงทะเบียน",
+            "marketAndTourist": "ตลาดและกลุ่มนักท่องเที่ยว",
+            "next": "ถัดไป"
+          },
+          "step1": "1. ประเภทของสถานประกอบการของท่าน",
+          "step10": "10. ตลาดใดบ้าง ที่บริษัทของท่านเคยรับรองการท่องเที่ยวในปัจจุบัน",
+          "step11": "11. ตลาดใดบ้าง ที่บริษัทของท่านเคยรับรองการท่องเที่ยวในอนาคต",
+          "step2": "2. ท่านเป็นสมาชิกอยู่ในสมาคมผู้ประกอบการท่องเที่ยวหรือไม่ หากใช่ท่านอยู่ในสมาคมใด",
+          "step3": "3. ท่านสนใจรูปแบบการท่องเที่ยวโดยชุมชนประเภทใด (เลือกได้มากกว่า 1 ข้อ)",
+          "step4": "4. สถานประกอบการ/บริษัท ของท่านพิจารณาในการคัดเลือกแหล่งท่องเที่ยวชุมชนและให้ความสำคัญเรื่องใด (เลือกได้มากกว่า 1 ข้อ)",
+          "step5": "5. สถานประกอบการ/บริษัทของท่าน ได้รับมาตรฐานหรือรางวัลอะไรบ้าง (หากมีโปรดระบุ)",
+          "step6": "6. สถานประกอบการ/บริษัทของท่าน มีส่วนร่วมในการทำกิจกรรมเพื่อสังคมด้านใดบ้าง (เลือกได้มากกว่า 1 ข้อ)",
+          "step7": "7. สถานประกอบการ/บริษัทของท่าน ต้องการทำการเจรจาธุรกิจ (Business Matching) กับชุมชนท่องเที่ยวหรือไม่",
+          "step8": "8. กลุ่มนักท่องเที่ยวที่เป็นกลุ่มเป้าหมายหลักของสถานประกอบการ/บริษัทของท่านในปัจจุบัน (เลือกได้มากกว่า 1 ข้อ)",
+          "step9": "9. กลุ่มนักท่องเที่ยวที่เป็นกลุ่มเป้าหมายหลักของสถานประกอบการ/บริษัทของท่านในอนาคต (เลือกได้มากกว่า 1 ข้อ)",
+          "tikTok": "Tik Tok",
+          "title": "ลงทะเบียนผู้ประกอบการ",
+          "typeOfEstablishment": "ประเภทของสถานประกอบการของท่าน",
+          "website": "Website"
+        },
+        "guide": {
+          "addressDetail": "ที่อยู่",
+          "affiliatedWith": "หน่วยงาน/ชุมชน ที่สังกัด",
+          "careerInformation": "ข้อมูลอาชีพ",
+          "companyWork": "บริษัทที่ท่านร่วมงาน หรืออิสระ",
+          "contactInformation": "ข้อมูลการติดต่อ",
+          "email": "E-mail",
+          "expiateDate": "วันหมดอายุ",
+          "facebook": "Facebook",
+          "firstName": "ชื่อ",
+          "identification": "บัตรประชาชชน",
+          "instagram": "Instagram",
+          "language": "ภาษาที่ {number}",
+          "languageAbility": "ความสามารถด้านภาษา",
+          "lastName": "นามสกุล",
+          "lengthOfGuide": "ระยะเวลาในการเป็นมัคคุเทศก์ (ปี)",
+          "lengthOfGuideMonth": "ระยะเวลาในการเป็นมัคคุเทศก์ (เดือน)",
+          "licenseNumber": "เลขที่ใบอนุญาติ",
+          "line": "ID Line",
+          "nationality": "สัญชาติ",
+          "other": "อื่นๆ",
+          "phoneNumber": "เบอร์โทรศัพท์",
+          "profile": "ข้อมูลส่วนตัวมัคคุเทศก์",
+          "provinceGuide": "จังหวัดที่ท่านเป็นมัคคุเทศก์",
+          "title": "ลงทะเบียนมัคคุเทศก์",
+          "status": {
+            "click": "คลิกที่นี่",
+            "completed": "คุณได้ทำการลงทะเบียนมัคคุเทศก์แล้ว",
+            "waiting": "รอการยืนยันการลงทะเบียนมัคคุเทศก์ กรุณาตรวจสอบที่อีเมลของคุณ"
+          }
+        },
+        "menus": {
+          "community": "ชุมชนท่องเที่ยว",
+          "entrepreneur": "ผู้ประกอบการท่องเที่ยว",
+          "guide": "มัคคุเทศก์",
+          "title": "ลงทะเบียน"
+        },
+        "popup": {
+          "confirm": {
+            "titleCommunity": "ยืนยันการลงทะเบียนชุมชนท่องเที่ยว ?",
+            "titleOrganization": "ยืนยันการลงทะเบียนผู้ประกอบการ ?",
+            "titleGuide": "ยืนยันการลงทะเบียนมัคคุเทศก์ ?"
+          },
+          "done": {
+            "title": "ระบบจะส่งลิงก์ยืนยันผ่านอีเมลของท่าน"
+          },
+          "privacyPolicy": {
+            "description": {
+              "aboutPrivacyPolicy": "หากคุณมีความเห็นว่านโยบายความเป็นส่วนตัวของ smartcbt.dasta.or.th ไม่ครบถ้วนหรือไม่ถูกต้อง ในส่วนที่เกี่ยวข้องกับการใช้งานของสมาชิก กรุณาติดต่อ Administrator เพื่อแก้ไขสถานการณ์หากมีความจำเป็น",
+              "changesPrivacyPolicies": "การเปลี่ยนแปลงใดๆเกี่ยวกับนโยบายความเป็นส่วนตัวในอนาคตจะปรากฏในหน้านี้และหากเหมาะสม คุณจะได้รับแจ้งผ่านทางอีเมล",
+              "collectingWhatInformation": "ก. ข้อมูลที่คุณมอบให้แก่ smartcbt.dasta.or.th เพื่อที่จะสร้างหน้าประวัติออนไลน์ของคุณพร้อมชุดข้อมูลที่คุณได้ระบุหรือรับข้อเสนอและจดหมายข่าวสาร โดยคุณจำเป็นที่จะต้องกรอกข้อมูลส่วนตัวบางอย่างให้แก่ อพท.ดังที่เครื่องหมาย ‘*’ ปรากฏในแบบฟอร์มสมัครสมาชิก \nความพึงพอใจของผู้ใช้ \nสมาชิกสามารถเลือกที่จะให้ข้อมูลความต้องการสำหรับธุรกิจการท่องเที่ยวและข้อมูลส่วนตัวต่าง ๆ แก่ smartcbt.dasta.or.th ที่จะนำไปใช้ช่วยเหลือ smartcbt.dasta.or.th/travelmart ในการนำเสนอข้อมูลเกี่ยวกับสินค้า บริการ ให้ตรงตามความพึงพอใจของสมาชิก \n<p>ข. ข้อมูลที่  SMARTCBT.DASTA.OR.TH รวบรวมโดยอัตโนมัติ ไอพี แอดเดรส \nSmartcbt.dasta.or.th รวบรวมข้อมูลหมายเลขไอพี แอดเดรส เพื่อช่วยวิเคราะห์ปัญหาเกี่ยวกับเซอร์เวอร์และการบริหารจัดการระบบ โปรดทราบว่าอพท. อาจมีลิ้งค์ไปยังเว็บไซต์ภายนอกปรากฏในเว็บไซต์ของเรา ซึ่งสามารถรวบรวมข้อมูลส่วนตัวของคุณได้ นโยบายความเป็นส่วนตัวนี้ไม่ได้ครอบคลุมถึงการรวบรวมข้อมูลและนโยบายของเว็บไซต์เหล่านั้น นอกเหนือจากหมายเลขไอพี แอดเดรส  smartcbt.dasta.or.th รวบรวมข้อมูลบางอย่างโดยอัตโนมัติเมื่อคุณเข้าเยี่ยมชมเว็บไซต์ ข้อมูลบางส่วนนั้นมาจาก cookies (ดูด้านล่าง) และ sessions อพท. ยังสามารถรวบรวมข้อมูลประเภทของเบราว์เซอร์ ระบบปฏิบัติการของคุณ วันและเวลาที่เข้าเยี่ยมชมเว็บไซต์ และ Internet address ของเว็บไซต์ที่เชื่อมต่อคุณมายัง  smartcbt.dasta.or.th ได้โดยอัตโนมัติ</p> \n<p>ค. Cookies \nCookies คือ ชิ้นส่วนข้อมูลเล็ก ๆ ที่ถูกจัดเก็บโดยเบราว์เซอร์ของคุณ ไว้ใน hard drive ของคอมพิวเตอร์ของคุณ smartcbt.dasta.or.th ใช้ประโยชน์จาก Cookies นี้หลากหลายวิธี หนึ่งคือทำให้คุณสามารถเข้าสู่ระบบได้โดยไม่ต้องพิมพ์ชื่อสมาชิกทุกครั้ง โดยใช้เพียงรหัสผ่านในการเข้าสู่ระบบ สองคือใช้ Cookies ในการติดตามการใช้งานของผู้ใช้ทั่วไป หรือ “Guest” เว็บเบราว์เซอร์ทั่วไปจะยอมรับการทำงานของ Cookies โดยอัตโนมัติ แต่คุณสามารถปิดกั้นการทำงานของ Cookies ได้ที่ตัวเลือกเบราว์เซอร์ของคุณ</p>",
+              "contactUs": "หากคุณมีคำถาม ข้อคิดเห็น และคำขอต่าง ๆ เกี่ยวกับนโยบายความเป็นส่วนตัว การกรอกแบบฟอร์มที่ “ติดต่อเรา”",
+              "editPersonalInformation": "อพท. จะยอมรับว่าข้อมูลที่ผู้ใช้มอบให้นั้นมีความสมบูรณ์และถูกต้อง ดังนั้นจึงเป็นสิ่งสำคัญที่เราจะทำให้คุณสามารถปรับเปลี่ยนหรืออัพเดตข้อมูลที่คุณคิดว่าไม่ถูกต้องหรือไม่ครบถ้วน เราจึงทำให้การแก้ไขข้อมูลเป็นไปได้ง่ายที่สุดเท่าที่จะทำได้ ในการปรับแก้ข้อมูล เข้าสู่ระบบและคลิกข้อมูลบัญชีของคุณ หากคุณพบปัญหาในการเปลี่ยนข้อมูลส่วนตัวของคุณ กรุณาติดต่อ Administrator ผ่านฟอร์มที่ “ติดต่อเรา”",
+              "howToUsePersonalInformation": "อพท. ไม่ขายข้อมูลชื่อ และข้อมูลประวัติส่วนตัวของลูกค้าให้แก่กลุ่มบุคคลที่สาม ทั้งในปัจจุบันและในอนาคต ในบางครั้ง smartcbt.dasta.or.th จะจ้างกลุ่มบุคคลที่สามมาดำเนินการโครงการต่าง ๆ อาทิเช่น แคมเปญการตลาด และการสำรวจตลาด ทำให้อพท. มีความจำเป็นที่จะมอบข้อมูลเหล่านี้ให้แก่กลุ่ม เพื่อการดำเนินการโครงการดังกล่าว ข้อมูลเหล่านี้จะได้รับการรักษาความปลอดภัยภายใต้ข้อตกลงลับ และจะนำไปใช้เพื่อบรรลุวัตถุประสงค์ของโครงการของ smartcbt.dasta.or.th การท่องเที่ยวแห่งประเทศไทย และเว็บไซต์ของอพท. ที่เกี่ยวข้องเท่านั้น อพท. ไม่อนุญาตให้กลุ่มบุคคลที่สามโฆษณาบน smartcbt.dasta.or.th และไม่มีการรวบรวม Cookies ของกลุ่มบุคคลที่สามเพื่อผลประโยชน์เชิงโฆษณา กลุ่มบุคคลที่สามกลุ่มเดียวที่สามารถโพส “โฆษณา” บน smartcbt.dasta.or.th ได้คือ องค์กรไม่แสวงหาผลกำไรที่เกี่ยวข้องกับหน่วยงานรัฐบาล",
+              "keepYourPersonalInformationSafely": "หากคุณต้องการรักษาข้อมูลส่วนตัวของคุณให้ปลอดภัย วิธีที่ง่ายที่สุดคือการให้ข้อมูลส่วนตัวของคุณกับเราน้อยที่สุดเท่าที่ทำได้ แม้ว่าคุณจำเป็นต้องให้ข้อมูลส่วนตัวบางอย่างสำหรับการสมัครสมาชิกกับ smartcbt.dasta.or.th การให้ข้อมูลเกี่ยวกับตัวคุณอย่างครบถ้วนและถูกต้องจะทำให้การใช้งานเว็บไซต์เกิดประโยชน์และมีประสิทธิภาพอย่างสูงสุด มาตรการเลือกไม่รับ ไม่ว่าจะเวลาใดก็ตาม คุณสามารถยกเลิกการใช้งานคุณสมบัติใด ๆ ของ smartcbt.dasta.or.th ได้ หรือเลือกให้ smartcbt.dasta.or.th หยุดรวบรวมข้อมูลส่วนตัวของคุณที่ไม่ได้เป็นส่วนสำคัญของการใช้งานของคุณ ในฐานะสมาชิก ในบางโอกาส คุณจะได้รับอีเมลเกี่ยวกับข่าวสารของสินค้า ข้อเสนอพิเศษ กิจกรรม เทศกาล และบริการใหม่ ๆ ของ smartcbt.dasta.or.th โดยอพท. หวังว่าข่าวสารเหล่านี้จะเป็นที่น่าสนใจสำหรับคุณ อย่างไรก็ตาม หากคุณไม่ต้องการรับข่าวสารเหล่านี้ คลิกยกเลิกที่ลิ้งก์ในอีเมลที่คุณได้รับ smartcbt.dasta.or.th สงวนสิทธิ์ในการจำกัดแค่สมาชิกที่จะได้รับอีเมลเหล่านี้ เนื่องด้วยการส่งอีเมลเป็นช่องทางที่มีประสิทธิภาพในการเข้าถึงคุณ",
+              "otherInformationAboutPrivacyPolicies": "อาจมีลิ้งก์ไปยังเว็บไซต์อื่น ๆ ปรากฏ ขอให้คุณทราบว่าหากคุณคลิกลิ้งก์เหล่านี้ คุณจะเข้าสู่เว็บไซต์อื่นที่ไม่ได้อยู่ในความรับผิดชอบของ smartcbt.dasta.or.th เราขอแนะนำให้คุณอ่านนโยบายความเป็นส่วนตัวของเว็บไซต์เหล่านั้นเนื่องด้วยเนื้อหาของนโยบายอาจแตกต่างจากของ smartcbt.dasta.or.th และคุณคือคนเดียวที่จะรักษารหัสผ่านลับในการเข้าสู่ระบบและข้อมูลอื่น ๆ ของบัญชี กรุณาระมัดระวัง รับผิดชอบ และตื่นตัวต่อข้อมูลนี้ ทุกครั้งที่คุณออนไลน์ นอกจากสถานการณ์ข้างต้น smartcbt.dasta.or.th อาจต้องเปิดเผยข้อมูลของสมาชิกหากได้รับคำสั่งทางกฏหมายจากศาล โดยหน่วยงานของรัฐและหน่วยงานผู้บังคับใช้กฎหมายอื่น ๆ หากการเปิดเผยข้อมูลมีความจำเป็นสำหรับการปกป้องสิทธิและทรัพย์สินของ smartcbt.dasta.or.th และการเปิดเผยข้อมูลมีความจำเป็นสำหรับการระบุตัว ติดต่อ และเป็นการปฏิบัติทางกฎหมายต่อบุคคลที่ได้สร้างความเสียหายต่อสิทธิและทรัพย์สินของเรา ไม่ว่าจะโยเจตนาหรือไม่ก็ตาม หรือหากมีบุคคลอื่นได้รับความเสียหายจากกิจกรรมเช่นนั้น การเปลี่ยนแปลงในเนื้อหาของนโยบายความเป็นส่วนตัว ที่เกี่ยวกับวิธีการที่ smartcbt.dasta.or.th ใช้ข้อมูลส่วนตัวของคุณจะปรากฏในนโยบายความเป็นส่วนตัวฉบับใหม่ในอนาคต ทั้งนี้ คุณสามารถเสนอข้อห่วงกังวลเกี่ยวกับนโยบายความเป็นส่วนตัวและการดำเนินงานเกี่ยวกับความเป็นส่วนตัวของเราได้ที่อีเมลสำหรับการติดต่อของ smartcbt.dasta.or.th และระบุถึงนโยบายความเป็นส่วนตัวในหัวข้อเรื่อง smartcbt.dasta.or.th จะพยายามตอบข้อห่วงกังวลและข้อสงสัยดังกล่าว",
+              "whatKindOfSecurity": "ใช้รักษาความเป็นส่วนตัวของคุณ อพท. ทราบดีว่าเมื่อคุณมอบข้อมูลประเภทใด ๆ ให้แก่เราแล้ว คุณไว้วางใจให้เราเก็บรักษาไว้อย่างปลอดภัยจากการนำไปใช้โดยไม่ได้รับอนุญาต เรามี software รักษาความปลอดภัยที่อัพเดตอยู่เสมอและมาตรการต่าง ๆ ที่จะทำให้แน่ใจว่าข้อมูลส่วนตัวของคุณนั้นปลอดภัย",
+              "whoIsThisPrivacyPolicy": "นโยบายความเป็นส่วนตัวนี้ใช้กับธุรกิจที่เข้าร่วมกับ smartcbt.dasta.or.th และสมัครใจที่จะเปิดเผยข้อมูลแก่เว็บไซต์เพื่อวัตถุประสงค์ทางการตลาดท่องเที่ยว โดยผู้ประกอบการธุรกิจท่องเที่ยวและวิสาหกิจชุมชนที่มีศักยภาพในประเทศไทยที่สมัครใจเป็นสมาชิกของ smartcbt.dasta.or.th \nนโยบายความเป็นส่วนตัวนี้ไม่ได้ใช้กับเว็บไซต์และข้อมูลอิสระของบริษัทที่ smartcbt.dasta.or.th ไม่ได้เป็นเจ้าของและควบคุม กลุ่มบุคคลที่ไม่ได้เป็นลูกจ้างของ smartcbt.dasta.or.th และเว็บไซต์ภายนอกที่คุณอาจสามารถเชื่อมต่อไปได้ผ่านเว็บไซต์นี้ ข้อมูลเพิ่มเติมเกี่ยวกับการแบ่งปันข้อมูลกับเว็บไซต์ภายนอกสามารถดูได้ด้านล่าง"
+            },
+            "header": {
+              "aboutPrivacyPolicy": "7. คุณจะทำอย่างไรเกี่ยวกับการละเมิดนโยบายของ SMARTCBT.DASTA.OR.TH",
+              "changesPrivacyPolicies": "9. การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว",
+              "collectingWhatInformation": "2. SMARTCBT.DASTA.OR.TH รวบรวมข้อมูลอะไร?",
+              "contactUs": "10. ติดต่อได้ที่",
+              "editPersonalInformation": "5. คุณสามารถแก้ไขข้อมูลส่วนตัวที่ SMARTCBT.DASTA.OR.TH บันทึกไว้ให้ถูกต้องได้อย่างไร?",
+              "howToUsePersonalInformation": "3. TOURISMTHAILAND.ORG นำข้อมูลส่วนตัวไปใช้อย่างไร เช่น ข้อมูลจะถูกแบ่งปันกับใคร?",
+              "keepYourPersonalInformationSafely": "6. คุณจะรักษาข้อมูลส่วนตัวของคุณให้ปลอดภัยได้อย่างไร?",
+              "otherInformationAboutPrivacyPolicies": "8. ข้อมูลอื่น ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวของ SMARTCBT.DASTA.OR.TH ที่คุณควรรู้ มีอะไรบ้าง",
+              "whatKindOfSecurity": "4. การรักษาความปลอดภัยรูปแบบไหนที่ SMARTCBT.DASTA.OR.TH",
+              "whoIsThisPrivacyPolicy": "1. นโยบายความเป็นส่วนตัวนี้ใช้กับใคร?"
+            },
+            "subTitle": "คุณสามารถจัดการข้อมูลที่คุณนำเสนอแก่ Smartcbt.dasta.or.th ได้ ในฐานะผู้เยี่ยมชม smartcbt.dasta.or.th \nคุณสามารถจัดการควบคุมและเข้าถึงการใช้งานในส่วนต่างๆตามขอบเขตุความเหมาะสมขึ้นอยู่กับความเกี่ยวเนื่องของ user และระบบ อันได้แก่ การจัดการข้อมูลต่างๆ ที่ส่งให้ smartcbt.dasta.or.th สิ่งสำคัญคือ การที่ อพท. เคารพในความเป็นส่วนตัวของผู้เยี่ยมชม smartcbt.dasta.or.th อยู่เสมอ เพราะการรักษาความเป็นส่วนตัวของคุณคือสิ่งสำคัญสำหรับเรา คุณวางใจได้ว่า smartcbt.dasta.or.th สามารถเปิดเผยข้อมูลเหล่านี้แก่คุณ: <ul><li>เรารวบรวมข้อมูลส่วนตัวของคุณอย่างไร</li> <li>เรารวบรวมข้อมูลอะไรจากคุณ</li> <li>ข้อมูลจะถูกแบ่งปันกับใคร (หากมี)</li> <li>มาตรการเลือกไม่รับ การเข้าถึงข้อมูล (รวมถึงการอัพเดตและแก่ไขข้อมูลให้ถูกต้อง)</li> <li>การรักษาความปลอดภัยของข้อมูล</li> <li>ข้อมูลอื่น ๆ เกี่ยวกับความเป็นส่วนตัว</li></ul>",
+            "title": "นโยบายความเป็นส่วนตัว"
+          },
+          "termsAndConditions": {
+            "description": {
+              "customerCommunication": "ก่อนมีรายชื่อปรากฏใน smartcbt.dasta.or.th Administrator จะตรวจสอบ/ เปิดใช้งาน ข้อมูลที่จำเป็นของแต่ละธุรกิจและผู้ให้บริการว่ามีการแบ่งประเภทถูกต้องเหมาะสม และให้ข้อมูลเกี่ยวกับสินค้า บริการ และอื่น ๆ แก่เว็บไซต์อย่างถูกต้อง",
+              "howDoWeUseInformation": "ข้อมูลที่เรารวบรวมจากคุณเมื่อคุณสมัครสมาชิกกับ smartcbt.dasta.or.th/travelmart จะถูกนำไปใช้ ดังต่อไปนี้: <ul><li>เผยแพร่ข้อมูลเกี่ยวกับธุรกิจและรายละเอียดการให้บริการ ได้แก่ รูปภาพ วันที่และเวลาเปิดปิด ที่อยู่ โทรศัพท์ติดต่อ รวมถึงข้อมูลและรายละเอียดจากการลงทะเบียน บนสื่อออนไลน์ในเครือ อพท. ได้แก่ เว็บไซต์ smartcbt.dasta.or.th และ/หรือ เว็บไซต์อื่นๆ ในเครือของ อพท.</li> <li>ข้อมูลส่วนตัวของบัญชีผู้ประกอบการ ข้อมูลผู้ประสานงานของร้านค้า หรือวิสาหกิจชุมชน</li> <li>จะใช้สำหรับติดต่อสื่อสารระหว่าง เจ้าหน้าที่ อพท. กับผู้ประกอบการในชุมชนเท่านั้นและเพื่อประชาสัมพันธ์ข่าวสารของ</li></ul> \nอพท. ท่านสามารถศึกษาวิธีการที่เราประมวลผลข้อมูลส่วนบุคคลของคุณได้จากนโยบายความเป็นส่วนตัว",
+              "informationCollectedDuringMembership": "เพื่อให้มีรายชื่อปรากฏใน smartcbt.dasta.or.th/travelmart ธุรกิจและผู้ให้บริการต่าง ๆ ต้องเข้าร่วมกระบวนการในการให้ข้อมูลสินค้า บริการ และเนื้อหาอื่น ๆ ที่เกี่ยวข้องกับการท่องเที่ยวในประเทศไทย ผู้ประกอบการธุรกิจท่องเที่ยวและวิสาหกิจชุมชนที่ให้บริการใดๆ ที่ประสงค์ลงทะเบียนเพื่อให้มีชื่อปรากฏใน smartcbt.dasta.or.th/travelmart ต้องให้ข้อมูลอีเมลแอดเดรส เบอร์โทรศัพท์ที่ติดต่อได้ในวัน/เวลาทำการ นอกจากนี้ Administrator ของ smartcbt.dasta.or.th/travelmart จำเป็นที่จะต้องสามารถติดต่อตัวแทนของธุรกิจและผู้ให้บริการต่าง ๆ ที่มีข้อมูลสินค้าและบริการปรากฏบนเว็บไซต์ได้ผ่านทางโทรศัพท์ (ตอบรับในช่วงเวลาทำการ จันทร์-ศุกร์) และ/หรือ ตรวจเช็กอีเมล (อย่างน้อยวันละครั้ง) ผู้ประกอบการธุรกิจท่องเที่ยวและวิสาหกิจชุมชนต้องใส่ข้อมูลที่บังคับให้ครบถ้วน โดย Administrator จะตรวจสอบข้อมูลบัญชีการเป็นสมาชิกของ smartcbt.dasta.or.th/travelmart",
+              "inspectionAndMaintenance": "ก่อนมีรายชื่อปรากฏใน smartcbt.dasta.or.th/travelmart Administrator จะตรวจสอบ/ เปิดใช้งาน ข้อมูลที่จำเป็นของแต่ละธุรกิจและผู้ให้บริการว่ามีการแบ่งประเภทถูกต้องเหมาะสม และให้ข้อมูลเกี่ยวกับสินค้า บริการ และอื่น ๆ แก่เว็บไซต์อย่างถูกต้อง การเพิ่มเติม แก้ไข หรืออัพเดตข้อมูลบน smartcbt.dasta.or.th/travelmart จะปรากฏบนเว็บไซต์ได้โดยดุลยพินิจของ smartcbt.dasta.or.th/travelmart smartcbt.dasta.or.th/travelmart ไม่รับผิดชอบต่อความถูกต้องของข้อมูลที่ธุรกิจและผู้ให้บริการเสนอแก่ระบบ แม้ว่าข้อมูลต่าง ๆ เหล่านั้นจะเกี่ยวข้องกับการท่องเที่ยวในประเทศไทย เนื้อหาเหล่านั้นจะถูกยึดถือว่าถูกต้องและถูกกฎหมาย โดย smartcbt.dasta.or.th/travelmart และหน่วยงานที่เกี่ยวข้องจะไม่รับผิดชอบต่อการละเมิดลิขสิทธิ์ที่ธุรกิจและผู้ให้บริการที่มีรายชื่อปรากฏบนเว็บไซต์ได้กระทำ เนื้อหาที่ปรากฏบนเว็บไซต์ smartcbt.dasta.or.th/travelmart อาจถูกลบหาก : <ul><li>ธุรกิจและผู้ให้บริการนั้นๆ ไม่ได้ดำเนินการกิจการตามที่ได้บรรยายไว้ในหน้าเนื้อหานั้นๆ แล้ว และ Administrator จากsmartcbt.dasta.or.th/travelmart ไม่สามารถติดต่อธุรกิจและผู้ให้บริการนั้น ๆ ผ่านอีเมลแอดเดรสหรือเบอร์โทรศัพท์ที่ระบุไว้ได้</li> <li>ธุรกิจและผู้ให้บริการนั้นๆ ได้รับการร้องเรียนจำนวนมากเกี่ยวกับคุณภาพของสินค้าและบริการ ที่อาจต่ำกว่ามาตรฐานที่ smartcbt.dasta.or.th/travelmart ตั้งไว้ รวมไปถึงอาจมีความเกี่ยวข้องกับกิจกรรมที่ผิดกฎหมาย พฤติกรรมที่ไม่เหมาะสม และการกระทำที่ไม่เป็นมืออาชีพ</li> <li>Administrator ของ smartcbt.dasta.or.th/travelmart มีสิทธิที่จะลบข้อมูลของธุรกิจและผู้ให้บริการที่ไม่สามารถแสดงผลงานได้ตรงตามมาตรฐานที่ smartcbt.dasta.or.th ตั้งไว้ และความคาดหวังจากนักท่องเที่ยวที่มีมาตรฐานดังกล่าว</li></ul>",
+              "liability": "องค์การบริหารการพัฒนาพื้นที่พิเศษ เพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) ไม่มีส่วนเกี่ยวข้องและไม่รับผิดชอบต่อการให้บริการ การจอง หรือการซื้อขายสินค้าบนหน้าเว็บไซต์ หากมีข้อโต้แย้งหรือความเสียหายใดๆ เกิดขึ้นกับลูกค้าหรือผู้ให้บริการ จะต้องดำเนินการตามกฎหมายด้วยตนเอง",
+              "universalPolicy": "หลักการของ SMART CBT คือการให้ข้อมูลเกี่ยวกับชุมชนที่จัดตั้งอยู่ในพื้นที่พิเศษภายใต้ องค์การบริหารการพัฒนาพื้นที่พิเศษ เพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) ประเทศไทย แก่บุคคลทั่วไปและผู้ประกอบการธุรกิจการท่องเที่ยว และช่องทางในการเข้าถึงเจ้าของกิจการ สินค้า และผู้ให้บริการเกี่ยวกับการท่องเที่ยวในชุมชน ดังนั้น องค์กรหรือบุคคลใด ๆ เป็นเจ้าของกิจการ สินค้า และผู้ให้บริการเกี่ยวกับการท่องเที่ยว สามารถมีรายชื่อปรากฏบน smartcbt.dasta.or.th ได้โดยไม่เสียค่าใช้จ่าย"
+            },
+            "header": {
+              "customerCommunication": "5. การติดต่อสื่อสารของลูกค้า",
+              "howDoWeUseInformation": "2. เรานำข้อมูลไปใช้อย่างไร",
+              "informationCollectedDuringMembership": "3. ข้อมูลที่รวบรวมระหว่างกระบวนการสมัครสมาชิก",
+              "inspectionAndMaintenance": "4. การตรวจสอบสมาชิกและการบำรุงรักษา",
+              "liability": "6. ความรับผิด",
+              "universalPolicy": "1. ความเป็นสากลของนโยบาย"
+            },
+            "title": "ข้อตกลงและเงื่อนไข"
+          }
+        }
+      },
+      "rescheduleNegotiation": {
+        "cancel": "ยกเลิกการเจรจา",
+        "communityRequest": "ทางชุมชนต้องการเปลี่ยนเวลาการจัดเจรจา",
+        "confirm": "ยืนยันการเปลี่ยนเวลา",
+        "organizationRequest": "ทางผู้ประกอบการต้องการเปลี่ยนเวลาการจัดเจรจา",
+        "title": "เปลี่ยนเวลาการเจรจา"
+      },
+      "roleMenus": {
+        "community": "Community",
+        "guide": "Guide",
+        "organization": "Organizition"
+      },
+      "scheduleEvents": {
+        "title": "กำหนดการจัดกิจกรรม"
+      },
+      "sell": {
+        "allProjects": "All Projects",
+        "description": "<h3>หลักเกณฑ์การคัดเลือกและประเมินศักยภาพของชุมชนจากการนำเสนอขาย มาจากหัวข้อการอบรมด้าน 4 ข้อดังนี้</h3>\n <ul><li>แนวคิดการนำเสนอขาย เพื่อให้ชุมชนนำไปประยุกต์ใช้กับการนำเสนอขายเส้นทางกิจกรรมท่องเที่ยว และสินค้าทางการท่องเที่ยวโดยชุมชนได้</li><li>เทคนิคการนำเสนอขายให้โดนใจผู้ฟัง และสร้างความมั่นใจแต่ผู้นำเสนอ</li><li>การออกแบบรายละเอียดการนำเสนอผ่านแผนผังการนำเสนอขาย ( Pitching Canvas )จนเกิดความครบถ้วนในการเตรียมความพร้อมก่อนการนำเสนอ หากใช้แนวคิด 4E</li><li>การสร้างเรื่องเล่าสำหรับการนำเสนอ ( Storytelling for Pitching )</li></ul>",
+        "descriptionExpert1": "อาจารย์คณะนิเทศศาสตร์ มหาวิยาลัยหอการค้าไทย ผู้เชี่ยวชาญด้านการสร้างแบรนด์และการสื่อสารการตลาด",
+        "descriptionExpert2": "Founder & Managing Director, BRAND STUDIO (THAILAND) Co.,Ltd Head of Aviation Business Management, SRIPATUM UNIVERSITY Chonburi campus",
+        "event": "กิจกรรมชุมชน",
+        "expert": "ผู้เชี่ยวชาญ",
+        "nameExpert1": "ผศ.ดร.บุปผา ลาภะวัฒนาพันธ์",
+        "nameExpert2": "ผศ.ดร.ปิ่นปินัทธ์ จ่าดา",
+        "sellPresentationTable": "Pitching list",
+        "table": {
+          "activityName": "Activity list",
+          "click": "Click",
+          "date": "Date",
+          "displayTime": "{time} น.",
+          "presentationLink": "Link",
+          "province": "Province",
+          "time": "Time"
+        },
+        "title": "Pitching"
+      },
+      "training": {
+        "date": "Date of training",
+        "lecturer": "Lecturer",
+        "link": "Watch Training",
+        "position": "Position",
+        "subject": "Subject {subject}",
+        "video_title": "Training Video",
+        "tabs": {
+          "header": {
+            "community": "Training Session for Community Enterprise",
+            "organization": "Training Session for Tourism Enterperneur"
+          },
+          "title": {
+            "community": "For Community",
+            "organization": "For Enterperneur"
+          }
+        },
+        "time": "Time {start} น. - {end} น.",
+        "title": "Traing for Educate",
+        "topic": "Topic"
+      }
+    },
+    "userManual": {
+      "menu": {
+        "api": "คู่มือ API",
+        "carbonFootprint": "คู่มือ Carbon Footprint",
+        "photoBank": "คู่มือ Photo Bank",
+        "siaSroi": "คู่มือ SIA / SROI",
+        "travelMart": "คู่มือ Travel Mart"
+      },
+      "title": "คู่มือการใช้งานเว็บไซต์",
+      "cbtTitle": "คู่มือการใช้งาน CBT Thailand",
+      "type": {
+        "staff": "สําหรับผู้ปฏิบัติงาน อพท.",
+        "community": "สำหรับชุมชน"
+      }
+    },
+    "webPortal": {
+      "api": {
+        "description": "ชุดคำสั่งและกฎเกณฑ์ที่ออกแบบมาเพื่อให้แอปพลิเคชันหรือระบบต่างๆ ซึ่งสามารถเชื่อมต่อและแลกเปลี่ยนข้อมูลกันได้อย่างมีประสิทธิภาพผ่านช่องทางที่กำหนดไว้ เป็นส่วนสำคัญในการเปิดโอกาสให้ระบบต่างๆ สามารถทำงานร่วมกันได้ในสถานการณ์ที่ต้องการแลกเปลี่ยนข้อมูลหรือบริการ นักพัฒนาสามารถนำ API ใช้เพื่อติดต่อกับแหล่งข้อมูลหรือบริการภายนอกเพื่อเพิ่มความสามารถหรือความหลากหลายให้แก่แอปพลิเคชันได้อย่างเป็นระบบจากฐานของระบบ SmartCBT",
+        "title": "API"
+      },
+      "carbonFootprint": {
+        "description": "ระบบ CFP (Carbon footprint system) เป็นการประเมินค่าการปลดปล่อยคาร์บอนไดออกไซด์ของกิจกรรมที่เกิดขึ้น จากชุมชนเป้าหมายของทาง อพท. ที่ช่วยให้ผู้ใช้งานได้ประเมินกิจกรรม ของตนเอง รวมถึงการปรับ ลด ชดเชย ที่จะช่วยให้กิจกรรมของชุมชนนั้น เป็นส่วนหนึ่งที่สนับสนุนการลดภาวะโลกร้อน",
+        "title": "Carbon Footprint"
+      },
+      "cbtThailand": {
+        "button": "ดูข้อมูลเพิ่มเติม",
+        "description": "สัมผัสประสบการณ์การท่องเที่ยวสุดพิเศษ ผ่านกิจกรรมการท่องเที่ยวโดยชุมชนสุดสร้างสรรค์ เรียนรู้ความหลากหลายของวิถีชีวิต ผู้คน ผ่านวัฒนธรรมและประเพณีอันสวยงาม",
+        "title": "CBT Thailand"
+      },
+      "photoBank": {
+        "description": "Photo Bank: ระบบจัดเก็บคลังภาพ สำหรับกิจกรรมในพื้นที่พิเศษ ภายใต้การดูแลของ องค์การบริหารการพัฒนาพื้นที่พิเศษ เพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) จัดทำขึ้นเพื่ออำนวยความสะดวกแก่เจ้าหน้าที่และบุคคลที่เชื่อมโยงกับระบบ พร้อมช่องทางการอัปโหลดภาพสำหรับช่างภาพที่ร่วมกิจกรรมกับทางอพท.",
+        "title": "Photo Bank"
+      },
+      "saiSroi": {
+        "description": "การประเมินผลกระทบทางสังคม (Social Impact Assessment : SIA) และผลตอบแทนทางสังคมจากการ ลงทุนโครงการ (Social Return On Investment : SROI) เป็นเครื่องมือสำหรับองค์การที่ทำงานเกี่ยวข้องกับสังคม และการดำเนินกิจกรรมด้านความรับผิดชอบต่อสังคม ใช้สำหรับนำมาวิเคราะห์ความคุ้มค่าของการสนับสนุนงบประมาณ (ต้นทุน) ขององค์การว่า สามารถสร้างผลตอบแทนคืนสู่สังคมได้อย่างคุ้มค่า มีประสิทธิภาพและมีประสิทธิผล เชิงผลลัพธ์ (Outcome) และผลกระทบ (Impact) หรือไม่ ซึ่งในปัจจุบันเครื่องมือ SROI ได้รับความสนใจจากองค์การ ที่ทำงานเกี่ยวข้องกับสังคมทั่วโลกและถูกนำมาใช้เป็นเครื่องมือวัดความสำเร็จของโครงการเพื่อสังคมทั้งใน โครงการภาครัฐ รวมถึงกลายเป็นเกณฑ์ชี้วัดระดับความสำเร็จของกิจกรรม ในหลายบริบท",
+        "title": "SIA/SROI"
+      },
+      "travelMart": {
+        "button": "ดูข้อมูลเพิ่มเติม",
+        "description": "ช่องทางสำหรับการสร้างเสริมโอกาสและเพิ่มศักยภาพทางธุรกิจท่องเที่ยว ให้กับทางวิสาหกิจชุมชนและผู้ประกอบการธุรกิจท่องเที่ยวพร้อมระบบ Recommended List เพื่อเพิ่มความแม่นยำและตอบโจทย์ความต้องการสำหรับการแนะนำคู่ค้าทางธุรกิจ",
+        "title": "Travel Mart"
+      }
+    }
+  },
+  "errors": {
+    "custom": "Invalid input",
+    "customRequired": "กรุณาระบุข้อมูล",
+    "invalid_arguments": "Invalid function arguments",
+    "invalid_date": "Invalid date",
+    "invalid_enum_value": "Invalid enum value. Expected {- options}, received '{received}'",
+    "invalid_intersection_types": "Intersection results could not be merged",
+    "invalid_literal": "Invalid literal value, expected {expected}",
+    "invalid_return_type": "Invalid function return type",
+    "invalid_string": {
+      "cuid": "Invalid {validation}",
+      "datetime": "Invalid {validation}",
+      "email": "Invalid {validation}",
+      "endsWith": "Invalid input: must end with \"{endsWith}\"",
+      "regex": "Invalid",
+      "startsWith": "Invalid input: must start with \"{startsWith}\"",
+      "url": "Invalid {validation}",
+      "uuid": "Invalid {validation}"
+    },
+    "invalid_type": "Expected {expected}, received {received}",
+    "invalid_type_received_undefined": "Required",
+    "invalid_union": "Invalid input",
+    "invalid_union_discriminator": "Invalid discriminator value. Expected {- options}",
+    "not_finite": "Number must be finite",
+    "not_multiple_of": "Number must be a multiple of {multipleOf}",
+    "password_not_match": "Password not match",
+    "too_big": {
+      "array": {
+        "exact": "Array must contain exactly {maximum} element(s)",
+        "inclusive": "Array must contain at most {maximum} element(s)",
+        "not_inclusive": "Array must contain less than {maximum} element(s)"
+      },
+      "date": {
+        "exact": "Date must be exactly {- maximum, datetime}",
+        "inclusive": "Date must be smaller than or equal to {- maximum, datetime}",
+        "not_inclusive": "Date must be smaller than {- maximum, datetime}"
+      },
+      "number": {
+        "exact": "Number must be exactly {maximum}",
+        "inclusive": "Number must be less than or equal to {maximum}",
+        "not_inclusive": "Number must be less than {maximum}"
+      },
+      "set": {
+        "exact": "Invalid input",
+        "inclusive": "Invalid input",
+        "not_inclusive": "Invalid input"
+      },
+      "string": {
+        "exact": "String must contain exactly {maximum} character(s)",
+        "inclusive": "String must contain at most {maximum} character(s)",
+        "not_inclusive": "String must contain under {maximum} character(s)"
+      }
+    },
+    "too_small": {
+      "array": {
+        "exact": "Array must contain exactly {minimum} element(s)",
+        "inclusive": "Array must contain at least {minimum} element(s)",
+        "not_inclusive": "Array must contain more than {minimum} element(s)"
+      },
+      "date": {
+        "exact": "Date must be exactly {- minimum, datetime}",
+        "inclusive": "Date must be greater than or equal to {- minimum, datetime}",
+        "not_inclusive": "Date must be greater than {- minimum, datetime}"
+      },
+      "number": {
+        "exact": "Number must be exactly {minimum}",
+        "inclusive": "Number must be greater than or equal to {minimum}",
+        "not_inclusive": "Number must be greater than {minimum}"
+      },
+      "set": {
+        "exact": "Invalid input",
+        "inclusive": "Invalid input",
+        "not_inclusive": "Invalid input"
+      },
+      "string": {
+        "exact": "String must contain exactly {minimum} character(s)",
+        "inclusive": "String must contain at least {minimum} character(s)",
+        "not_inclusive": "String must contain over {minimum} character(s)"
+      }
+    },
+    "unrecognized_keys": "Unrecognized key(s) in object: {- keys}"
+  },
+  "types": {
+    "array": "array",
+    "bigint": "bigint",
+    "boolean": "boolean",
+    "date": "date",
+    "float": "float",
+    "function": "function",
+    "integer": "integer",
+    "map": "map",
+    "nan": "nan",
+    "never": "never",
+    "null": "null",
+    "number": "number",
+    "object": "object",
+    "promise": "promise",
+    "set": "set",
+    "string": "string",
+    "symbol": "symbol",
+    "undefined": "undefined",
+    "unknown": "unknown",
+    "void": "void"
+  },
+  "validations": {
+    "cuid": "cuid",
+    "datetime": "datetime",
+    "email": "email",
+    "regex": "regex",
+    "url": "url",
+    "uuid": "uuid"
+  }
+}

@@ -1,0 +1,8 @@
+# .tbls.yml
+
+# DSN (Database Source Name) to connect database
+dsn: postgres://directus:directus@0.0.0.0:5432/directus
+
+# Path to generate document
+# Default is `dbdoc`
+docPath: doc/schema

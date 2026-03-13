@@ -1,0 +1,46 @@
+name: "deploy-dev-website"
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - "**"
+      - ".github/workflows/webportal-server-dev.yaml"
+
+jobs:  
+
+  deploy:
+    
+    name: Build Image
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Deploy
+      uses: appleboy/ssh-action@master
+      with:
+          host: ${{ secrets.REMOTE_HOST_DEV }}
+          username: ${{ secrets.REMOTE_USER_DEV }}
+          key: ${{ secrets.SSH_PRIVATE_KEY_DEV }}
+          port: 22
+          command_timeout: 200m
+          script: | 
+              cd smartcbt-webportal
+              git pull         
+              rm -rf .env
+              cat > .env << EOF
+              ${{ vars.ENV_DEV }}
+              EOF
+              cd /home/ubuntu/
+              docker compose -f smartcbt-webportal/docker-compose.yml up -d --build
+
+    - name: Google Chat Notification
+      uses: Co-qn/google-chat-notification@releases/v1
+      with:
+        name: Build
+        url: ${{ secrets.DEV_GOOGLE_CHAT_WEBHOOK }}
+        status: ${{ job.status }}
+      if: always()

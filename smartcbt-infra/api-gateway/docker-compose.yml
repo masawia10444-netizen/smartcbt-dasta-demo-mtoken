@@ -1,0 +1,114 @@
+version: "3"
+name: api
+services:
+  kong-database:
+    container_name: kong-database
+    image: postgres:15.4
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./data/postgres/kong:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - "127.0.0.1:5432:5432/tcp"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  kong-migration:
+    container_name: kong-migration
+    image: kong:3.4.2
+    command: "kong migrations bootstrap"
+    restart: on-failure:0
+    environment:
+      KONG_PG_HOST: ${KONG_PG_HOST}
+      KONG_PG_USER: ${KONG_PG_USER}
+      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD}
+      KONG_PG_DATABASE: ${KONG_PG_DATABASE}
+      KONG_PG_PORT: ${KONG_PG_PORT}
+    links:
+      - kong-database
+    depends_on:
+      - kong-database
+
+  kong:
+    container_name: kong
+    image: kong:3.4.2
+    restart: always
+    environment:
+      KONG_PG_HOST: ${KONG_PG_HOST}
+      KONG_PG_USER: ${KONG_PG_USER}
+      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD}
+      KONG_PG_DATABASE: ${KONG_PG_DATABASE}
+      KONG_PG_PORT: ${KONG_PG_PORT}
+      KONG_ADMIN_GUI_LISTEN: ${KONG_ADMIN_GUI_LISTEN}
+      KONG_PROXY_LISTEN: ${KONG_PROXY_LISTEN}
+      KONG_PROXY_LISTEN_SSL: ${KONG_PROXY_LISTEN_SSL}
+      KONG_ADMIN_LISTEN: ${KONG_ADMIN_LISTEN}
+      KONG_PROXY_ACCESS_LOG: ${KONG_PROXY_ACCESS_LOG}
+      KONG_ADMIN_ACCESS_LOG: ${KONG_ADMIN_ACCESS_LOG}
+      KONG_PROXY_ERROR_LOG: ${KONG_PROXY_ERROR_LOG}
+      KONG_ADMIN_ERROR_LOG: ${KONG_ADMIN_ERROR_LOG}
+
+    depends_on:
+      - kong-migration
+      - kong-database
+    healthcheck:
+      test: ["CMD", "kong", "health"]
+      interval: 5s
+      timeout: 2s
+      retries: 15
+    ports:
+      - "8000:8000"
+      - "127.0.0.1:8002:8002/tcp"
+      - "127.0.0.1:8001:8001/tcp"
+    expose:
+      - 8001
+      - 8002
+
+  konga-database:
+    container_name: konga-database
+    image: postgres:9.6
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_KONGA_USER}
+      POSTGRES_DB: ${POSTGRES_KONGA_DB}
+      POSTGRES_PASSWORD: ${POSTGRES_KONGA_PASSWORD}
+      POSTGRES_DATABASE: ${POSTGRES_KONGA_DATABASE}
+    expose:
+      - '5432'
+    volumes:
+      - ./data/postgres/konga:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_KONGA_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  konga:
+    container_name: konga
+    image: pantsel/konga:0.14.9
+    restart: always
+    environment:
+      DB_ADAPTER: ${DB_ADAPTER}
+      DB_HOST: ${DB_HOST}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      TOKEN_SECRET: ${TOKEN_SECRET}
+      DB_DATABASE: ${DB_DATABASE}
+      NODE_ENV: ${NODE_ENV}
+    depends_on:
+      - kong-database
+      - kong
+    ports:
+      - "1337:1338"
+
+networks: 
+  default: 
+      name: network-stack

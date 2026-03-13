@@ -1,0 +1,1600 @@
+{
+  "dasta_objective": [
+    {
+      "dasta_working_objective_id": 4,
+      "detail": null,
+      "selected": true
+    }
+  ],
+  "dasta_working_area": [
+    {
+      "dasta_working_area_id": 1
+    },
+    {
+      "dasta_working_area_id": 4
+    }
+  ],
+  "duration_type": "year",
+  "featured_image": "efbf6b58-1925-43b7-a909-fc01a1642ba5",
+  "has_project_strategies": [
+    {
+      "project_strategies_items_id": 2
+    },
+    {
+      "project_strategies_items_id": 7
+    },
+    {
+      "project_strategies_items_id": 12
+    },
+    {
+      "project_strategies_items_id": 17
+    },
+    {
+      "project_strategies_items_id": 18
+    },
+    {
+      "project_strategies_items_id": 20
+    },
+    {
+      "project_strategies_items_id": 28
+    },
+    {
+      "project_strategies_items_id": 42
+    },
+    {
+      "project_strategies_items_id": 53
+    }
+  ],
+  "project_activities": [
+    {
+      "sort": 1,
+      "status": "published",
+      "title": "1.สร้างระบบ Vertical Indoor Farming"
+    },
+    {
+      "sort": 2,
+      "status": "published",
+      "title": "2. ติดตั้งระบบ Solar Rooftop ระบบ On-Grid ขนาด 300 Watts ให้กับครัวเรือนจำนวน 50 หลัง"
+    },
+    {
+      "sort": 3,
+      "status": "published",
+      "title": "3. พัฒนาระบบไฟธรรมชาติ ในการปลูกผัก Hydoponic"
+    },
+    {
+      "sort": 4,
+      "status": "published",
+      "title": "4. ติดตั้งระบบ Solar Rooftop แบบ Hybrid System ขนาด 500 Watts ที่ Vertical Indoor Farming"
+    },
+    {
+      "sort": 5,
+      "status": "published",
+      "title": "5. ติดตั้งระบบบำบัดน้ำ"
+    }
+  ],
+  "project_budget": "4500000.00",
+  "project_budget_details": [
+    {
+      "amount": 1000000,
+      "detail": "สร้างระบบ Vertical Indoor Farming รองรับการปลูกผักกาดหอม แบบ Hydroponic จำนวน 500 หลุม",
+      "year_no": 1
+    },
+    {
+      "amount": 1500000,
+      "detail": "ติดตั้ง Solar Rooftop ระบบ On-Grid ขนาด 300 Watts ให้กับบ้านในชุมชน 50 หลัง",
+      "year_no": 1
+    },
+    {
+      "amount": 500000,
+      "detail": "พัฒนาระบบแสงไฟธรรมชาติ ในการปลูก Hydoponic",
+      "year_no": 2
+    },
+    {
+      "amount": 500000,
+      "detail": "พัฒนาระบบ Solar Rooftop แบบ Hybrid System ขนาด 500 Watts ที่ Vertical Indoor Farming",
+      "year_no": 2
+    },
+    {
+      "amount": 1000000,
+      "detail": "ทำระบบบำบัดน้ำ เพื่อให้เกิดการใช้อย่างหมุนเวียน",
+      "year_no": 3
+    }
+  ],
+  "project_characteristic": 1,
+  "project_characteristic_other": null,
+  "project_consequence_duration_year": 3,
+  "project_consequence_end_year": 2572,
+  "project_duration_year": 4,
+  "project_end_year": 2569,
+  "project_galleries": [
+    {
+      "directus_files_id": "cb21cdab-07ca-4b7d-829d-0196341e3c5b"
+    }
+  ],
+  "project_locations": {
+    "address": "ชุมชนท่าข้าม ตำบลท่าข้าม จังหวัดพิษณุโลก ",
+    "district": 4,
+    "latitude": "123",
+    "longitude": "321",
+    "postalcode": null,
+    "province": 2,
+    "status": "published",
+    "subdistrict": 33,
+    "title": "ชุมชนท่าข้าม จังหวัดพิษณุโลก"
+  },
+  "project_objectives": [
+    {
+      "no": 1,
+      "objective": "เพื่อส่งเสริมการทำการเกษตรอย่างยั่งยืน และเพิ่มรายได้ให้กับชุมชน"
+    },
+    {
+      "no": 2,
+      "objective": " เพื่อลดค่าครองชีพให้กับคนในชุมชน"
+    },
+    {
+      "no": 3,
+      "objective": "เพื่อลดการปลดปล่อยน้ำเสียลงสู่ชุมชน และธรรมชาติ"
+    },
+    {
+      "no": 4,
+      "objective": "เพื่อลดการใช้สารเคมีในการปลูกผักสวนครัว"
+    }
+  ],
+  "project_outcomes": [
+    {
+      "benefits": [
+        {
+          "based_case_impacts": [
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2570
+            },
+            {
+              "benefit": 90,
+              "impact": 10,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ทำให้เสียพื้นที่ของชุมชนจากการสร้างโรงเรือนไป 10%",
+              "type": 3,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2571
+            },
+            {
+              "benefit": 90,
+              "impact": 10,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ทำให้เสียพื้นที่ของชุมชนจากการสร้างโรงเรือนไป 10%",
+              "type": 3,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2567
+            },
+            {
+              "benefit": 90,
+              "impact": 10,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ทำให้เสียพื้นที่ของชุมชนจากการสร้างโรงเรือนไป 10%",
+              "type": 3,
+              "year": 2570
+            },
+            {
+              "benefit": 90,
+              "impact": 10,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ทำให้เสียพื้นที่ของชุมชนจากการสร้างโรงเรือนไป 10%",
+              "type": 3,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2568
+            },
+            {
+              "benefit": 90,
+              "impact": 10,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ทำให้เสียพื้นที่ของชุมชนจากการสร้างโรงเรือนไป 10%",
+              "type": 3,
+              "year": 2572
+            },
+            {
+              "benefit": 90,
+              "impact": 10,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ทำให้เสียพื้นที่ของชุมชนจากการสร้างโรงเรือนไป 10%",
+              "type": 3,
+              "year": 2569
+            }
+          ],
+          "ex_ante": [],
+          "ex_post": [],
+          "ordering": null,
+          "sort": null,
+          "status": "published",
+          "title": "ช่วยลดมลภาวะจากการกำจัดขยะในแต่ละรอบเพาะปลูก"
+        },
+        {
+          "based_case_impacts": [
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2567
+            }
+          ],
+          "ex_ante": [],
+          "ex_post": [],
+          "ordering": null,
+          "sort": null,
+          "status": "published",
+          "title": "ช่วยลดมลภาวะจากการใช้สารเคมีป้องกันแมลง"
+        }
+      ],
+      "impacts": [
+        {
+          "categorie": "economic",
+          "detail": "<p>1.ทำให้ชุมชนมีรายได้เพิ่มขึ้นจากการทำเกษตรกรรมที่ทันสมัย</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "economic",
+          "detail": "<p>1.รายได้ของชาวบ้านอาจจะลดลง เนื่องจากการทำเกษตรในรูปเเบบปัจจุบันพึ่งพาปัจจัยภายนอกเยอะ เช่น ฤดูกาล</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. เกิดเป็นชุมชนต้นแบบในการทำเกษตรกรรมที่ทันสมัย</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. จะไม่เข้าใจ และเท่าทันถึงเทคโนโลยีการเกษตรยุคใหม่ ที่ช่วยลดต้นทุนในระยะยาวได้</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. ลดการใช้สารเคมี</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. มีการใช้สารเคมีอย่างต่อเนื่อง ในการจัดการกับแมลง</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        }
+      ],
+      "ordering": "3",
+      "sort": 3,
+      "status": "published",
+      "title": "คนในชุมชนมีความรู้ และความเข้าใจในการทำ Vertical Indoor Farming"
+    },
+    {
+      "benefits": [
+        {
+          "based_case_impacts": [
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2658
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2570
+            },
+            {
+              "benefit": 70,
+              "impact": 30,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "บริษัท Smart Farm ร่วมสนับสนุนโครงการคิดเป็นสัดส่วน 30% ของโครงการทั้งหมด",
+              "type": 1,
+              "year": 2567
+            },
+            {
+              "benefit": 70,
+              "impact": 30,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "บริษัท Smart Farm ร่วมสนับสนุนโครงการคิดเป็นสัดส่วน 30% ของโครงการทั้งหมด",
+              "type": 1,
+              "year": 2572
+            },
+            {
+              "benefit": 70,
+              "impact": 30,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "บริษัท Smart Farm ร่วมสนับสนุนโครงการคิดเป็นสัดส่วน 30% ของโครงการทั้งหมด",
+              "type": 1,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2572
+            },
+            {
+              "benefit": 70,
+              "impact": 30,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "บริษัท Smart Farm ร่วมสนับสนุนโครงการคิดเป็นสัดส่วน 30% ของโครงการทั้งหมด",
+              "type": 1,
+              "year": 2570
+            },
+            {
+              "benefit": 70,
+              "impact": 30,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "บริษัท Smart Farm ร่วมสนับสนุนโครงการคิดเป็นสัดส่วน 30% ของโครงการทั้งหมด",
+              "type": 1,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2571
+            },
+            {
+              "benefit": 70,
+              "impact": 30,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "บริษัท Smart Farm ร่วมสนับสนุนโครงการคิดเป็นสัดส่วน 30% ของโครงการทั้งหมด",
+              "type": 1,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2567
+            }
+          ],
+          "ex_ante": [],
+          "ex_post": [],
+          "ordering": "1",
+          "sort": null,
+          "status": "published",
+          "title": "รายได้จากการขายผักกาดหอม แบบ Hydoponic"
+        }
+      ],
+      "impacts": [
+        {
+          "categorie": "economic",
+          "detail": "<p>1. เกิดการสร้างรายได้ให้กับชุมชนได้ทุกฤดูกาลตลอดปีจากการทำ Vertical Indoor Farming</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. ความสัมพันธ์ระหว่างสมาชิกในชุมชนดีขึ้น</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. ลดการเกิดของเสีย</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "economic",
+          "detail": "<p>1. รายได้ของชุมชนไม่สม่ำเสมอ ขึ้นอยู่กับฤดูกาล</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. ไม่เกิดความร่วมมือในชุมชน ต่างคนต่างทำ เกิดการแย่งใช้ทรัพยากร</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. ปริมาณของเสียเยอะ</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        }
+      ],
+      "ordering": "1",
+      "sort": null,
+      "status": "published",
+      "title": "เพิ่มรายได้ให้กับคนในชุมชนจากการทำเกษตรกรรมที่ทันสมัย"
+    },
+    {
+      "benefits": [
+        {
+          "based_case_impacts": [
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "PEA ได้เข้ามาทำโครงการติด Solar Rooftop ให้บ้านที่เข้าร่วมโครงการ 10 หลัง จาก 50 หลัง โครงการมีส่วนสนับสนุน 20%",
+              "type": 2,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2567
+            },
+            {
+              "benefit": 60,
+              "impact": 40,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ชุมชนสนับสนุนการทำนุบำรุงแผงโซล่าอย่างต่อเนื่อง โดยโครงการมีส่วนสนับสนุน 60%",
+              "type": 1,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2670
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "PEA ได้เข้ามาทำโครงการติด Solar Rooftop ให้บ้านที่เข้าร่วมโครงการ 10 หลัง จาก 50 หลัง โครงการมีส่วนสนับสนุน 20%",
+              "type": 2,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2567
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "PEA ได้เข้ามาทำโครงการติด Solar Rooftop ให้บ้านที่เข้าร่วมโครงการ 10 หลัง จาก 50 หลัง โครงการมีส่วนสนับสนุน 20%",
+              "type": 2,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2569
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "PEA ได้เข้ามาทำโครงการติด Solar Rooftop ให้บ้านที่เข้าร่วมโครงการ 10 หลัง จาก 50 หลัง โครงการมีส่วนสนับสนุน 20%",
+              "type": 2,
+              "year": 2567
+            },
+            {
+              "benefit": 60,
+              "impact": 40,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ชุมชนสนับสนุนการทำนุบำรุงแผงโซล่าอย่างต่อเนื่อง โดยโครงการมีส่วนสนับสนุน 60%",
+              "type": 1,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2568
+            },
+            {
+              "benefit": 60,
+              "impact": 40,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ชุมชนสนับสนุนการทำนุบำรุงแผงโซล่าอย่างต่อเนื่อง โดยโครงการมีส่วนสนับสนุน 60%",
+              "type": 1,
+              "year": 2571
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "PEA ได้เข้ามาทำโครงการติด Solar Rooftop ให้บ้านที่เข้าร่วมโครงการ 10 หลัง จาก 50 หลัง โครงการมีส่วนสนับสนุน 20%",
+              "type": 2,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2572
+            }
+          ],
+          "ex_ante": [],
+          "ex_post": [],
+          "ordering": null,
+          "sort": null,
+          "status": "published",
+          "title": "ลดค่าใช้จ่ายการใช้พลังงานไฟฟ้า จากการใช้พลังงานไฟฟ้าแสงอาทิตย์ขนาด 300 Watts แทน"
+        }
+      ],
+      "impacts": [
+        {
+          "categorie": "economic",
+          "detail": "<p>1. ชุมชนมีค่าครองชีพที่ถูกลง ซึ่งจะช่วยส่งเสริมให้มีคุณภาพชีวิตที่ดีขึ้น</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "economic",
+          "detail": "<p>1. ชุมชนมีค่าครองชีพที่สูง ซึ่งนำไปสู่การพัฒนาคุณภาพชีวิตที่ยากขึ้น</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. อัตราความสุขของคนในชุมชนเพิ่มขึ้น</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. อัตราความสุขของคนในชุมชนลดลง จากต้นทุนในการดำเนินชีวิตที่สูงขึ้น</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. ลดการใช้พลังงานไฟฟ้าจาก Fossil ช่วยลดการสร้างก๊าซเรือนกระจก</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. ใช้เชื้อเพลิง Fossil ในการสร้างพลังงานไฟฟ้าในการทำการเกษตร เพิ่มก๊าซเรือนกระจก</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        }
+      ],
+      "ordering": "2",
+      "sort": null,
+      "status": "published",
+      "title": "ลดค่าใช้จ่ายที่เป็นค่าไฟฟ้าในครัวเรือนในแต่ละเดือน จากการใช้พลังงานแสงอาทิตย์"
+    },
+    {
+      "benefits": [
+        {
+          "based_case_impacts": [
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2678
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2567
+            }
+          ],
+          "ex_ante": [],
+          "ex_post": [],
+          "ordering": null,
+          "sort": null,
+          "status": "published",
+          "title": "ลดค่าใช้จ่ายการใช้น้ำปะปา จากการใช้ระบบน้ำหมุนเวียนในชุมชน"
+        },
+        {
+          "based_case_impacts": [
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "สาธารณสุขชุมชนทำโครงการบำบัดน้ำในชุมชน โดยทำให้โครงการมีผลประโยชน์ 80%",
+              "type": 2,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2567
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "สาธารณสุขชุมชนทำโครงการบำบัดน้ำในชุมชน โดยทำให้โครงการมีผลประโยชน์ 80%",
+              "type": 2,
+              "year": 2570
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "สาธารณสุขชุมชนทำโครงการบำบัดน้ำในชุมชน โดยทำให้โครงการมีผลประโยชน์ 80%",
+              "type": 2,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2571
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2568
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "สาธารณสุขชุมชนทำโครงการบำบัดน้ำในชุมชน โดยทำให้โครงการมีผลประโยชน์ 80%",
+              "type": 2,
+              "year": 2568
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 2,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2569
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2572
+            },
+            {
+              "benefit": 80,
+              "impact": 20,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "สาธารณสุขชุมชนทำโครงการบำบัดน้ำในชุมชน โดยทำให้โครงการมีผลประโยชน์ 80%",
+              "type": 2,
+              "year": 2572
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 1,
+              "year": 2567
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2570
+            },
+            {
+              "benefit": 100,
+              "impact": 0,
+              "ordering": null,
+              "sort": null,
+              "status": "published",
+              "title": "ไม่มี",
+              "type": 3,
+              "year": 2571
+            }
+          ],
+          "ex_ante": [],
+          "ex_post": [],
+          "ordering": null,
+          "sort": null,
+          "status": "published",
+          "title": "ป้องกันการเกิดโรคท้องร่วงในชุมชนจากการปนเปื้อนมลพิษทางน้ำ"
+        }
+      ],
+      "impacts": [
+        {
+          "categorie": "economic",
+          "detail": "<p>1. ทำให้ชุมชนประหยัดค่าการใช้น้ำปะปาในการทำการเกษตร และดำรงชีวิต</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "economic",
+          "detail": "<p>1. ชุมชนมีต้นทุนในการใช้ชีวิตที่สูงขึ้นจากการใช้น้ำปะปาปริมาณมากในการทำการเกษตร และดำรงชีวิต</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. ลดการปลดปล่อยน้ำเสียลงสู่ธรรมชาติ จากการใช้รูปแบบพลังงานหมุนเวียน</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "environment",
+          "detail": "<p>1. มีการปลดปล่อยน้ำเสียลงสู่ธรรมชาติ</p>",
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. คนในชุมชนมีทรัพยากรธรรมชาติที่สมบูรณ์ยิ่งขึ้นต่อการดำรงชีวิต</p>",
+          "mode": "with",
+          "sort": null,
+          "status": "published",
+          "title": null
+        },
+        {
+          "categorie": "social",
+          "detail": "<p>1. คนในชุมชนไม่มีทรัพยากรธรรมชาติที่สมบูรณ์ยิ่งขึ้นต่อการดำรงชีวิต</p>",
+          "id": 171,
+          "mode": "withoout",
+          "sort": null,
+          "status": "published",
+          "title": null
+        }
+      ],
+      "ordering": "4",
+      "sort": null,
+      "status": "published",
+      "title": "มีระบบการใช้พลังงานหมุนเวียนเข้ามาใช้ในชุมชน เพื่อช่วยลดมลภาวะทางน้ำ และป้องกันการเกิดโรคติดต่อทางน้ำ"
+    }
+  ],
+  "project_outputs": [
+    {
+      "sort": 2,
+      "status": "published",
+      "title": "2. ครัวเรือนในชุมชน 50 หลัง มีระบบ Solar Rooftop ขนาด 300 Watts ใช้ เพื่อลดค่าใช้จ่ายด้านไฟฟ้า"
+    },
+    {
+      "sort": 3,
+      "status": "published",
+      "title": "3. ชุมชนมีระบบบำบัดน้ำต้นแบบ ที่ทำให้เกิดการใช้พลังงานหมุนเวียน"
+    },
+    {
+      "sort": 1,
+      "status": "published",
+      "title": "1. เกิดอาคารต้นแบบในการทำ Vertical Indoor Farming 1 โรงเรือน ขนาด 60 ตร.ม.  สำหรับการปลูกผัก Hydoponic จำนวน 500 หลุม"
+    }
+  ],
+  "project_owner": "1",
+  "project_owner_other": "อพท.",
+  "project_sdgs": [
+    {
+      "sdgs_id": 3
+    },
+    {
+      "sdgs_id": 9
+    },
+    {
+      "sdgs_id": 12
+    }
+  ],
+  "project_start_year": 2567,
+  "project_status": "new",
+  "project_summary_ex_ante": {
+    "npv_sroi": 4796103,
+    "sroi_ex_ante": [
+      {
+        "net_sroi": -2500000,
+        "status": "published",
+        "year": 2567
+      },
+      {
+        "net_sroi": 1065651,
+        "status": "published",
+        "year": 2568
+      },
+      {
+        "net_sroi": 1175744.5,
+        "status": "published",
+        "year": 2569
+      },
+      {
+        "net_sroi": 2005618,
+        "status": "published",
+        "year": 2570
+      },
+      {
+        "net_sroi": 2112861.2,
+        "status": "published",
+        "year": 2571
+      },
+      {
+        "net_sroi": 2225806.5,
+        "status": "published",
+        "year": 2572
+      }
+    ],
+    "sroi_irr": 43.67,
+    "sroi_ratio": 1.1,
+    "status": "published"
+  },
+  "project_summary_ex_post": null,
+  "project_type": 2,
+  "project_utilizers": [
+    {
+      "status": "published",
+      "title": "1. ชาวบ้านชุมชนท่าข้าม จังหวัดพิษณุโลก"
+    }
+  ],
+  "related_project_id": null,
+  "related_projects": [],
+  "status": "approved",
+  "title": "(UAT) โครงการส่งเสริมการใช้พลังงานธรรมชาติเพื่อการเกษตรอย่างยั่งยืน และยกระดับคุณภาพชีวิตของคนในชุมชนท่าข้าม จังหวัดพิษณุโลก"
+}

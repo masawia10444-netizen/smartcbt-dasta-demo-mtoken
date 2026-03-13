@@ -1,0 +1,5 @@
+.env
+nginx-proxy-manager/volumes/*
+
+data/
+volume/

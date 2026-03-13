@@ -1,0 +1,42 @@
+version: '3'
+name: nginx
+services:
+  nginx:
+    container_name: nginx
+    image: 'jc21/nginx-proxy-manager:2.10.4'
+    restart: always
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    environment:
+      DB_MYSQL_HOST: ${DB_MYSQL_HOST}
+      DB_MYSQL_PORT: ${DB_MYSQL_PORT}
+      DB_MYSQL_USER: ${DB_MYSQL_USER}
+      DB_MYSQL_PASSWORD: ${DB_MYSQL_PASSWORD}
+      DB_MYSQL_NAME: ${DB_MYSQL_NAME}
+    volumes:
+      - ./volumes/nginx/data:/data
+      - ./volumes/nginx/letsencrypt:/etc/letsencrypt
+  mariadb:
+    container_name: mariadb
+    image: 'jc21/mariadb-aria:10.4.15'
+    restart: always
+    expose:
+      - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - /var/www/nginx-proxy/data/mysql:/var/lib/mysql
+
+networks: 
+  default: 
+      name: network-stack
+
+# Admid Port 81
+# Default Admin User:
+# Email:    admin@example.com
+# Password: changeme

@@ -1,0 +1,32 @@
+FROM directus/directus:10.5.3
+
+USER root
+RUN corepack enable \
+  && corepack prepare pnpm@8.3.1 --activate
+
+USER node
+RUN pnpm install moment uuid  
+RUN pnpm install directus-extension-computed-interface
+#RUN pnpm install @wellenplan/directus-extension-hourclock-interface
+RUN pnpm install directus-extension-schema-management-module
+RUN pnpm install directus-extension-field-actions
+RUN pnpm install directus-extension-api-docs
+RUN pnpm install directus-extension-editorjs
+RUN pnpm install directus-extension-tags-m2m-interface
+RUN pnpm install directus-extension-grid-layout
+RUN pnpm install directus-extension-comment-interface
+#RUN pnpm install dimitrov-adrian/directus-extension-searchsync
+RUN pnpm install directus-extension-currency-interface
+#RUN pnpm install directus-extension-linkmeta
+RUN pnpm install directus-extension-masked-interface
+RUN pnpm install directus-extension-svgmap-picker-interface
+#RUN pnpm install @wellenplan/directus-extension-hourclock-interface
+RUN pnpm install @wellenplan/directus-extension-duration-display
+RUN pnpm install @wellenplan/directus-extension-duration-interface
+#RUN pnpm install @wellenplan/directus-extension-hourclock-module
+RUN pnpm install directus-extension-display-link
+#RUN pnpm install directus-extension-api-viewer
+RUN pnpm i directus-extension-m2o-presentation-interface
+RUN pnpm add directus-extension-group-tabs-interface
+RUN pnpm install directus-extension-api-docs
+

@@ -1,0 +1,26 @@
+# Ignore sensitive environment variables
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.prod
+
+# Ignore Node.js
+**/node_modules/
+**/.next/
+**/dist/
+**/build/
+
+# Ignore Docker volumes and data
+**/volumes/
+smartcbt-directus/volumes/
+
+# Ignore OS generated files
+**/.DS_Store
+**/.DS_Store?
+**/.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore IDE files
+**/.vscode/
+**/.idea/

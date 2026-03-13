@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .form-checkbox,
+  .form-radio {
+    cursor: pointer;
+    color: #73d13d;
+    --tw-ring-color: #73d13d !important;
+  }
+  .form-checkbox:focus,
+  .form-radio:focus {
+    color: #73d13d;
+    --tw-ring-color: #73d13d !important;
+  }
+  .form-checkbox:hover,
+  .form-radio:hover {
+    color: #73d13d;
+    --tw-ring-color: #73d13d !important;
+  }
+}
+
+@media (min-width: 320) {
+  .debug-screens::before {
+    content: "screen: xs" !important;
+  }
+}
+
+@media (min-width: 1440) {
+  .debug-screens::before {
+    content: "screen: 2xl" !important;
+  }
+}
+
+@media (min-width: 1536) {
+  .debug-screens::before {
+    content: "screen: 2xl" !important;
+  }
+}
+
+.paging-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .paging-dot {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.pitching-criteria h2 {
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight: 500;
+}
+
+.pitching-criteria ul {
+  position: relative;
+  list-style-position: outside;
+  list-style-type: disc;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  font-weight: 600;
+}
+
+.pitching-criteria li {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem /* 16px */ * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem /* 16px */ * var(--tw-space-y-reverse));
+  margin-left: 1.5rem /* 24px */;
+}
+
+.training ul {
+  position: relative;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+.training li {
+  --tw-space-y-reverse: 0;
+  margin-top: 0.5rem /* 8px */;
+  margin-left: 1.5rem /* 24px */;
+}
+
+@media (min-width: 1024px) {
+  .pitching-criteria h2 {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .page-break {
+    margin-top: 1rem;
+    display: block;
+    page-break-before: auto;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}
+
+.masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.masonry-grid_column img {
+  width: 100%;
+}
+
+/* Style your items */
+.masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 15px; /* space between items */
+  }
+}
+
+.star {
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 5px;
+}
