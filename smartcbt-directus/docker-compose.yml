@@ -1,5 +1,4 @@
 version: '3.9'
-name: cbt
 services:
   portainer:
     container_name: portainer
