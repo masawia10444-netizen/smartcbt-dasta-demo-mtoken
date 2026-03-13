@@ -1,5 +1,4 @@
 version: '3'
-name: nginx
 services:
   nginx:
     container_name: nginx
