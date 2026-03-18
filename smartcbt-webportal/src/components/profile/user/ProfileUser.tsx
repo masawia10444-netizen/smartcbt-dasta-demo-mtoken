@@ -47,7 +47,7 @@ const ProfileUser = ({}: ProfileUserProps) => {
   return (
     <FormProvider {...formContext}>
       <form
-        className="m-8 flex flex-col gap-4 divide-y-2 rounded-2xl border border-smart-cbt-green bg-white p-8"
+        className="m-4 lg:m-8 flex flex-col gap-4 divide-y-2 rounded-2xl border border-smart-cbt-green bg-white p-4 lg:p-8"
         onSubmit={handleOnSubmit}
       >
         <div className="flex flex-row justify-between">
@@ -69,9 +69,9 @@ const ProfileUser = ({}: ProfileUserProps) => {
             </Button>
           )}
         </div>
-        <div className="flex flex-row gap-10 pt-10">
-          <div className="w-fit">
-            <div className="relative h-60 w-60 items-center justify-center rounded-full bg-smart-cbt-orange-2 text-center text-xl uppercase text-black">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 pt-6 lg:pt-10 items-center lg:items-start">
+          <div className="w-fit shrink-0">
+            <div className="relative h-32 w-32 md:h-60 md:w-60 items-center justify-center rounded-full bg-smart-cbt-orange-2 text-center text-xl uppercase text-black">
               {(session?.user?.image as any) ? (
                 <Image
                   src={session?.user?.image}

@@ -19,8 +19,8 @@ export const MobileMenu = ({ onToggle, isMobileOpened, menus, session }: MenusPr
     <div>
       {isMobileOpened && (
         <div className="fixed inset-0 z-50 bg-black/50 md:hidden">
-          <div className="fixed left-auto right-0 z-50 h-screen w-[400px] bg-smart-cbt-green">
-            <div className="px-16 py-10">
+          <div className="fixed left-auto right-0 z-50 h-screen w-[85vw] max-w-[400px] bg-smart-cbt-green shadow-xl overflow-y-auto">
+            <div className="px-6 md:px-16 py-8 md:py-10 min-h-full">
               <div className="flex flex-col gap-10">
                 <button className="flex justify-end" onClick={onToggle}>
                   <XCircleIcon className="h-8 w-8 fill-smart-cbt-green text-white" />

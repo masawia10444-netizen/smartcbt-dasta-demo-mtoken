@@ -34,7 +34,9 @@ export default async function middleware(req: NextRequest) {
   const unauthenPathnameRegex = new RegExp(regexUnauthenPattern, "i");
   const isUnAuthenPage = unauthenPathnameRegex.test(req.nextUrl.pathname);
 
-  const response = NextResponse.redirect(new URL("/login", req.nextUrl));
+  const loginUrl = new URL("/login", req.nextUrl);
+  loginUrl.search = req.nextUrl.search;
+  const response = NextResponse.redirect(loginUrl);
   const removeTokens = async () => {
     response.cookies.delete("NEXT_TOKEN");
     response.cookies.delete("NEXT_REFRESH_TOKEN");
@@ -42,9 +44,20 @@ export default async function middleware(req: NextRequest) {
   };
 
   const token = req.cookies.get("NEXT_TOKEN")?.value;
+  const isMTokenSession = req.cookies.get("MTOKEN_SESSION")?.value === "true";
 
   if (token && isUnAuthenPage) {
     return NextResponse.redirect(new URL("/main-menus", req.url));
+  }
+  
+  // Route restriction for mToken users
+  if (token && isMTokenSession) {
+    const restrictedPaths = ["/photo-bank", "/sia-sroi", "/mapi"];
+    const isRestricted = restrictedPaths.some(p => req.nextUrl.pathname.includes(p));
+    
+    if (isRestricted) {
+      return NextResponse.redirect(new URL("/main-menus", req.url));
+    }
   }
 
   if (isPublicPage || isUnAuthenPage) {

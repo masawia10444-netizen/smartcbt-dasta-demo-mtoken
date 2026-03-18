@@ -1,11 +1,11 @@
 "use server";
 
-import { findUserAccountByEmail, loginWithStaticTokenByEmail } from "@/utils/cms/adapters/website/users/register";
+import { findUserAccountByEmail, findUserAccountByMobile, loginWithStaticTokenByEmail } from "@/utils/cms/adapters/website/users/register";
 import { loginEmail, loginMobile } from "@/utils/cms/cms-api-adapter";
 import { fetchMTokenProfile, setMTokenRegisterProfileCookie } from "@/utils/mtoken";
 import { extractAuthErrorMessage, extractErrorMessage } from "@/utils/error";
 import { clearSession } from "@/utils/session";
-import { setCookies } from "@/utils/token";
+import { setCookies, setMTokenSession } from "@/utils/token";
 import { revalidatePath } from "next/cache";
 
 export async function login(body: Record<string, any | string>) {
@@ -30,6 +30,7 @@ export async function login(body: Record<string, any | string>) {
     }
     if (token == null) return { error: "ไม่มีบัญชีโปรดตรวจสอบ อีเมล/โทรศัพท์ หรือ รหัสผ่าน" };
     await setCookies(token, refreshToken, expires, body.appCode);
+    setMTokenSession(false); // Ensure regular login clears any mToken flag
     return { success: true };
 } catch (error) {
   console.log("login error:", error);
@@ -43,7 +44,6 @@ export async function loginWithMToken(body: { appId: string; mToken: string; app
   const appCode = body.appCode || "PORTAL";
 
   try {
-    console.log("loginWithMToken: Fetching profile for:", body.appId);
     let profile: any;
     
     try {
@@ -54,16 +54,12 @@ export async function loginWithMToken(body: { appId: string; mToken: string; app
       return { error: errorMsg };
     }
 
-    console.log("loginWithMToken: Profile fetched:", { userId: profile?.userId, email: profile?.email });
-    
     const email = String(profile?.email || "").trim().toLowerCase();
 
     if (!email) {
-      console.log("loginWithMToken: No email found in profile");
       return { error: "ไม่พบอีเมลจากข้อมูล mToken" };
     }
 
-    console.log("loginWithMToken: Looking for existing user with email:", email);
     let existingUser: any;
     
     try {
@@ -73,42 +69,43 @@ export async function loginWithMToken(body: { appId: string; mToken: string; app
       const errorMsg = extractErrorMessage(findError, "ไม่สามารถค้นหาผู้ใช้ได้");
       return { error: errorMsg };
     }
-
-    console.log("loginWithMToken: Existing user found:", !!existingUser);
+    
+    // Fallback: Check by mobile if email lookup failed
+    if (!existingUser && profile.mobile) {
+      try {
+        existingUser = await findUserAccountByMobile(profile.mobile);
+      } catch (findMobileError) {
+        console.error("loginWithMToken: findUserAccountByMobile failed:", findMobileError);
+      }
+    }
 
     if (existingUser) {
-      console.log("loginWithMToken: Getting auth data for existing user");
       let authData: any;
       
       try {
-        authData = await loginWithStaticTokenByEmail(email, appCode);
+        authData = await loginWithStaticTokenByEmail(existingUser.email, appCode);
       } catch (authError) {
         console.error("loginWithMToken: loginWithStaticTokenByEmail failed:", authError);
         const errorMsg = extractAuthErrorMessage(authError, "ไม่สามารถสร้าง token ได้");
         return { error: errorMsg };
       }
-
-      console.log("loginWithMToken: Auth data received:", !!authData?.access_token);
       
       if (!authData || !authData?.access_token) {
-        console.log("loginWithMToken: No access token from auth data");
         return { error: "ไม่สามารถสร้าง access token สำหรับผู้ใช้ได้" };
       }
 
-      console.log("loginWithMToken: Setting cookies");
       try {
         await setCookies(authData.access_token, authData.refresh_token, authData.expires, appCode);
+        setMTokenSession(true); // Flag this session as an mToken session
       } catch (cookieError) {
         console.error("loginWithMToken: setCookies failed:", cookieError);
         const errorMsg = extractErrorMessage(cookieError, "ไม่สามารถตั้งค่า cookies ได้");
         return { error: errorMsg };
       }
 
-      console.log("loginWithMToken: Cookies set, returning redirect to main-menus");
       return { redirectTo: "/main-menus", source: "login" };
     }
 
-    console.log("loginWithMToken: User is new, setting registration profile cookie");
     try {
       await setMTokenRegisterProfileCookie(profile);
     } catch (cookieError) {
@@ -117,7 +114,6 @@ export async function loginWithMToken(body: { appId: string; mToken: string; app
       return { error: errorMsg };
     }
 
-    console.log("loginWithMToken: Registration profile cookie set, returning redirect to register");
     return { redirectTo: "/register?mtoken=1", source: "register" };
   } catch (error) {
     console.error("loginWithMToken: Unexpected error:", error);
@@ -128,5 +124,6 @@ export async function loginWithMToken(body: { appId: string; mToken: string; app
 
 export async function logout() {
   clearSession();
+  setMTokenSession(false);
   revalidatePath("/");
 }

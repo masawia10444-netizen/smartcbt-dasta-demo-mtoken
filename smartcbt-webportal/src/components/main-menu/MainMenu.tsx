@@ -16,7 +16,11 @@ import { NextLink } from "../Link";
 import { useSession } from "../context-provider/AuthProvider";
 import MainMenuGridItem from "./MainMenuGridItem";
 
-const MainMenu = () => {
+type MainMenuProps = {
+  isMTokenSession?: boolean;
+};
+
+const MainMenu = ({ isMTokenSession }: MainMenuProps) => {
   const t = useTranslations("common");
 
   const [mainMenus, setMainMenus] = useState<MainMenusType[]>([]);
@@ -37,14 +41,18 @@ const MainMenu = () => {
     if (appCodes?.includes("BUSINESS")) {
       menus.push(travelMartMenu);
     }
-    if (appCodes?.includes("PHOTO")) {
-      menus.push(photoBankMenu);
-    }
-    if (appCodes?.includes("APM")) {
-      menus.push(apiMenu);
-    }
-    if (appCodes?.includes("SIA/SROI")) {
-      menus.push(siaSroiMenu);
+    
+    // Hide these menus if logged in via mToken
+    if (!isMTokenSession) {
+      if (appCodes?.includes("PHOTO")) {
+        menus.push(photoBankMenu);
+      }
+      if (appCodes?.includes("APM")) {
+        menus.push(apiMenu);
+      }
+      if (appCodes?.includes("SIA/SROI")) {
+        menus.push(siaSroiMenu);
+      }
     }
   }, []);
 

@@ -24,7 +24,7 @@ const AvatarNormal = ({ name, image, handleLogout }: AvatarNormalProps) => {
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right gap-10 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+      <Menu.Items className="absolute left-0 lg:left-auto lg:right-0 mt-2 w-56 origin-top-left lg:origin-top-right gap-10 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none z-50">
         <div className="flex flex-col divide-y-2 divide-gray-200 px-6 py-2">
           <Menu.Item>
             <div className="relative flex flex-col gap-2 py-2">

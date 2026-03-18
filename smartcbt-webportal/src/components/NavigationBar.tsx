@@ -105,6 +105,15 @@ export default function NavigationBar({
   const { session } = useSession();
   const isOnboardingApm = useMemo(() => session && getIsOnBoarding(session?.user?.roles), [session]);
 
+  const [isMTokenSession, setIsMTokenSession] = useState(false);
+
+  useEffect(() => {
+    // Read the cookie on the client side without extra dependencies
+    const cookies = document.cookie.split("; ");
+    const mtokenCookie = cookies.find(row => row.startsWith("MTOKEN_SESSION="))?.split("=")[1];
+    setIsMTokenSession(mtokenCookie === "true");
+  }, []);
+
   useEffect(() => {
     let menus;
     if (pathname.includes("photo-bank")) {
@@ -180,13 +189,13 @@ export default function NavigationBar({
 
   return (
     <Fragment>
-      <nav className={cn("fixed left-0 right-0 top-0 z-40 h-14 bg-smart-cbt-green", className)}>
+      <nav className={cn("fixed left-0 right-0 top-0 z-40 h-14 bg-white md:bg-smart-cbt-green shadow-sm md:shadow-none", className)}>
         <div className="flex h-14 items-center justify-between px-4 md:container md:mx-auto md:px-0">
           <Link className="hover:cursor-pointer" href={"/"}>
             <Image src={CBTLogo} alt="logo" height={56} style={{ filter: "grayscale(100%)" }} />
           </Link>
           <button className="block md:hidden " onClick={onToggle}>
-            <HamburgerIcon className="h-8 w-8 text-white group-[.bg-transparent]:text-smart-cbt-dark-green" />
+            <HamburgerIcon className="h-8 w-8 text-smart-cbt-dark-green md:text-white group-[.bg-transparent]:text-smart-cbt-dark-green" />
           </button>
           <div className="hidden h-full w-auto flex-row items-center gap-4 md:flex">
             {showMenus.map((m) => {
@@ -206,7 +215,7 @@ export default function NavigationBar({
             })}
             {registerTravelMartButton()}
             {photographerMenu()}
-            {pathname.includes("/mapi") && !isOnboardingApm && (
+            {pathname.includes("/mapi") && !isOnboardingApm && !isMTokenSession && (
               <div className="flex flex-row gap-4">
                 <NextLink
                   intent="whiteButton"

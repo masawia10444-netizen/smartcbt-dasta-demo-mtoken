@@ -149,24 +149,64 @@ async function findUserAccountByEmail(email: string) {
   
   const normalizedEmail = email.trim().toLowerCase();
 
-  const data = await cmsApi.request(
-    withRevalidate(
-      // @ts-ignore
-      readItems("users", {
-        fields: ["id", "email", "status", "directus_user", "firstname", "lastname", "mobile", "thai_national_id_card"],
-        filter: {
-          email: {
-            _eq: normalizedEmail,
+  try {
+    const data = await cmsApi.request(
+      withRevalidate(
+        // @ts-ignore
+        readItems("users", {
+          fields: ["id", "email", "status", "directus_user", "firstname", "lastname", "mobile", "thai_national_id_card"],
+          filter: {
+            email: {
+              _eq: normalizedEmail,
+            },
           },
-        },
-        limit: 1,
-      })as any,
-      0
-    )
-  );
+          limit: 1,
+        })as any,
+        0
+      )
+    );
 
-  cmsApi.setToken(null);
-  return _.get(data, [0], null);
+    const found = _.get(data, [0], null);
+    return found;
+  } catch (error) {
+    console.error(`findUserAccountByEmail: Error searching for ${normalizedEmail}`, error);
+    return null;
+  } finally {
+    cmsApi.setToken(null);
+  }
+}
+
+async function findUserAccountByMobile(mobile: string) {
+  const adminToken = getCmsAdminToken();
+  await cmsApi.setToken(adminToken);
+  
+  const normalizedMobile = mobile.trim();
+
+  try {
+    const data = await cmsApi.request(
+      withRevalidate(
+        // @ts-ignore
+        readItems("users", {
+          fields: ["id", "email", "status", "directus_user", "firstname", "lastname", "mobile", "thai_national_id_card"],
+          filter: {
+            mobile: {
+              _eq: normalizedMobile,
+            },
+          },
+          limit: 1,
+        })as any,
+        0
+      )
+    );
+
+    const found = _.get(data, [0], null);
+    return found;
+  } catch (error) {
+    console.error(`findUserAccountByMobile: Error searching for ${normalizedMobile}`, error);
+    return null;
+  } finally {
+    cmsApi.setToken(null);
+  }
 }
 
 async function ensureDirectusStaticToken(directusUserId: string, forceRefresh = false) {
@@ -472,6 +512,7 @@ export {
   ensureDirectusStaticToken,
   fetchApplications,
   findUserAccountByEmail,
+  findUserAccountByMobile,
   forgetPassword,
   getRoleUserAllAppication,
   listApplications,

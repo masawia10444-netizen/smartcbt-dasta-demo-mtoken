@@ -10,6 +10,7 @@ enum Cookies {
 export const ACCESS_TOKEN_KEY = "NEXT_TOKEN";
 export const REFRESH_TOKEN_KEY = "NEXT_REFRESH_TOKEN";
 export const APP_CODE_KEY = "APP_CODE";
+export const MTOKEN_SESSION_KEY = "MTOKEN_SESSION";
 
 export async function setTokens(res: NextResponse, accessToken: string, refreshToken: string) {
   res.cookies.set(Cookies.AccessToken, accessToken);
@@ -38,4 +39,15 @@ export async function setCookies(
     }
   }
   if (refreshToken) cookieStore.set(REFRESH_TOKEN_KEY, refreshToken, { maxAge: refreshTokenMaxAge });
+}
+
+export function setMTokenSession(isMToken: boolean) {
+  const cookieStore = cookies();
+  const maxAge = 60 * 60 * 24 * 30; /* 30 Days */
+  
+  if (isMToken) {
+    cookieStore.set(MTOKEN_SESSION_KEY, "true", { maxAge });
+  } else {
+    cookieStore.delete(MTOKEN_SESSION_KEY);
+  }
 }

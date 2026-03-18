@@ -34,23 +34,23 @@ const CarbonFootprintGraphSummary = (props: FootprintDashboardCalculationResultW
   };
 
   return (
-    <div className="relative">
-      <div className="absolute left-0 top-0 flex flex-col gap-1 text-center text-smart-cbt-green-2">
+    <div className="relative w-[342px] max-w-full mx-auto min-w-0">
+      <div className="absolute left-0 top-0 flex flex-col gap-1 text-center text-smart-cbt-green-2 z-10 scale-[0.65] sm:scale-100 origin-top-left">
         <PercentLabel value={props.accommodation_cf.proportion} />
         <GraphLabel title={t("carbon.summary.type.accomodations")} icon={AccommodationIcon} />
         <ValueLabel value={props.accommodation_cf.grandTotal} />
       </div>
-      <div className="absolute right-0 top-0 flex flex-col gap-1 text-center text-smart-cbt-blue">
+      <div className="absolute right-0 top-0 flex flex-col gap-1 text-center text-smart-cbt-blue z-10 scale-[0.65] sm:scale-100 origin-top-right">
         <PercentLabel value={props.travel_cf.proportion} />
         <GraphLabel title={t("carbon.summary.type.transportations")} icon={VehicleIcon} />
         <ValueLabel value={props.travel_cf.grandTotal} />
       </div>
-      <div className="absolute bottom-0 left-0 flex flex-col gap-1 text-center text-smart-cbt-orange">
+      <div className="absolute bottom-0 left-0 flex flex-col gap-1 text-center text-smart-cbt-orange z-10 scale-[0.65] sm:scale-100 origin-bottom-left -translate-y-4 sm:translate-y-0">
         <PercentLabel value={props.food_cf.proportion} />
         <GraphLabel title={t("carbon.summary.type.foods")} icon={FoodIcon} />
         <ValueLabel value={props.food_cf.grandTotal} />
       </div>
-      <div className="absolute bottom-0 right-0 flex flex-col gap-1 text-center text-smart-cbt-red-3">
+      <div className="absolute bottom-0 right-0 flex flex-col gap-1 text-center text-smart-cbt-red-3 z-10 scale-[0.65] sm:scale-100 origin-bottom-right -translate-y-4 sm:translate-y-0">
         <PercentLabel value={props.waste_cf.proportion} />
         <GraphLabel title={t("carbon.summary.type.wastes")} icon={FactoryIcon} />
         <ValueLabel value={props.waste_cf.grandTotal} />

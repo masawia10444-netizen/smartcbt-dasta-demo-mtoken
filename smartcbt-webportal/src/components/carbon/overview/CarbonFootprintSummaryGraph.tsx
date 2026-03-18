@@ -19,7 +19,7 @@ const CarbonFootprintSummaryGraph = ({ pieChartCarbon }: CarbonFootprintSummaryG
   return (
     <div className="flex w-full flex-col gap-3 ">
       <p className="text-center text-smart-cbt-dark-grey">{t("carbon.create.totalCarbonFootprint")}</p>
-      <div className="relative flex h-full flex-grow items-center justify-center">
+      <div className="relative flex h-full flex-grow items-center justify-center w-full min-w-0">
         {footprintSummaryData && <CarbonFootprintGraphSummary {...footprintSummaryData} />}
       </div>
     </div>

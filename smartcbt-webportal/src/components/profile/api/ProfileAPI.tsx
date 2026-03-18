@@ -30,7 +30,7 @@ const ProfileAPI = ({}: ProfileAPIProps) => {
 
   return (
     <FormProvider {...formContext}>
-      <div className="m-8 rounded-2xl border border-smart-cbt-green bg-white p-8">
+      <div className="m-4 md:m-8 rounded-2xl border border-smart-cbt-green bg-white p-4 md:p-8">
         {user?.communities != null || user?.organizations != null ? (
           <form className="flex flex-col gap-4 divide-y-2" onSubmit={handleOnSubmit}>
             <div className="flex flex-row justify-between">
@@ -58,9 +58,9 @@ const ProfileAPI = ({}: ProfileAPIProps) => {
                 </Button>
               )}
             </div>
-            <div className="flex flex-row gap-10 pt-10">
-              <div className="w-fit">
-                <div className="border-smart-cbt-grey relative h-60 w-60 items-center justify-center rounded-full border bg-white text-center text-xl uppercase text-black">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 pt-6 lg:pt-10 items-center lg:items-start">
+              <div className="w-fit shrink-0">
+                <div className="border-smart-cbt-grey relative h-32 w-32 md:h-60 md:w-60 items-center justify-center rounded-full border bg-white text-center text-xl uppercase text-black">
                   {(session?.user as any)?.image ? (
                     <Image
                       src={(session?.user as any)?.image}

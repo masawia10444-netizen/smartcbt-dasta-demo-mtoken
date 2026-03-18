@@ -25,41 +25,41 @@ export default function SideBar({ menuItems }: SideBarProps) {
   };
 
   return (
-    <nav className="fixed z-30 min-h-screen w-64 pt-14">
-      <div className="flex flex-col">
+    <nav className="fixed z-30 lg:min-h-screen w-full lg:w-64 top-14 lg:top-0 lg:pt-14 bg-white shadow-md lg:shadow-none overflow-x-auto custom-scrollbar">
+      <div className="flex flex-row lg:flex-col min-w-max w-max lg:w-full">
         {menuItems.map((value, index) => {
           return !value.disabled ? (
             value.href ? (
               <Link key={index} href={value.href}>
                 <div
                   className={cn(
-                    "flex flex-row gap-4 p-4",
+                    "flex flex-row gap-2 md:gap-4 p-3 md:p-4 items-center",
                     isSelected(value.href)
                       ? "bg-[#EDFFF4] text-base text-smart-cbt-dark-green"
                       : "text-smart-cbt-medium-grey"
                   )}
                 >
                   {value.icon}
-                  {value.label}
+                  <span className="whitespace-nowrap">{value.label}</span>
                 </div>
               </Link>
             ) : (
               <div
-                className="flex cursor-pointer flex-row gap-4 p-4 text-base text-smart-cbt-medium-grey"
+                className="flex cursor-pointer flex-row gap-2 md:gap-4 p-3 md:p-4 text-base items-center text-smart-cbt-medium-grey whitespace-nowrap"
                 onClick={value.onClick}
                 key={index}
               >
                 {value.icon}
-                {value.label}
+                <span>{value.label}</span>
               </div>
             )
           ) : (
             <div
-              className="flex cursor-not-allowed flex-row gap-4 bg-smart-cbt-light-grey p-4 text-base text-smart-cbt-medium-grey"
+              className="flex cursor-not-allowed flex-row gap-2 md:gap-4 bg-smart-cbt-light-grey p-3 md:p-4 text-base items-center text-smart-cbt-medium-grey whitespace-nowrap"
               key={index}
             >
               {value.icon}
-              {value.label}
+              <span>{value.label}</span>
             </div>
           );
         })}

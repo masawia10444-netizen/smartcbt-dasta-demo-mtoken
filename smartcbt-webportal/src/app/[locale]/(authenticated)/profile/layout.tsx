@@ -66,9 +66,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <SideBar menuItems={menuItems} />
-      <div className="pl-64">
+      <div className="lg:pl-64 pt-14 lg:pt-0 flex flex-col min-h-screen bg-[#EDFFF4]">
         <NavigationBar onToggle={toggleMobileMenu} isMobileOpened={isMobileOpened} />
-        <div className="relative min-h-screen bg-[#EDFFF4] pt-14">{children}</div>
+        <div className="relative flex-1 bg-[#EDFFF4] pt-16 lg:pt-14">{children}</div>
       </div>
     </>
   );

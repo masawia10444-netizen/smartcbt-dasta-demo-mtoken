@@ -9,6 +9,8 @@ services:
     restart: always
     ports:
       - "1002:3000"
+    env_file:
+      - .env
 
     networks:
       - network-stack

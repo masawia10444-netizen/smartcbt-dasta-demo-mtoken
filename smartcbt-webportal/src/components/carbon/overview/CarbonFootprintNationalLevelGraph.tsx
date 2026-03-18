@@ -29,7 +29,7 @@ const CarbonFootprintNationalLevelGraph = ({
 
   return (
     <div className="flex h-full flex-col gap-3">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between gap-4">
         <p className="font-medium text-smart-cbt-dark-green">{t("carbon.overview.nationalLevel")}</p>
         <Button
           type="button"
@@ -42,9 +42,9 @@ const CarbonFootprintNationalLevelGraph = ({
           {t("carbon.overview.filter")}
         </Button>
       </div>
-      <div className="flex flex-grow flex-col">
+      <div className="flex flex-grow flex-col w-full min-w-0">
         <p className="ml-6 text-sm text-smart-cbt-medium-grey">kgCO2eq</p>
-        <div className="relative flex-grow">
+        <div className="relative flex-grow w-full min-w-0">
           <Line options={data.options} data={data.data} />
         </div>
       </div>

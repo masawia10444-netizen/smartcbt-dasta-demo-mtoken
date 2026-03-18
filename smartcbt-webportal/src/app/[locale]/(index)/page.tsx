@@ -1,38 +1,17 @@
 "use client";
 
-import NavigationBar from "@/components/NavigationBar";
-import WebPortal from "@/components/web-portal/WebPortal";
-import { Fragment, useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
-  const [isMobileOpened, setIsMobileOpened] = useState(false);
-
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    const params = searchParams.toString();
+    const landingUrl = `/landing${params ? `?${params}` : ""}`;
+    router.replace(landingUrl);
+  }, [router, searchParams]);
 
-  const toggleMobileMenu = () => {
-    setIsMobileOpened((opened) => !opened);
-  };
-
-  return (
-    <Fragment>
-      <NavigationBar
-        onToggle={toggleMobileMenu}
-        className={scrollPosition == 0 ? "bg-transparent" : ""}
-        isMobileOpened={isMobileOpened}
-      />
-      <WebPortal />
-    </Fragment>
-  );
+  return null;
 }
