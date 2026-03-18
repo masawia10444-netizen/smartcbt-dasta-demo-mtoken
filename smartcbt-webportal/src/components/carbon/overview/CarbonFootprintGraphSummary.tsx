@@ -18,44 +18,55 @@ const CarbonFootprintGraphSummary = (props: FootprintDashboardCalculationResultW
   const data = chartGraphSummaryData(props);
 
   const PercentLabel = ({ value }: { value: number }) => {
-    return <div className="text-lg font-medium">{`${Math.round(value)} %`}</div>;
+    return <div className="text-sm sm:text-lg font-medium">{`${Math.round(value)} %`}</div>;
   };
 
   const GraphLabel = ({ title, icon }: { title: string; icon: StaticImageData }) => {
     return (
-      <div className="flex flex-row gap-2 text-sm font-normal">
-        <Image src={icon} alt="" /> {title}
+      <div className="flex flex-row items-center justify-center gap-1 text-[10px] sm:text-sm font-normal">
+        <Image src={icon} alt="" className="h-3 w-3 sm:h-auto sm:w-auto object-contain" /> {title}
       </div>
     );
   };
 
   const ValueLabel = ({ value }: { value: number }) => {
-    return <div className="text-sm font-normal">{`${Math.round(value)} kgCO2eQ`}</div>;
+    return <div className="text-[10px] sm:text-sm font-normal">{`${Math.round(value)} kgCO2eQ`}</div>;
   };
 
   return (
-    <div className="relative w-[342px] max-w-full mx-auto min-w-0">
-      <div className="absolute left-0 top-0 flex flex-col gap-1 text-center text-smart-cbt-green-2 z-10 scale-[0.65] sm:scale-100 origin-top-left">
-        <PercentLabel value={props.accommodation_cf.proportion} />
-        <GraphLabel title={t("carbon.summary.type.accomodations")} icon={AccommodationIcon} />
-        <ValueLabel value={props.accommodation_cf.grandTotal} />
+    <div className="mx-auto flex w-full max-w-[420px] flex-col items-center gap-2">
+      <div className="flex w-full justify-between items-start px-2">
+        <div className="flex flex-col gap-1 text-center text-smart-cbt-green-2">
+          <PercentLabel value={props.accommodation_cf.proportion} />
+          <GraphLabel title={t("carbon.summary.type.accomodations")} icon={AccommodationIcon} />
+          <ValueLabel value={props.accommodation_cf.grandTotal} />
+        </div>
+        <div className="flex flex-col gap-1 text-center text-smart-cbt-blue">
+          <PercentLabel value={props.travel_cf.proportion} />
+          <GraphLabel title={t("carbon.summary.type.transportations")} icon={VehicleIcon} />
+          <ValueLabel value={props.travel_cf.grandTotal} />
+        </div>
       </div>
-      <div className="absolute right-0 top-0 flex flex-col gap-1 text-center text-smart-cbt-blue z-10 scale-[0.65] sm:scale-100 origin-top-right">
-        <PercentLabel value={props.travel_cf.proportion} />
-        <GraphLabel title={t("carbon.summary.type.transportations")} icon={VehicleIcon} />
-        <ValueLabel value={props.travel_cf.grandTotal} />
+
+      {/* Chart Area */}
+      <div className="relative -my-6 sm:-my-14 w-full h-[280px] sm:h-[350px] flex justify-center">
+        <div className="w-full max-w-[300px] sm:max-w-[350px]">
+           <PolarArea options={data.options} data={data.data} plugins={ShadowPlugin} />
+        </div>
       </div>
-      <div className="absolute bottom-0 left-0 flex flex-col gap-1 text-center text-smart-cbt-orange z-10 scale-[0.65] sm:scale-100 origin-bottom-left -translate-y-4 sm:translate-y-0">
-        <PercentLabel value={props.food_cf.proportion} />
-        <GraphLabel title={t("carbon.summary.type.foods")} icon={FoodIcon} />
-        <ValueLabel value={props.food_cf.grandTotal} />
+
+      <div className="flex w-full justify-between items-end px-2">
+        <div className="flex flex-col gap-1 text-center text-smart-cbt-orange">
+          <PercentLabel value={props.food_cf.proportion} />
+          <GraphLabel title={t("carbon.summary.type.foods")} icon={FoodIcon} />
+          <ValueLabel value={props.food_cf.grandTotal} />
+        </div>
+        <div className="flex flex-col gap-1 text-center text-smart-cbt-red-3">
+          <PercentLabel value={props.waste_cf.proportion} />
+          <GraphLabel title={t("carbon.summary.type.wastes")} icon={FactoryIcon} />
+          <ValueLabel value={props.waste_cf.grandTotal} />
+        </div>
       </div>
-      <div className="absolute bottom-0 right-0 flex flex-col gap-1 text-center text-smart-cbt-red-3 z-10 scale-[0.65] sm:scale-100 origin-bottom-right -translate-y-4 sm:translate-y-0">
-        <PercentLabel value={props.waste_cf.proportion} />
-        <GraphLabel title={t("carbon.summary.type.wastes")} icon={FactoryIcon} />
-        <ValueLabel value={props.waste_cf.grandTotal} />
-      </div>
-      <PolarArea options={data.options} data={data.data} plugins={ShadowPlugin} />
     </div>
   );
 };

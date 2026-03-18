@@ -14,6 +14,7 @@ import { Collection } from "@/utils/cms/cms-type";
 import { cn } from "@/utils/cn";
 import { getSession } from "@/utils/session";
 import { Metadata } from "next";
+import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 
 // CMS
@@ -111,6 +112,7 @@ export default async function RootLayoutPage({ children, params }: { children: R
           {children}
           <ToastContainer />
         </RootLayout>
+        <Script src="https://czp.dga.or.th/cportal/sdk/iu/v4/sdk.js" strategy="afterInteractive" />
         <TagManager />
       </body>
     </html>

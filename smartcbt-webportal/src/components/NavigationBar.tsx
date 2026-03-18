@@ -82,8 +82,8 @@ export const MenuItem = ({ type, title, session, href, setRoleTravelMartMenu }: 
       return (
         <Link
           href={href ?? "/"}
-          className={`flex h-full items-center group-[.bg-transparent]:text-smart-cbt-dark-green md:px-2 ${
-            isMapiActiveMenu ? "text-smart-cbt-dark-green md:bg-smart-cbt-border-green" : "text-white"
+          className={`flex h-full items-center group-[.bg-transparent]:text-smart-cbt-dark-green lg:px-2 ${
+            isMapiActiveMenu ? "text-smart-cbt-dark-green lg:bg-smart-cbt-border-green" : "text-white"
           }`}
         >
           <div className={`text-sm font-medium hover:cursor-pointer`}>{title}</div>
@@ -189,15 +189,15 @@ export default function NavigationBar({
 
   return (
     <Fragment>
-      <nav className={cn("fixed left-0 right-0 top-0 z-40 h-14 bg-white md:bg-smart-cbt-green shadow-sm md:shadow-none", className)}>
-        <div className="flex h-14 items-center justify-between px-4 md:container md:mx-auto md:px-0">
+      <nav className={cn("fixed left-0 right-0 top-0 z-40 h-14 bg-white lg:bg-smart-cbt-green shadow-sm lg:shadow-none", className)}>
+        <div className="flex h-14 items-center justify-between px-4 lg:container lg:mx-auto lg:px-0">
           <Link className="hover:cursor-pointer" href={"/"}>
             <Image src={CBTLogo} alt="logo" height={56} style={{ filter: "grayscale(100%)" }} />
           </Link>
-          <button className="block md:hidden " onClick={onToggle}>
-            <HamburgerIcon className="h-8 w-8 text-smart-cbt-dark-green md:text-white group-[.bg-transparent]:text-smart-cbt-dark-green" />
+          <button className="block lg:hidden " onClick={onToggle}>
+            <HamburgerIcon className="h-8 w-8 text-smart-cbt-dark-green lg:text-white group-[.bg-transparent]:text-smart-cbt-dark-green" />
           </button>
-          <div className="hidden h-full w-auto flex-row items-center gap-4 md:flex">
+          <div className="hidden h-full w-auto flex-row items-center gap-4 lg:flex">
             {showMenus.map((m) => {
               return (
                 <MenuItem

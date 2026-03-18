@@ -47,7 +47,9 @@ const CarbonFootprintRegionalBarGraph = (props: RegionalGraphProps) => {
         <p>{region}</p>
         <p>{tooltipContent?.value?.toFixed(2)} kgCO2eq</p>
       </div>
-      {graph}
+      <div className="h-[300px] lg:h-full">
+        {graph}
+      </div>
     </div>
   );
 };
@@ -99,7 +101,7 @@ const chartData = (
       scales: {
         x: {
           grid: { display: false },
-          ticks: { color: "#A3A3A3", font: { size: 14 } },
+          ticks: { color: "#A3A3A3", font: { size: 14 }, autoSkip: true, maxTicksLimit: 7 },
           suggestedMax: max ? max * 1.1 : undefined,
         },
         y: {

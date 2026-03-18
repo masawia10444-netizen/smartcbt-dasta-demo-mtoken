@@ -132,7 +132,7 @@ export function chartNationalLevelGraphData(values: ReturnType<typeof convertTab
         },
       },
       scales: {
-        x: { ticks: { color: "#A3A3A3", font: { size: 14 } } },
+        x: { ticks: { color: "#A3A3A3", font: { size: 14 }, autoSkip: true, maxTicksLimit: 7 } },
         y: {
           beginAtZero: true,
           suggestedMax: maxValue ? maxValue * 1.1 : undefined,
@@ -175,7 +175,8 @@ export function chartGraphSummaryData(calculation: FootprintDashboardCalculation
   return {
     data: { datasets },
     options: {
-      layout: { padding: 60 },
+      maintainAspectRatio: false,
+      layout: { padding: 0 },
       scales: {
         r: {
           startAngle: -10,

@@ -7,7 +7,8 @@ import { District, Subdistrict } from "@/models/travel-mart/travel-mart-countrie
 import { ProvinceJSONData } from "@/utils/cms/adapters/master-data/geolocation/provinces";
 import { CommunityJSONData } from "@/utils/cms/adapters/website/travel-mart/communities";
 import { NextIntlClientProvider, useLocale } from "next-intl";
-import { PropsWithChildren } from "react";
+import { useRouter } from "next/navigation";
+import { PropsWithChildren, useEffect, useRef } from "react";
 import { AuthProvider } from "./context-provider/AuthProvider";
 
 type Data = {
@@ -34,6 +35,28 @@ export default function RootLayout({
   session: Session | null;
 }>) {
   const locale = useLocale();
+  const router = useRouter();
+  const backBtnSetRef = useRef(false);
+
+  useEffect(() => {
+    if (backBtnSetRef.current) return;
+    backBtnSetRef.current = true;
+
+    // Wait for the SDK to be available on window
+    const interval = setInterval(() => {
+      const czpSdk = (window as any).czpSdk;
+      if (czpSdk) {
+        czpSdk.setBackButtonVisible?.(true);
+        czpSdk.onBackButtonTap?.(() => {
+          router.back();
+        });
+        clearInterval(interval);
+      }
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [router]);
+
   // const [initValue, setInitValue] = useState<Data>({
   //   provinces: [],
   //   districts: [],
